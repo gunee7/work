@@ -17,14 +17,15 @@ import android.content.Intent;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final int REQUEST_CODE_LOGIN = 0;
+    private static final int REQUEST_CODE_LOGOUT =0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -74,27 +75,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_login) {
-            //context 3가지
-            // 1.getApplicationContext();
-            // 2.getContext();
-            // 3.MainActivity.this
-
-
-
-            Intent i = new  Intent (MainActivity.this, LoginActivity.class);
-            startActivity(i);
-
-
-        } else if (id == R.id.nav_logout) {
-
-        } else if (id == R.id.nav_manage) {
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_camera) {
-          // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_manage) {
+
+        } else if (id == R.id.nav_login) {
+            Intent i = new Intent(MainActivity.this, LoginActivty.class);
+            startActivityForResult(i, REQUEST_CODE_LOGIN);
+        } else if (id == R.id.nav_logout) {
+            Intent i = new Intent(MainActivity.this, LoginActivty.class);
+            startActivityForResult(i, REQUEST_CODE_LOGOUT);
 
         }
 
@@ -102,4 +96,32 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+
+        //requestCode == REQUEST_CODE_LOGIN
+        //resultCode == RESULT_ok
+        //data == 처리된 결과가 정보가 들어 있다.
+
+        //결과 화인
+
+        if(requestCode==REQUEST_CODE_LOGIN && resultCode == 0) {
+            boolean loginstatus = data.getBooleanExtra("LOGIN_STATUS", false);
+
+
+            NavigationView navView = findViewById(R.id.nav_view);
+            if (navView != null && loginstatus == true) {
+                Menu menu = navView.getMenu();
+                menu.findItem(R.id.nav_logout).setVisible(true);
+                menu.findItem(R.id.nav_login).setVisible(false);
+                menu.findItem(R.id.nav_regist).setVisible(false);
+                menu.findItem(R.id.nav_manage).setVisible(true);
+        }
+
+    }
+}
+
 }
