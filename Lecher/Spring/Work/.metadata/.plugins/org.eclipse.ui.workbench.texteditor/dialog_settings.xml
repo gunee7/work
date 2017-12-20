@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wst.html.ui.internal.preferences.ui.HTMLTemplatePreferencePage$HTMLEditTemplateDialog_dialogBounds">
+		<item value="612" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="330" key="DIALOG_HEIGHT"/>
+		<item value="102" key="DIALOG_X_ORIGIN"/>
+		<item value="192" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="di05.annotation" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="di05.di"/>
+			<item value="di01"/>
+			<item value="docType"/>
+			<item value="di01.di"/>
+			<item value="myname"/>
+			<item value="aaa"/>
+			<item value="if"/>
+			<item value="LIKE"/>
+		</list>
+		<list key="replacehistory">
+			<item value="di05.annotation"/>
+			<item value="di05"/>
+			<item value="doc1"/>
+			<item value="di07.resource.injection"/>
+			<item value="di06.mixed"/>
+			<item value="di04.xml.collections"/>
+			<item value="di02.basic"/>
+			<item value="di03.xml"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="261" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="376" key="DIALOG_HEIGHT"/>
+		<item value="159" key="DIALOG_Y_ORIGIN"/>
+		<item value="1374" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

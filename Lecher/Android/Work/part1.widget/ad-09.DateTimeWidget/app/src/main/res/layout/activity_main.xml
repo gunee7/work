@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.datetimewidget.MainActivity">
+    
+    
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+    
+    
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="515dp"
+               android:orientation="vertical">
+        
+               <TextView
+                   android:id="@+id/textview1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="아날로그 시계"
+                   android:textColor="@color/colorAccent"
+                   android:textSize="25dp"/>
+    
+    
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="100dp"
+                   android:orientation="vertical">
+    
+                   <Button
+                       android:id="@+id/button"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="예약시작"/>
+    
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal">
+    
+                       <RadioButton
+                           android:id="@+id/radioButton"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="날짜 예약"/>
+    
+                       <RadioButton
+                           android:id="@+id/radioButton2"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="시간 예약"/>
+                   </LinearLayout>
+
+               </LinearLayout>
+    
+               <AnalogClock
+                   android:id="@+id/analogcolck"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_horizontal"/>
+    
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="100dp"
+                   android:orientation="vertical">
+    
+               </LinearLayout>
+    
+               <DigitalClock
+                   android:id="@+id/digitalclock1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_horizontal"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textSize="40dp"/>
+    
+    
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:orientation="vertical">
+               </LinearLayout>
+    
+               <Chronometer
+                   android:id="@+id/chronometer"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textSize="50dp"/>
+    
+           </LinearLayout>
+    
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+    
+           <TextView
+               android:id="@+id/textview2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="타임피커"
+               android:textColor="@color/colorAccent"
+               android:textSize="40dp"/>
+    
+    
+           <TimePicker
+               android:id="@+id/timepicker1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="40dp"
+               android:timePickerMode="clock">
+           </TimePicker>
+    
+           <TimePicker
+               android:id="@+id/timepicker2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:timePickerMode="spinner"
+               android:textSize="40dp">
+           </TimePicker>
+    
+       </LinearLayout>
+    
+    
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:orientation="vertical">
+    
+               <TextView
+                   android:id="@+id/textview3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="데이트피커(DatePicker)"
+                   android:textColor="@color/colorAccent"
+                   android:textSize="40dp"/>
+    
+               <DatePicker
+                   android:id="@+id/datepicker1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:datePickerMode="calendar"/>
+
+
+           </LinearLayout>
+       
+    
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+        
+           <TextView
+               android:id="@+id/textview4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="데이트피커, 캘린더뷰"
+               android:textColor="@color/colorAccent"
+               android:textSize="40dp"/>
+    
+    
+           <DatePicker
+               android:id="@+id/datepicker2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:datePickerMode="calendar"/>
+        
+               
+           <CalendarView
+               android:id="@+id/calenearview"
+                   android:layout_width="match_parent"
+                   android:layout_height="300dp">
+        
+           </CalendarView>
+           
+  
+       </LinearLayout>
+
+    
+       <Button
+           android:id="@+id/btn1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="실행"
+           android:textSize="30dp"/>
+       
+   </LinearLayout>
+   
+
+   </ScrollView>
+   
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hello World2</string>
+    <string name="strBtn1">버튼입니다. 누르시겠습니까?</string>
+</resources>

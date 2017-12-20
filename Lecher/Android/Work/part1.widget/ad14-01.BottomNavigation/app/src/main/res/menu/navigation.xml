@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+    <item
+        android:id="@+id/navigation_donut"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_donut"/>
+    
+    <item
+        android:id="@+id/navigation_muffin"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_muffin"/>
+    
+    <item
+        android:id="@+id/navigation_waffle"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_waffle"/>
+    
+    <item
+        android:id="@+id/navigation_crawacint"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_crawacint"/>
+
+</menu>

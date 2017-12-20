@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+         var alarm=function (min, callback) {
+         var isCall = false;
+         setInterval(new Function()) {
+            var date = new Date();
+            var nowMin = date.getMinutes();
+            if (nowMin = min && !isCall) {
+                // statement
+                // isCall = true;
+                callback(nowMin);
+            }
+         }, 1000); // 1000 ms == 1초
+         }
+
+
+       // 페이지 로딩되고 호출되는 콜백 함수
+        window.onload = function () {
+            var curMin = new new Date().getMinutes();
+            alarm(curMin+1, function(min) {
+                  var mesg = "현재는'" +min+'분입니다.';
+              });
+
+            });
+
+
+
+            // 페이지 로딩되고 호출되는 콜백 함수
+        // window.onload = function () {
+            // var mesg = 'welcome!!!';
+            // console.log( mesg );
+            // alert( mesg );
+
+    </script>
+</head>
+<body>
+
+<script>
+    console.log( 'before </body>' );
+</script>
+</body>
+</html>

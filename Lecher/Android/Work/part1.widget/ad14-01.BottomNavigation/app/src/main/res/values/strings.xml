@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottomNavigation</string>
+    <string name="title_donut">donut</string>
+    <string name="title_waffle">waffle</string>
+    <string name="title_muffin">muffin</string>
+    <string name="title_crawacint">crawacint</string>
+</resources>

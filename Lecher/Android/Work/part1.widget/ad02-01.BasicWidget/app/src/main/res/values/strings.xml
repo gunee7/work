@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BasicWidget</string>
+    <string name="button1">poor</string>
+    <string name="button2">hungry</string>
+    <string name="button3">orphan</string>
+    <string name="button4">widow</string>
+    <string name="button5">streeter</string>
+    <string name="button6">misionary</string>
+    <string name="button7">africa children</string>
+
+</resources>

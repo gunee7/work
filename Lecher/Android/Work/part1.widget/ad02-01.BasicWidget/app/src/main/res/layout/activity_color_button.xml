@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ap34a="http://schemas.android.com/apk/res/android"
+
+              ap34a:layout_width="match_parent"
+              ap34a:layout_height="match_parent"
+              ap34a:orientation="vertical">
+    
+    />
+    
+    <Button
+        ap34a:id="@+id/button1"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@android:color/holo_red_dark"
+        ap34a:text="poor"/>
+    
+    <Button
+        ap34a:id="@+id/button2"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@android:color/holo_orange_dark"
+        ap34a:text="hungry"/>
+    
+    <Button
+        ap34a:id="@+id/button3"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@android:color/holo_orange_light"
+        ap34a:text="orphan"/>
+    
+    <Button
+        ap34a:id="@+id/button4"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@android:color/holo_green_dark"
+        ap34a:text="widow"/>
+    
+    <Button
+        ap34a:id="@+id/button5"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@android:color/holo_blue_dark"
+        ap34a:text="streeter"/>
+    
+    <Button
+        ap34a:id="@+id/button6"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@color/colorPrimaryDark"
+        ap34a:text="misionary"/>
+    
+    <Button
+        ap34a:id="@+id/button7"
+        ap34a:layout_width="match_parent"
+        ap34a:layout_height="wrap_content"
+        ap34a:layout_weight="1"
+        ap34a:background="@android:color/holo_purple"
+        ap34a:text="africa children"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GB Network</string>
+    <string name="clickmsg1">네이트 홈페이지 열기</string>
+    <string name="clickmsg2">911 응급전화걸기</string>
+    <string name="clickmsg3">갤러리 열기</string>
+    <string name="clickmsg4">끝내기</string>
+    
+</resources>
+
+
