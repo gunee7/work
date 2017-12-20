@@ -19,9 +19,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="drawer_menu_login"/>
-    <string name="drawer_menu_logout"/>
-    <string name="drawer_menu_regist"/>
-    <string name="drawer_menu_edit"/>
+    <string name="drawer_menu_login">로그인</string>
+    <string name="drawer_menu_logout">로그아웃</string>
+    <string name="drawer_menu_regist">회원가입</string>
+    <string name="drawer_menu_edit">정보수정</string>
     <string name="login_fail">로그인 실패</string>
 </resources>

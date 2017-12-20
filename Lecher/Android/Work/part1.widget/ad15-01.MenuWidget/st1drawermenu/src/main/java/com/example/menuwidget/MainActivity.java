@@ -1,9 +1,10 @@
 package com.example.menuwidget;
 
+import android.content.ClipData;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -18,12 +19,21 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final int REQUEST_CODE_LOGIN = 0;
-    private static final int REQUEST_CODE_LOGOUT =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences pref = getSharedPreferences(CommonCode.FILE_PRIFERENCE, MODE_PRIVATE);
+
+        if (pref.getBoolean(CommonCode.LOGIN_STATUS, false) == true) {
+            NavigationView navView = findViewById(R.id.nav_view);
+            menuSetTF(true, navView);
+        } else {
+            NavigationView navView = findViewById(R.id.nav_view);
+            menuSetTF(false, navView);
+        }
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -35,6 +45,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -87,9 +98,12 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this, LoginActivty.class);
             startActivityForResult(i, REQUEST_CODE_LOGIN);
         } else if (id == R.id.nav_logout) {
-            Intent i = new Intent(MainActivity.this, LoginActivty.class);
-            startActivityForResult(i, REQUEST_CODE_LOGOUT);
+            NavigationView navView = findViewById(R.id.nav_view);
+            Menu menu = navView.getMenu();
+            menuSetTF(false, navView);
 
+            SharedPreferences pref = getSharedPreferences(CommonCode.FILE_PRIFERENCE, MODE_PRIVATE);
+            xmlChanger(false, pref);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -99,29 +113,33 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         super.onActivityResult(requestCode, resultCode, data);
-
         //requestCode == REQUEST_CODE_LOGIN
-        //resultCode == RESULT_ok
-        //data == 처리된 결과가 정보가 들어 있다.
+        //requestCode == RESULT_OK or RESULT_FAIL
+        //data == 처리된 결과 정보가 들어있음
 
-        //결과 화인
-
-        if(requestCode==REQUEST_CODE_LOGIN && resultCode == 0) {
-            boolean loginstatus = data.getBooleanExtra("LOGIN_STATUS", false);
-
+        if (requestCode == REQUEST_CODE_LOGIN && resultCode == RESULT_OK) {
+            boolean loginStatus = data.getBooleanExtra(CommonCode.LOGIN_STATUS, false);
 
             NavigationView navView = findViewById(R.id.nav_view);
-            if (navView != null && loginstatus == true) {
+            if (navView != null && loginStatus == true) {
                 Menu menu = navView.getMenu();
-                menu.findItem(R.id.nav_logout).setVisible(true);
-                menu.findItem(R.id.nav_login).setVisible(false);
-                menu.findItem(R.id.nav_regist).setVisible(false);
-                menu.findItem(R.id.nav_manage).setVisible(true);
+                menuSetTF(true, navView);
+            }
         }
-
     }
-}
 
+    private void menuSetTF(boolean login, NavigationView navView) {
+        Menu menu = navView.getMenu();
+        menu.findItem(R.id.nav_login).setVisible(!login);
+        menu.findItem(R.id.nav_logout).setVisible(login);
+        menu.findItem(R.id.nav_regist).setVisible(!login);
+        menu.findItem(R.id.nav_edit).setVisible(login);
+    }
+
+    private void xmlChanger(boolean value, SharedPreferences pref) {
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean(CommonCode.LOGIN_STATUS, value);
+        editor.apply();
+    }
 }
