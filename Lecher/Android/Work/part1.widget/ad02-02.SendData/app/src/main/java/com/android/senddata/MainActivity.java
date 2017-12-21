@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 // 1. edtName에서 값 가져오기
-                String tmp = edtName.getText().toString();
+                String str = edtName.getText().toString();
 
                 // 2. txtMsg 에 값을 설정하기.
-                txtMsg.setText(tmp);
+                txtMsg.setText(str);
 
             }
         });
@@ -91,3 +91,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
+
+
+

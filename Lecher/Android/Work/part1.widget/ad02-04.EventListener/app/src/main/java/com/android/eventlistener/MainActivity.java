@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+
+
+
     button2.setOnClickListener(new View.OnClickListener() {
 
     }
@@ -74,17 +77,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    innerclass()
 
 
-    button3 = findViewById(R.id.button3);
+
+
 
     button3.setOnClickListener(new View.OnClickListener() {
+
+
     @Override
     public void onClick(View view) {
         Toast.makeText(getApplicationContext(), "implements 리스터", Toast.LENGTH_SHORT).show();
 
     }
+    }
+
+    @Override
+    public void onClick(View view) {
+
+    });
 
 
     private class innerclass implements View.OnClickListener {
