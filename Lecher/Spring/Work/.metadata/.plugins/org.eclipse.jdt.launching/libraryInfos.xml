@@ -19,6 +19,25 @@
 <entry path="D:\DevTool\jdk\jdk1.8.0_91\win64\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="C:\DevTool\jdk\jdk1.8.0_144\win64" version="1.8.0_144">
+<bootpath>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\resources.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\rt.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\jsse.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\jce.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\charsets.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\jfr.jar"/>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DevTool\jdk\jdk1.8.0_144\win64\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="D:\JAVA\jdk\jdk1.8.0_45\win64" version="1.8.0_45">
 <bootpath>
 <entry path="D:\JAVA\jdk\jdk1.8.0_45\win64\jre\lib\resources.jar"/>
@@ -112,6 +131,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="C:\JAVA\jdk\jdk1.7.0_80\win32\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\DevTool\jdk\jdk1.8.0_121\win64" version="1.8.0_121">
+<bootpath>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\resources.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\rt.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\sunrsasign.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\jsse.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\jce.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\charsets.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\jfr.jar"/>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\DevTool\jdk\jdk1.8.0_121\win64\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="D:\JAVA\jdk\jdk1.8.0_45\win64\jre" version="1.8.0_45">

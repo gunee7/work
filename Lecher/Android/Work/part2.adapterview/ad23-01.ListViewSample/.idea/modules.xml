@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ad23-01.ListViewSample.iml" filepath="$PROJECT_DIR$/ad23-01.ListViewSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st3radiolistview/st3radiolistview.iml" filepath="$PROJECT_DIR$/st3radiolistview/st3radiolistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st4checklistview/st4checklistview.iml" filepath="$PROJECT_DIR$/st4checklistview/st4checklistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st5check/st5check.iml" filepath="$PROJECT_DIR$/st5check/st5check.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st5checklistview/st5checklistview.iml" filepath="$PROJECT_DIR$/st5checklistview/st5checklistview.iml" />
+    </modules>
+  </component>
+</project>

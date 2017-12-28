@@ -2553,437 +2553,401 @@ java.io.InvalidClassException: org.eclipse.m2e.core.internal.project.registry.Ba
 2016-12-01 12:01:52,607 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-12-01 12:01:52,618 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-12-01 12:01:52,619 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:00:48,522 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:00:48,554 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:00:48,589 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:00:48,590 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:11:41,922 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.spring01:start:1.0.0-BUILD-SNAPSHOT @ D:\DevTool\workspace\Lecture\Spring\Work\spring01.start\pom.xml.
-2016-12-01 14:11:44,601 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:11:44,604 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:11:44,627 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:11:44,630 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:11:47,153 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:48,627 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:48,923 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-context:3.1.1.RELEASE
-2016-12-01 14:11:49,102 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:11:49,159 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-context:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-context:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:11:49,905 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:50,878 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:51,207 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-aop:3.1.1.RELEASE
-2016-12-01 14:11:51,377 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:11:51,383 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-aop:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-aop:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:11:52,094 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar
-2016-12-01 14:11:52,445 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar
-2016-12-01 14:11:52,908 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for aopalliance:aopalliance:1.0
-2016-12-01 14:11:53,095 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-javadoc.jar
-2016-12-01 14:11:53,097 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for aopalliance:aopalliance:1.0
-org.eclipse.core.runtime.CoreException: Could not resolve artifact aopalliance:aopalliance:jar:javadoc:1.0
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:11:53,907 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:55,126 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:55,359 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-beans:3.1.1.RELEASE
-2016-12-01 14:11:55,535 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:11:55,537 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-beans:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-beans:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:11:56,305 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:57,407 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:57,596 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-core:3.1.1.RELEASE
-2016-12-01 14:11:57,793 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:11:57,799 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-core:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-core:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:11:58,525 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:59,381 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE-sources.jar
-2016-12-01 14:11:59,552 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-expression:3.1.1.RELEASE
-2016-12-01 14:11:59,721 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:11:59,723 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-expression:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-expression:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:00,495 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:00,667 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:00,759 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-asm:3.1.1.RELEASE
-2016-12-01 14:12:00,931 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:12:00,933 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-asm:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-asm:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:01,791 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:02,966 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:03,196 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-webmvc:3.1.1.RELEASE
-2016-12-01 14:12:03,360 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:12:03,363 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-webmvc:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-webmvc:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:04,502 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:05,619 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:05,745 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-context-support:3.1.1.RELEASE
-2016-12-01 14:12:05,916 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:12:05,919 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-context-support:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-context-support:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:06,683 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:08,838 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE-sources.jar
-2016-12-01 14:12:09,043 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-web:3.1.1.RELEASE
-2016-12-01 14:12:09,221 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE-javadoc.jar
-2016-12-01 14:12:09,225 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework:spring-web:3.1.1.RELEASE
-org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework:spring-web:jar:javadoc:3.1.1.RELEASE
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:10,020 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-sources.jar
-2016-12-01 14:12:10,719 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-sources.jar
-2016-12-01 14:12:11,011 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.aspectj:aspectjrt:1.6.10
-2016-12-01 14:12:11,224 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-javadoc.jar
-2016-12-01 14:12:11,308 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:12:11,326 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:12:11,332 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:12:11,333 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:12:12,325 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-javadoc.jar
-2016-12-01 14:12:12,605 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.aspectj:aspectjrt:1.6.10
-2016-12-01 14:12:12,798 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-sources.jar
-2016-12-01 14:12:13,004 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-sources.jar
-2016-12-01 14:12:13,113 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.slf4j:slf4j-api:1.6.6
-2016-12-01 14:12:13,299 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-javadoc.jar
-2016-12-01 14:12:13,632 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-javadoc.jar
-2016-12-01 14:12:13,759 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.slf4j:slf4j-api:1.6.6
-2016-12-01 14:12:13,947 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-sources.jar
-2016-12-01 14:12:14,126 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-sources.jar
-2016-12-01 14:12:14,289 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.slf4j:jcl-over-slf4j:1.6.6
-2016-12-01 14:12:14,472 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-javadoc.jar
-2016-12-01 14:12:14,716 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-javadoc.jar
-2016-12-01 14:12:14,833 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.slf4j:jcl-over-slf4j:1.6.6
-2016-12-01 14:12:15,012 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-sources.jar
-2016-12-01 14:12:15,182 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-sources.jar
-2016-12-01 14:12:15,326 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.slf4j:slf4j-log4j12:1.6.6
-2016-12-01 14:12:15,527 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-javadoc.jar
-2016-12-01 14:12:15,734 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-javadoc.jar
-2016-12-01 14:12:15,960 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.slf4j:slf4j-log4j12:1.6.6
-2016-12-01 14:12:16,158 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar
-2016-12-01 14:12:16,674 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar
-2016-12-01 14:12:16,766 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for log4j:log4j:1.2.15
-2016-12-01 14:12:16,929 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15-javadoc.jar
-2016-12-01 14:12:16,937 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for log4j:log4j:1.2.15
-org.eclipse.core.runtime.CoreException: Could not resolve artifact log4j:log4j:jar:javadoc:1.2.15
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:17,868 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar
-2016-12-01 14:12:18,029 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar
-2016-12-01 14:12:18,209 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.inject:javax.inject:1
-2016-12-01 14:12:18,364 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar
-2016-12-01 14:12:18,687 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar
-2016-12-01 14:12:18,807 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for javax.inject:javax.inject:1
-2016-12-01 14:12:18,991 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar
-2016-12-01 14:12:19,476 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar
-2016-12-01 14:12:19,614 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.servlet:servlet-api:2.5
-2016-12-01 14:12:19,769 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-javadoc.jar
-2016-12-01 14:12:19,775 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for javax.servlet:servlet-api:2.5
-org.eclipse.core.runtime.CoreException: Could not resolve artifact javax.servlet:servlet-api:jar:javadoc:2.5
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:20,661 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar
-2016-12-01 14:12:21,625 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar
-2016-12-01 14:12:21,752 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.servlet.jsp:jsp-api:2.1
-2016-12-01 14:12:21,956 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-javadoc.jar
-2016-12-01 14:12:21,962 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for javax.servlet.jsp:jsp-api:2.1
-org.eclipse.core.runtime.CoreException: Could not resolve artifact javax.servlet.jsp:jsp-api:jar:javadoc:2.1
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:23,468 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2-sources.jar
-2016-12-01 14:12:24,666 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2-sources.jar
-2016-12-01 14:12:24,775 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.servlet:jstl:1.2
-2016-12-01 14:12:24,943 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2-javadoc.jar
-2016-12-01 14:12:24,948 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for javax.servlet:jstl:1.2
-org.eclipse.core.runtime.CoreException: Could not resolve artifact javax.servlet:jstl:jar:javadoc:1.2
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:25,884 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.7/junit-4.7-sources.jar
-2016-12-01 14:12:26,566 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.7/junit-4.7-sources.jar
-2016-12-01 14:12:26,674 [Worker-22] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for junit:junit:4.7
-2016-12-01 14:12:26,841 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.7/junit-4.7-javadoc.jar
-2016-12-01 14:12:26,848 [Worker-22] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for junit:junit:4.7
-org.eclipse.core.runtime.CoreException: Could not resolve artifact junit:junit:jar:javadoc:4.7
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:237) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:202) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
-2016-12-01 14:12:27,166 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:12:27,167 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-12-01 14:12:27,168 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:12:27,169 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-12-01 14:46:34,120 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:46:34,138 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 14:46:34,144 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 14:46:34,145 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-12-01 15:03:35,602 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 15:03:35,609 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-12-01 15:03:35,613 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 15:03:35,614 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-12-01 15:05:20,498 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 15:05:20,499 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-12-01 15:05:20,501 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-2016-12-01 15:05:20,502 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-06 07:19:16,987 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @831002ms
+2016-12-06 07:19:17,125 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-06 07:19:17,176 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7dac0c3d{/help,null,AVAILABLE}
+2016-12-06 07:19:17,184 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@72cae7c3{HTTP/1.1,[http/1.1]}{127.0.0.1:2104}
+2016-12-06 07:19:17,185 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @831202ms
+2016-12-06 08:08:56,057 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@72cae7c3{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-06 08:08:56,092 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7dac0c3d{/help,null,UNAVAILABLE}
+2016-12-06 20:33:16,715 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @207340ms
+2016-12-06 20:33:17,107 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-06 20:33:17,186 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@54bc129e{/help,null,AVAILABLE}
+2016-12-06 20:33:17,219 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@204182a6{HTTP/1.1,[http/1.1]}{127.0.0.1:2760}
+2016-12-06 20:33:17,219 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @207880ms
+2016-12-07 08:02:38,444 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@204182a6{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-07 08:02:38,539 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@54bc129e{/help,null,UNAVAILABLE}
+2016-12-08 20:30:07,507 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @551251ms
+2016-12-08 20:30:07,771 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-08 20:30:07,844 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6a60a8ce{/help,null,AVAILABLE}
+2016-12-08 20:30:07,891 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@740ed6a0{HTTP/1.1,[http/1.1]}{127.0.0.1:1854}
+2016-12-08 20:30:07,892 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @551659ms
+2016-12-08 21:21:09,693 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@740ed6a0{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-08 21:21:09,704 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6a60a8ce{/help,null,UNAVAILABLE}
+2016-12-08 23:45:44,011 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2094609ms
+2016-12-08 23:45:44,473 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-08 23:45:44,607 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ceb23db{/help,null,AVAILABLE}
+2016-12-08 23:45:44,696 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2a601e12{HTTP/1.1,[http/1.1]}{127.0.0.1:7661}
+2016-12-08 23:45:44,697 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2095321ms
+2016-12-09 01:55:52,537 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2a601e12{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-09 01:55:52,549 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ceb23db{/help,null,UNAVAILABLE}
+2016-12-09 07:39:47,245 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @470926ms
+2016-12-09 07:39:48,187 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-09 07:39:48,410 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7121e7fc{/help,null,AVAILABLE}
+2016-12-09 07:39:48,440 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7df689a1{HTTP/1.1,[http/1.1]}{127.0.0.1:1364}
+2016-12-09 07:39:48,440 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @472142ms
+2016-12-09 07:56:34,507 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7df689a1{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-09 07:56:34,522 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7121e7fc{/help,null,UNAVAILABLE}
+2016-12-13 05:35:19,927 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1015927ms
+2016-12-13 05:35:20,057 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-13 05:35:20,099 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e745e55{/help,null,AVAILABLE}
+2016-12-13 05:35:20,108 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@21686e49{HTTP/1.1,[http/1.1]}{127.0.0.1:4450}
+2016-12-13 05:35:20,108 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1016112ms
+2016-12-13 06:16:02,285 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@21686e49{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-13 06:16:02,304 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1e745e55{/help,null,UNAVAILABLE}
+2016-12-13 07:53:58,880 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @3197662ms
+2016-12-13 07:53:59,193 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-13 07:53:59,272 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@117b4afe{/help,null,AVAILABLE}
+2016-12-13 07:53:59,288 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@ba18f65{HTTP/1.1,[http/1.1]}{127.0.0.1:3814}
+2016-12-13 07:53:59,288 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @3198106ms
+2016-12-13 08:10:47,905 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@ba18f65{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-13 08:10:47,944 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@117b4afe{/help,null,UNAVAILABLE}
+2016-12-13 14:33:15,016 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @10965831ms
+2016-12-13 14:33:15,716 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-13 14:33:15,830 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6cd016f5{/help,null,AVAILABLE}
+2016-12-13 14:33:15,927 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3c40e2fe{HTTP/1.1,[http/1.1]}{127.0.0.1:11487}
+2016-12-13 14:33:15,927 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @10966819ms
+2016-12-13 19:03:52,866 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3c40e2fe{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-13 19:03:52,906 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6cd016f5{/help,null,UNAVAILABLE}
+2016-12-19 06:36:18,950 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1824026ms
+2016-12-19 06:36:19,418 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-19 06:36:19,534 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ed01d33{/help,null,AVAILABLE}
+2016-12-19 06:36:19,551 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@182e9173{HTTP/1.1,[http/1.1]}{127.0.0.1:9966}
+2016-12-19 06:36:19,552 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1824656ms
+2016-12-19 08:15:35,271 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@182e9173{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-19 08:15:35,283 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ed01d33{/help,null,UNAVAILABLE}
+2016-12-19 15:36:27,898 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @10909512ms
+2016-12-19 15:36:28,405 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-19 15:36:28,502 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ed570a2{/help,null,AVAILABLE}
+2016-12-19 15:36:28,509 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2fc2050e{HTTP/1.1,[http/1.1]}{127.0.0.1:18773}
+2016-12-19 15:36:28,509 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @10910281ms
+2016-12-19 21:19:30,978 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2fc2050e{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-19 21:19:31,019 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ed570a2{/help,null,UNAVAILABLE}
+2016-12-20 10:54:00,560 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @4420359ms
+2016-12-20 10:54:01,157 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-20 10:54:01,320 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@db4bec7{/help,null,AVAILABLE}
+2016-12-20 10:54:01,361 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@560d3603{HTTP/1.1,[http/1.1]}{127.0.0.1:7719}
+2016-12-20 10:54:01,361 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @4421312ms
+2016-12-20 17:53:15,500 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@560d3603{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-20 17:53:15,586 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@db4bec7{/help,null,UNAVAILABLE}
+2016-12-21 11:51:16,484 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @3487646ms
+2016-12-21 11:51:16,798 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-21 11:51:16,872 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6b1281fd{/help,null,AVAILABLE}
+2016-12-21 11:51:16,880 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1db5d3b5{HTTP/1.1,[http/1.1]}{127.0.0.1:14397}
+2016-12-21 11:51:16,880 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @3488073ms
+2016-12-21 18:26:51,485 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1db5d3b5{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-21 18:26:51,591 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6b1281fd{/help,null,UNAVAILABLE}
+2016-12-22 11:12:30,124 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @5258759ms
+2016-12-22 11:12:30,387 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-22 11:12:30,515 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2c2bb671{/help,null,AVAILABLE}
+2016-12-22 11:12:30,585 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@748b553f{HTTP/1.1,[http/1.1]}{127.0.0.1:12928}
+2016-12-22 11:12:30,585 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @5259235ms
+2016-12-22 18:50:45,571 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@748b553f{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-22 18:50:45,633 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2c2bb671{/help,null,UNAVAILABLE}
+2016-12-23 22:24:03,890 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @739086ms
+2016-12-23 22:24:04,452 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-23 22:24:04,546 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@38c7541c{/help,null,AVAILABLE}
+2016-12-23 22:24:04,633 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3aea5b17{HTTP/1.1,[http/1.1]}{127.0.0.1:10705}
+2016-12-23 22:24:04,633 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @739866ms
+2016-12-24 08:44:32,612 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3aea5b17{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-24 08:44:32,674 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@38c7541c{/help,null,UNAVAILABLE}
+2016-12-25 19:45:46,094 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @844531ms
+2016-12-25 19:45:46,487 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-25 19:45:46,629 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@638d3fab{/help,null,AVAILABLE}
+2016-12-25 19:45:46,730 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@25291865{HTTP/1.1,[http/1.1]}{127.0.0.1:47648}
+2016-12-25 19:45:46,731 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @845202ms
+2016-12-26 07:28:51,140 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@25291865{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-26 07:28:51,177 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@638d3fab{/help,null,UNAVAILABLE}
+2016-12-26 12:09:03,906 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @9039362ms
+2016-12-26 12:09:04,422 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-26 12:09:04,518 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5f2e50e7{/help,null,AVAILABLE}
+2016-12-26 12:09:04,540 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@d0fcbf1{HTTP/1.1,[http/1.1]}{127.0.0.1:56037}
+2016-12-26 12:09:04,540 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @9040025ms
+2016-12-26 17:49:10,705 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@d0fcbf1{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-26 17:49:10,800 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5f2e50e7{/help,null,UNAVAILABLE}
+2016-12-26 17:54:57,368 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @343609ms
+2016-12-26 17:54:57,624 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-26 17:54:57,706 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3f4cdec1{/help,null,AVAILABLE}
+2016-12-26 17:54:57,785 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@269ccb40{HTTP/1.1,[http/1.1]}{127.0.0.1:60986}
+2016-12-26 17:54:57,785 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @344036ms
+2016-12-27 07:58:23,002 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@269ccb40{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-27 07:58:23,032 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3f4cdec1{/help,null,UNAVAILABLE}
+2016-12-27 15:13:18,798 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @19904522ms
+2016-12-27 15:13:19,269 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-27 15:13:19,545 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@d272d1d{/help,null,AVAILABLE}
+2016-12-27 15:13:19,611 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2e879192{HTTP/1.1,[http/1.1]}{127.0.0.1:10520}
+2016-12-27 15:13:19,611 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @19905400ms
+2016-12-27 21:06:16,034 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2e879192{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-27 21:06:16,074 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@d272d1d{/help,null,UNAVAILABLE}
+2016-12-29 16:35:25,835 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2930622ms
+2016-12-29 16:35:26,500 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-29 16:35:26,636 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3156e2f0{/help,null,AVAILABLE}
+2016-12-29 16:35:26,649 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@458d8076{HTTP/1.1,[http/1.1]}{127.0.0.1:17856}
+2016-12-29 16:35:26,649 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2931605ms
+2016-12-29 18:21:45,476 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@458d8076{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-29 18:21:45,516 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3156e2f0{/help,null,UNAVAILABLE}
+2016-12-30 05:15:53,608 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2367609ms
+2016-12-30 05:15:54,180 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-30 05:15:54,284 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@76dc3089{/help,null,AVAILABLE}
+2016-12-30 05:15:54,323 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4e265952{HTTP/1.1,[http/1.1]}{127.0.0.1:25887}
+2016-12-30 05:15:54,323 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2368492ms
+2016-12-30 08:16:14,805 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4e265952{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-30 08:16:14,834 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@76dc3089{/help,null,UNAVAILABLE}
+2016-12-30 11:08:56,143 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1593082ms
+2016-12-30 11:08:56,615 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-30 11:08:56,721 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5d0a212c{/help,null,AVAILABLE}
+2016-12-30 11:08:56,812 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@14593115{HTTP/1.1,[http/1.1]}{127.0.0.1:2388}
+2016-12-30 11:08:56,812 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1593799ms
+2016-12-30 13:40:00,204 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@14593115{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-30 13:40:00,317 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5d0a212c{/help,null,UNAVAILABLE}
+2016-12-30 16:54:52,176 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1133198ms
+2016-12-30 16:54:52,734 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-30 16:54:52,818 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@17e42ffa{/help,null,AVAILABLE}
+2016-12-30 16:54:52,857 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@78957afa{HTTP/1.1,[http/1.1]}{127.0.0.1:18536}
+2016-12-30 16:54:52,857 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1133913ms
+2016-12-30 18:09:35,700 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@78957afa{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-30 18:09:35,752 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@17e42ffa{/help,null,UNAVAILABLE}
+2016-12-31 06:47:16,463 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @36265572ms
+2016-12-31 06:47:17,061 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-12-31 06:47:17,225 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1147d161{/help,null,AVAILABLE}
+2016-12-31 06:47:17,255 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1a49c85b{HTTP/1.1,[http/1.1]}{127.0.0.1:2349}
+2016-12-31 06:47:17,256 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @36266408ms
+2016-12-31 11:00:29,832 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1a49c85b{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-12-31 11:00:29,869 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1147d161{/help,null,UNAVAILABLE}
+2017-01-03 10:57:25,436 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @4387170ms
+2017-01-03 10:57:25,822 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-03 10:57:25,991 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@45d5a98c{/help,null,AVAILABLE}
+2017-01-03 10:57:26,019 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@30d169ea{HTTP/1.1,[http/1.1]}{127.0.0.1:49224}
+2017-01-03 10:57:26,019 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @4387952ms
+2017-01-03 13:39:15,424 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@30d169ea{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-03 13:39:15,440 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@45d5a98c{/help,null,UNAVAILABLE}
+2017-01-16 10:50:21,852 [Worker-15] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-16 10:50:53,539 [Worker-32] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-16 10:51:38,325 [Worker-57] INFO  j.exodus.env.EnvironmentImpl - Store get cache hit rate: 0.0%
+2017-01-16 10:51:38,325 [Worker-57] INFO  j.exodus.env.EnvironmentImpl - Tree nodes cache hit rate: 0.0%
+2017-01-16 10:51:38,325 [Worker-57] INFO  j.exodus.env.EnvironmentImpl - Exodus log cache hit rate: 43.9%
+2017-01-16 10:51:52,797 [Worker-42] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-16 10:53:13,367 [Worker-52] INFO  j.exodus.env.EnvironmentImpl - Store get cache hit rate: 0.0%
+2017-01-16 10:53:13,367 [Worker-52] INFO  j.exodus.env.EnvironmentImpl - Tree nodes cache hit rate: 0.0%
+2017-01-16 10:53:13,379 [Worker-52] INFO  j.exodus.env.EnvironmentImpl - Exodus log cache hit rate: 43.9%
+2017-01-16 10:55:51,552 [Worker-49] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-16 11:29:15,539 [Worker-77] INFO  j.exodus.env.EnvironmentImpl - Store get cache hit rate: 0.0%
+2017-01-16 11:29:15,539 [Worker-77] INFO  j.exodus.env.EnvironmentImpl - Tree nodes cache hit rate: 0.0%
+2017-01-16 11:29:15,539 [Worker-77] INFO  j.exodus.env.EnvironmentImpl - Exodus log cache hit rate: 1.2%
+2017-01-16 11:31:38,637 [Worker-96] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-16 11:32:30,554 [Worker-49] INFO  j.exodus.env.EnvironmentImpl - Store get cache hit rate: 0.0%
+2017-01-16 11:32:30,554 [Worker-49] INFO  j.exodus.env.EnvironmentImpl - Tree nodes cache hit rate: 0.0%
+2017-01-16 11:32:30,554 [Worker-49] INFO  j.exodus.env.EnvironmentImpl - Exodus log cache hit rate: 1.1%
+2017-01-16 11:43:53,480 [Worker-100] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-16 11:51:08,858 [Worker-101] INFO  j.exodus.env.EnvironmentImpl - Store get cache hit rate: 0.0%
+2017-01-16 11:51:08,858 [Worker-101] INFO  j.exodus.env.EnvironmentImpl - Tree nodes cache hit rate: 0.0%
+2017-01-16 11:51:08,858 [Worker-101] INFO  j.exodus.env.EnvironmentImpl - Exodus log cache hit rate: 1.1%
+2017-01-16 13:40:56,838 [Worker-147] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-16 13:41:10,010 [Worker-147] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\2\store
+2017-01-16 13:44:28,105 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @11781372ms
+2017-01-16 13:44:28,452 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-16 13:44:28,563 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3286bbfc{/help,null,AVAILABLE}
+2017-01-16 13:44:28,587 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@486e3bdc{HTTP/1.1,[http/1.1]}{127.0.0.1:6678}
+2017-01-16 13:44:28,587 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @11781855ms
+2017-01-16 16:26:57,547 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@486e3bdc{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-16 16:26:57,617 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3286bbfc{/help,null,UNAVAILABLE}
+2017-01-16 16:40:18,338 [Worker-43] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-17 09:49:35,264 [Worker-9] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-17 10:09:20,528 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1368176ms
+2017-01-17 10:09:20,822 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-17 10:09:20,982 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7dc2779e{/help,null,AVAILABLE}
+2017-01-17 10:09:21,003 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@50511456{HTTP/1.1,[http/1.1]}{127.0.0.1:1769}
+2017-01-17 10:09:21,003 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1368652ms
+2017-01-17 14:31:31,348 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@50511456{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-17 14:31:31,406 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7dc2779e{/help,null,UNAVAILABLE}
+2017-01-18 10:45:28,487 [Worker-21] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-18 13:13:52,369 [Worker-59] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-01-18 13:13:55,328 [Worker-59] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\2\store
+2017-01-18 13:20:03,556 [Worker-17] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-19 21:56:51,589 [Worker-3] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-19 23:29:04,455 [Worker-13] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-20 07:47:53,362 [Worker-8] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-21 17:25:51,356 [Worker-52] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-21 17:50:18,219 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-01-21 18:07:33,233 [Worker-43] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-21 18:28:12,962 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2294090ms
+2017-01-21 18:28:13,186 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-21 18:28:13,392 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@191a626{/help,null,AVAILABLE}
+2017-01-21 18:28:13,414 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@12f7573a{HTTP/1.1,[http/1.1]}{127.0.0.1:3364}
+2017-01-21 18:28:13,414 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2294543ms
+2017-01-21 18:41:43,352 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@12f7573a{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-21 18:41:43,431 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@191a626{/help,null,UNAVAILABLE}
+2017-01-21 18:43:01,471 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-21 18:51:00,115 [Worker-20] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-21 19:43:49,874 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-21 20:12:14,962 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1718376ms
+2017-01-21 20:12:15,221 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-21 20:12:15,301 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5807292c{/help,null,AVAILABLE}
+2017-01-21 20:12:15,307 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@68175878{HTTP/1.1,[http/1.1]}{127.0.0.1:4998}
+2017-01-21 20:12:15,307 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1718721ms
+2017-01-21 20:46:32,256 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@68175878{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-21 20:46:32,288 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5807292c{/help,null,UNAVAILABLE}
+2017-01-21 20:49:38,477 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-21 21:29:55,512 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-23 14:33:25,454 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-23 15:45:54,962 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-23 17:01:33,652 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @4551603ms
+2017-01-23 17:01:33,888 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-23 17:01:33,994 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2b88d38d{/help,null,AVAILABLE}
+2017-01-23 17:01:34,017 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@48f02783{HTTP/1.1,[http/1.1]}{127.0.0.1:11289}
+2017-01-23 17:01:34,017 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @4551969ms
+2017-01-23 22:54:38,697 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@48f02783{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-23 22:54:38,721 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2b88d38d{/help,null,UNAVAILABLE}
+2017-01-24 09:49:38,337 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-24 13:54:44,069 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-24 18:08:34,292 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-25 04:58:42,588 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-25 05:19:35,430 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1335370ms
+2017-01-25 05:19:35,754 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-25 05:19:35,967 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2c2f41df{/help,null,AVAILABLE}
+2017-01-25 05:19:35,998 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@6373a11a{HTTP/1.1,[http/1.1]}{127.0.0.1:2901}
+2017-01-25 05:19:35,998 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1335938ms
+2017-01-25 06:37:08,571 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@6373a11a{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-25 06:37:08,590 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2c2f41df{/help,null,UNAVAILABLE}
+2017-01-25 09:40:39,661 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-26 10:30:11,978 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-26 10:31:10,424 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @82289ms
+2017-01-26 10:31:10,611 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-26 10:31:10,673 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7b14ef2e{/help,null,AVAILABLE}
+2017-01-26 10:31:10,673 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5c92a255{HTTP/1.1,[http/1.1]}{127.0.0.1:1819}
+2017-01-26 10:31:10,673 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @82542ms
+2017-01-26 11:48:44,000 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5c92a255{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-26 11:48:44,031 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7b14ef2e{/help,null,UNAVAILABLE}
+2017-01-26 13:43:21,717 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-26 22:02:02,267 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-28 06:13:21,607 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-01-30 22:25:20,335 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @231195694ms
+2017-01-30 22:25:21,087 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-30 22:25:21,382 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3f053d9a{/help,null,AVAILABLE}
+2017-01-30 22:25:21,435 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@255b3230{HTTP/1.1,[http/1.1]}{127.0.0.1:14756}
+2017-01-30 22:25:21,436 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @231196796ms
+2017-01-31 10:46:11,978 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@255b3230{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-31 10:46:12,041 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3f053d9a{/help,null,UNAVAILABLE}
+2017-01-31 12:37:34,084 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-31 13:24:21,375 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2878886ms
+2017-01-31 13:24:21,783 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-31 13:24:21,900 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@13ef21b8{/help,null,AVAILABLE}
+2017-01-31 13:24:21,918 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7e38afc{HTTP/1.1,[http/1.1]}{127.0.0.1:22286}
+2017-01-31 13:24:21,918 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2879430ms
+2017-01-31 14:28:46,239 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7e38afc{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-31 14:28:46,349 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@13ef21b8{/help,null,UNAVAILABLE}
+2017-01-31 14:43:24,296 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-31 15:53:56,490 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @4256475ms
+2017-01-31 15:53:56,737 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-31 15:53:56,827 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5103fbe5{/help,null,AVAILABLE}
+2017-01-31 15:53:56,836 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7c0e89f5{HTTP/1.1,[http/1.1]}{127.0.0.1:23516}
+2017-01-31 15:53:56,836 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @4256821ms
+2017-01-31 16:18:21,670 [Worker-27] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-01-31 16:46:28,673 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7c0e89f5{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-01-31 16:46:28,716 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5103fbe5{/help,null,UNAVAILABLE}
+2017-01-31 17:34:03,667 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-01-31 18:07:57,337 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2094418ms
+2017-01-31 18:07:57,593 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-01-31 18:07:57,693 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@10a39d4f{/help,null,AVAILABLE}
+2017-01-31 18:07:57,717 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@20e2931{HTTP/1.1,[http/1.1]}{127.0.0.1:24373}
+2017-01-31 18:07:57,718 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2094799ms
+2017-01-31 18:09:56,222 [Worker-30] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-01 03:16:22,692 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@20e2931{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-01 03:16:22,778 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@10a39d4f{/help,null,UNAVAILABLE}
+2017-02-01 07:40:30,518 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-01 07:48:07,398 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @522135ms
+2017-02-01 07:48:07,774 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-01 07:48:07,955 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@794289e9{/help,null,AVAILABLE}
+2017-02-01 07:48:07,966 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@367e170c{HTTP/1.1,[http/1.1]}{127.0.0.1:31797}
+2017-02-01 07:48:07,966 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @522704ms
+2017-02-01 08:17:00,752 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@367e170c{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-01 08:17:00,770 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@794289e9{/help,null,UNAVAILABLE}
+2017-02-01 09:51:09,737 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-01 09:52:36,115 [Worker-20] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-01 15:32:42,031 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-01 16:50:14,234 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-02 05:41:38,103 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-02-02 13:30:19,692 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-02 15:41:42,148 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-02-02 17:35:02,355 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-02 17:40:11,676 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @454608ms
+2017-02-02 17:40:13,209 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-02 17:40:14,167 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6eef314d{/help,null,AVAILABLE}
+2017-02-02 17:40:14,270 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7702ee2e{HTTP/1.1,[http/1.1]}{127.0.0.1:2395}
+2017-02-02 17:40:14,270 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @457203ms
+2017-02-02 18:16:36,843 [Worker-3] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-02 18:40:03,596 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7702ee2e{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-02 18:40:03,617 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6eef314d{/help,null,UNAVAILABLE}
+2017-02-03 09:37:28,119 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-04 04:54:35,593 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-04 05:00:05,517 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-04 06:32:19,472 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-04 17:30:45,525 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-04 18:41:50,438 [Worker-32] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-05 06:35:34,026 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-05 13:28:59,159 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-05 15:58:24,269 [Worker-37] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-05 16:31:04,382 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-05 20:40:35,585 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @15130386ms
+2017-02-05 20:40:35,854 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-05 20:40:35,951 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2f889eb4{/help,null,AVAILABLE}
+2017-02-05 20:40:35,959 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1ff2d705{HTTP/1.1,[http/1.1]}{127.0.0.1:7002}
+2017-02-05 20:40:35,960 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @15130761ms
+2017-02-05 22:29:47,243 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1ff2d705{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-05 22:29:47,287 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2f889eb4{/help,null,UNAVAILABLE}
+2017-02-06 07:20:57,268 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-06 14:45:37,111 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-07 05:29:38,100 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-07 12:21:00,879 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-07 12:27:16,869 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-07 17:15:23,628 [Worker-9] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-08 09:41:02,399 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-08 12:38:50,114 [Worker-38] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-08 14:39:01,272 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-09 10:00:05,801 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-10 10:18:49,502 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-12 12:40:22,113 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-12 17:46:55,442 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @18459941ms
+2017-02-12 17:46:55,828 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-12 17:46:56,018 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1bdcab1a{/help,null,AVAILABLE}
+2017-02-12 17:46:56,044 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1d80a0d0{HTTP/1.1,[http/1.1]}{127.0.0.1:5887}
+2017-02-12 17:46:56,044 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @18460543ms
+2017-02-13 06:44:44,163 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1d80a0d0{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-13 06:44:44,303 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1bdcab1a{/help,null,UNAVAILABLE}
+2017-02-13 07:24:21,301 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-13 09:47:11,123 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-13 15:45:42,856 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @21681128ms
+2017-02-13 15:45:43,435 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-13 15:45:43,592 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6adf9f38{/help,null,AVAILABLE}
+2017-02-13 15:45:43,616 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4a67fc40{HTTP/1.1,[http/1.1]}{127.0.0.1:6026}
+2017-02-13 15:45:43,616 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @21681887ms
+2017-02-13 17:39:04,220 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4a67fc40{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-13 17:39:04,252 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6adf9f38{/help,null,UNAVAILABLE}
+2017-02-13 20:23:35,779 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-14 06:46:59,057 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-14 09:38:54,494 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-14 14:06:41,692 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-14 14:53:53,047 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @2886614ms
+2017-02-14 14:53:53,389 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-14 14:53:53,507 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5ee5fc23{/help,null,AVAILABLE}
+2017-02-14 14:53:53,556 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b4b436{HTTP/1.1,[http/1.1]}{127.0.0.1:9872}
+2017-02-14 14:53:53,556 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @2887123ms
+2017-02-15 03:47:04,058 [Worker-47] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-02-15 06:12:08,100 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3b4b436{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-15 06:12:08,162 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5ee5fc23{/help,null,UNAVAILABLE}
+2017-02-15 09:43:53,919 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-16 16:01:36,545 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-17 22:23:50,047 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-02-17 22:42:18,682 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-03-11 22:05:06,329 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-03-11 22:44:11,986 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-03-16 16:10:43,333 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-03-16 20:06:46,762 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-03-16 20:58:33,326 [Worker-9] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2017-03-16 20:58:33,725 [Worker-9] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-03-16 21:15:39,555 [Worker-15] INFO  j.exodus.env.EnvironmentImpl - Store get cache hit rate: 0.0%
+2017-03-16 21:15:39,566 [Worker-15] INFO  j.exodus.env.EnvironmentImpl - Tree nodes cache hit rate: 0.0%
+2017-03-16 21:15:39,567 [Worker-15] INFO  j.exodus.env.EnvironmentImpl - Exodus log cache hit rate: 0.0%
+2017-03-16 21:17:37,013 [Worker-9] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\DevTool\workspace\Lecture\Spring\Work\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2017-03-17 20:47:07,772 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-03-27 20:54:58,610 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

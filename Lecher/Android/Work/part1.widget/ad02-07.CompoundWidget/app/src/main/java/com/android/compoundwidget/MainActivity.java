@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RadioGroup rgpDirection = null;
     private RadioGroup rgpGravity = null;
+    private RadioGroup radiocheck = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,26 @@ public class MainActivity extends AppCompatActivity {
         //찾기
         rgpDirection = findViewById(R.id.rgpDirection);
         rgpGravity = findViewById(R.id.rgpGravity);
+        radiocheck = findViewById(R.id.radiocheck);
+
+
+
 
         // 설정
+
+        radiocheck.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.check1) {
+                    radiocheck.setGravity(Gravity.LEFT);
+                } else if (checkedId == R.id.check2) {
+                    radiocheck.setGravity(Gravity.CENTER);
+                } else if (checkedId == R.id.check3) {
+                    radiocheck.setGravity(Gravity.RIGHT);
+                }
+            }
+        });
+
 
         rgpDirection.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

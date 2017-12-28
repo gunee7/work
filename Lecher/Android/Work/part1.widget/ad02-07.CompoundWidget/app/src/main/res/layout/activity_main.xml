@@ -17,23 +17,32 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
     
-            <CheckBox
-                android:id="@+id/checkBox"
+            <RadioGroup
+                android:id="@+id/radiocheck"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="안드로이드"/>
+                android:layout_height="match_parent">
     
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="아이폰"/>
+                <RadioButton
+                    android:id="@+id/check1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="안드로이드"/>
     
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
+                <RadioButton
+                    android:id="@+id/check2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="아이폰"/>
+    
+                <RadioButton
+                    android:id="@+id/check3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CheckBox"/>
+            </RadioGroup>
     
             <Switch
                 android:id="@+id/switch1"
@@ -81,7 +90,7 @@
     
             <RadioGroup
                 android:id="@+id/rgpDirection"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
         
@@ -91,10 +100,17 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="가로"/>
-        
-        
+    
+    
                 <RadioButton
                     android:id="@+id/rdoV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:text="세로"/>
+    
+                <RadioButton
+                    android:id="@+id/rdoV1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -105,7 +121,7 @@
     
             <RadioGroup
                 android:id="@+id/rgpGravity"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1">
     

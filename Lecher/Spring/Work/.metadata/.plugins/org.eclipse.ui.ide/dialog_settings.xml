@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="CleanDialogSettings">
 		<item value="500" key="DIALOG_WIDTH"/>
-		<item value="true" key="BUILD_ALL"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="false" key="BUILD_ALL"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
 		<item value="440" key="DIALOG_HEIGHT"/>
 		<item value="269" key="DIALOG_Y_ORIGIN"/>
 		<item value="524" key="DIALOG_X_ORIGIN"/>
@@ -14,7 +14,15 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\workspace\Lecher\Spring\Work"/>
+			<item value="D:\workspace\Lecher\JAVA\Work\JavaApplication"/>
+			<item value="D:\workspace2\gunee7\JAVA\Work"/>
+			<item value="C:\Users\Administrator\Downloads\평가07_개발자테스트_제공파일"/>
+			<item value="D:\workspace\Lecture\JAVA\Work"/>
 			<item value="D:\DevTool\workspace\Lecture\Spring\Work"/>
+			<item value="D:\Documents\GoogleBackup\Google드라이버\이젠.자바프로그래머.20160920-20170215\문서\말똥가리\2.평가지\"/>
+			<item value="D:\Documents\GoogleBackup\Google드라이버\이젠.자바프로그래머.20160920-20170215\문서\말똥가리\2.평가지\평가지05_개발자테스트\평가지_개발자테스트"/>
+			<item value="D:\DevTool\workspace\Lecture\Spring\Source"/>
 			<item value="D:\JAVA\workspace\Lecture\Source"/>
 			<item value="C:\Users\Administrator\Downloads\Controller-PhoneController-MyBatis-Spring"/>
 			<item value="C:\Users\Administrator\Downloads\MyBatis"/>
@@ -30,16 +38,13 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.ui.wizards.new.project" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.ajdt.wizards"/>
-			<item value="org.eclipse.ajdt.wizards/org.eclipse.ajdt.examples"/>
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
-		<item value="197" key="DIALOG_Y_ORIGIN"/>
-		<item value="204" key="DIALOG_X_ORIGIN"/>
+		<item value="-65" key="DIALOG_Y_ORIGIN"/>
+		<item value="189" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="BasicNewProjectResourceWizard">
 	</section>

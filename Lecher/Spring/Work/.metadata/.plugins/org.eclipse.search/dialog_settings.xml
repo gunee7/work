@@ -15,11 +15,12 @@
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
 		<item value="false" key="WHOLE_WORD"/>
+		<item value="false" key="SEARCH_IN_BINARIES"/>
 		<section name="HISTORY6">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="getArticleTotalRecord" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="uploadimage" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -30,8 +31,8 @@
 		<section name="HISTORY7">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="increaseHit" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="getPhotoByte" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -42,8 +43,8 @@
 		<section name="HISTORY4">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="getNextArticle" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="downloadfile" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -54,8 +55,8 @@
 		<section name="HISTORY10">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value=".dao" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="getbyteimage" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -66,8 +67,8 @@
 		<section name="HISTORY5">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="boardCd" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="uploadfile" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -83,8 +84,8 @@
 		<section name="HISTORY11">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="insertBoardList" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="getByteImage" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -95,8 +96,8 @@
 		<section name="HISTORY8">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="getBoardNm" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="photoBytes" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -107,8 +108,8 @@
 		<section name="HISTORY9">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="TB_Phone" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="ModelAttachfile" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -119,8 +120,8 @@
 		<section name="HISTORY2">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="di0" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="baeeunsu" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -131,8 +132,8 @@
 		<section name="HISTORY3">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="com.lecture" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/sql&quot; prefix=&quot;sql&quot; %&gt;" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -144,7 +145,7 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="di01" key="textPattern"/>
+			<item value="oper" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -155,8 +156,8 @@
 		<section name="HISTORY1">
 			<item value="false" key="ignoreCase"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="isWholeWord"/>
-			<item value="di" key="textPattern"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="&lt;&lt; {" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.*"/>
@@ -190,13 +191,13 @@
 	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
-			<item value="aop01"/>
-			<item value="aop"/>
-			<item value="di01"/>
-			<item value="boardcd"/>
-			<item value="increaseArticleHit"/>
-			<item value="getBoardName"/>
-			<item value="TB_Bbs_Phone"/>
+			<item value="{"/>
+			<item value="배은수"/>
+			<item value=""/>
+			<item value="filedownload"/>
+			<item value="fileupload"/>
+			<item value="imageupload"/>
+			<item value="getImageByte"/>
 		</list>
 	</section>
 	<section name="SearchDialog">
@@ -208,10 +209,10 @@
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item value="997" key="DIALOG_WIDTH"/>
+		<item value="531" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="452" key="DIALOG_HEIGHT"/>
-		<item value="289" key="DIALOG_Y_ORIGIN"/>
-		<item value="299" key="DIALOG_X_ORIGIN"/>
+		<item value="464" key="DIALOG_HEIGHT"/>
+		<item value="309" key="DIALOG_Y_ORIGIN"/>
+		<item value="663" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

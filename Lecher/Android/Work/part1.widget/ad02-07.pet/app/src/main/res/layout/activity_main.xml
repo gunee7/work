@@ -12,35 +12,30 @@
         android:id="@id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        
+    
         <LinearLayout
-            android:id="@+id/linerarlayoutA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+           <TextView
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="선택을 시작하시겠습니까?"
+            android:textSize="24sp"/>
     
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="선택을 시작하시겠습니까?"
-                android:textSize="24sp"/>
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시작함"
+            android:textSize="25dp"/>
+            
+        </LinearLayout>
     
-            <CheckBox
-                android:id="@+id/checkbox1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:text="시작함"/>
     
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="좋아하는 동물은?"
-                android:textSize="24sp"/>
-    
-            <RadioGroup
+    <RadioGroup
                 android:id="@+id/petRadio"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -66,57 +61,15 @@
                     android:layout_weight="1"
                     android:text="토끼"/>
 
-            </RadioGroup>
+     </RadioGroup>
     
     
-        <LinearLayout
-            android:id="@+id/linerarlayoutB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <Switch
-                android:id="@+id/toggleAnd"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="선택을 시작하시겠습니까?"
-                android:textSize="24sp"/>
-    
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="좋아하는 안드로이드 버전은?"
-                android:textSize="24sp"/>
-    
-            <RadioGroup
-                android:id="@+id/andRadio"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         
-                <RadioButton
-                    android:id="@+id/andNou"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="개"/>
         
-                <RadioButton
-                    android:id="@+id/andLolli"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="고양이"/>
-        
-                <RadioButton
-                    android:id="@+id/andLolli"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="토끼"/>
-    
-            </RadioGroup>
-    
             <Button
                 android:id="@+id/btnPet"
                 android:layout_width="match_parent"
@@ -144,28 +97,6 @@
                 app:srcCompat="@drawable/rabbit"/>
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
 
                 <Button
                     android:id="@+id/btnAnd"
@@ -179,9 +110,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_launcher_background"/>
-            </LinearLayout>
-
-
+     </LinearLayout>
+    
+     
     </ScrollView>
 
 </LinearLayout>
