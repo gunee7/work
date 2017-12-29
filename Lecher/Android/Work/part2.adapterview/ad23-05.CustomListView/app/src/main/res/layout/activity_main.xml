@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+    
+    <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="이름"
+        android:layout_weight="1"
+        android:id="@+id/edit_name"/>
+    
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="학번"
+        android:layout_weight="1"
+        android:id="@+id/edit_number"/>
+    
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="학과"
+        android:layout_weight="1"
+        android:id="@+id/edit_department"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:id="@+id/btn_add"
+        android:text="추가"/>
+
+</LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:id="@+id/textView"
+        android:text="정렬"/>
+    
+    
+    <RadioGroup
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+    
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/radioButton"
+        android:text="오름차순"/>
+    
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/radioButton2"
+        android:text="내림차순"/>
+
+</RadioGroup>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:id="@+id/btn_sort"
+        android:text="정렬"/>
+
+</LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_all_del"
+            android:text="전체 삭제"/>
+    
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_init"
+            android:text="초기화"/>
+
+</LinearLayout>
+    
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/list_view"/>
+
+</LinearLayout>
+</LinearLayout>

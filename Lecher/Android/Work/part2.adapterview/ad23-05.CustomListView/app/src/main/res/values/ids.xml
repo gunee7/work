@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_del" type="id"/>
+    <item name="edit_itme" type="id"/>
+    <item name="spinner" type="id"/>
+    <item name="btn_search" type="id"/>
+</resources>
