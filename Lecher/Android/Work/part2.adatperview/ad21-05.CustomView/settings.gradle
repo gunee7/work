@@ -1,1 +1,1 @@
-include ':st1studentlistview', ':myapplication', ':st2personview'
+include ':app', ':myapplication', ':st2personview'
