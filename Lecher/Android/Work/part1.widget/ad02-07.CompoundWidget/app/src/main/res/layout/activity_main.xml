@@ -108,13 +108,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:text="세로"/>
-    
-                <RadioButton
-                    android:id="@+id/rdoV1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:text="세로"/>
 
 
             </RadioGroup>

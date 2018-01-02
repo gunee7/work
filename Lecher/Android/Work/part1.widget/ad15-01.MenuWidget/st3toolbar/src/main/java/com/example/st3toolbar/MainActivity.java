@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.st2preference.R;
-
 public class MainActivity extends AppCompatActivity {
 
 
@@ -22,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textView = findViewById(R.id.textView);
-        button = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
+        textView = findViewById(R.in.textView);
+        button = findViewById(R.in.button);
+        button2 = findViewById(R.in.button2);
 
 
     }
