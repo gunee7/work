@@ -8,21 +8,20 @@
     android:orientation="vertical"
     tools:context="com.example.st3toolbar.MainActivity">
 
-<android.support.v7.widget.AppBarLayout
+<LinearLayout
     android:id="@+id/barlayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:theme=>
+    android:layout_height="match_parent">
     
     
-    <android.support.v7.widget.Toolbar
+    <LinearLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         
-        android:theme="@style/Toolbar"/>
-    
-    
-    
-    </android.support.v7.widget.AppBarLayout>
+        android:theme="@style/Toolbar">
+
+
+    </LinearLayout>
+</LinearLayout>
 </LinearLayout>

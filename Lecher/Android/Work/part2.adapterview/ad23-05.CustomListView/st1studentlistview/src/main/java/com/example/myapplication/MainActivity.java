@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     //위젯 선언
     private ListView listView1;
-    private ArrayAdapter<String> adapter;
-    private List<String> data;
+    private AdapterStudent   adapter;
+    private List<ModelStudent> data;
 
 
     @Override
@@ -26,30 +26,22 @@ public class MainActivity extends AppCompatActivity {
         // 위젯 찾기
         listView1  = findViewById(R.id.list_view);
 
-        //위젯 리스너 설정
-        listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-        });
-
-        listView1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                return false;
-            }
-        });
 
 
+        //데이터 만들기
         data = new ArrayList<>();
-        data.add("aaaaaa");
-        data.add("bbbbbb");
-        data.add("cccccc");
+        for (int i=0; i<5; i++) {
+            ModelStudent student = new ModelStudent();
+            student.setName("name" + i);
+            student.setNumber("number" + i);
+            student.setDepartment(i+"-" + i);
+            data.add(student);
+
+        }
+         
 
         //adapter 만들기
-        adapter = new ArrayAdapter<String>( MainActivity.this, android.R.layout.simple_list_item_1, data);
-
+        adapter = new AdapterStudent( MainActivity.this, R.layout.view_student,data);
 
         // listview
         listView1.setAdapter(adapter);

@@ -13,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
    private String[] itemsDepartment = {"bbb 0","bbb 1","bbb 2","bbb 3","bbb 4"};
 
 
-   private Intent Intent;
     private View adapterLV;
     private List<String> list;
     private ArrayAdapter<String> adapter;
@@ -145,9 +145,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
         ArrayAdapter<String> spinner = new ArrayAdapter<String>(MainActivity.this
                 ,android.R.layout.simple_list_item_1
                 ,itemsName);
@@ -170,12 +167,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
 
 
 

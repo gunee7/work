@@ -7,114 +7,118 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     
     
-    <LinearLayout
-        android:layout_height="wrap_content"
+        <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
     
-    <EditText
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:hint="이름"
-        android:layout_weight="1"
-        android:id="@+id/edit_name"/>
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="이름"/>
     
-    <EditText
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:hint="학번"
-        android:layout_weight="1"
-        android:id="@+id/edit_number"/>
+            <EditText
+                android:id="@+id/edit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="학번"/>
     
-    <EditText
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:hint="학과"
-        android:layout_weight="1"
-        android:id="@+id/edit_department"/>
+            <EditText
+                android:id="@+id/edit_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="학과"/>
     
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="80dp"
-        android:id="@+id/btn_add"
-        android:text="추가"/>
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="추가"/>
 
-</LinearLayout>
+        </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
     
     
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+        
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="정렬"/>
+        
+        
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+            
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="오름차순"/>
+            
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="내림차순"/>
+        
+                </RadioGroup>
+        
+                <Button
+                    android:id="@+id/btn_sort"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="정렬"/>
     
-    
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="horizontal">
-    
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="50dp"
-        android:id="@+id/textView"
-        android:text="정렬"/>
-    
-    
-    <RadioGroup
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:gravity="center_vertical">
-    
-    <RadioButton
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/radioButton"
-        android:text="오름차순"/>
-    
-    <RadioButton
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/radioButton2"
-        android:text="내림차순"/>
+            </LinearLayout>
 
-</RadioGroup>
-    
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="80dp"
-        android:id="@+id/btn_sort"
-        android:text="정렬"/>
 
-</LinearLayout>
-    
+        </LinearLayout>
     
     <LinearLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
     
-    <Button android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
+        <Button
             android:id="@+id/btn_all_del"
-            android:text="전체 삭제"/>
-    
-    <Button android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="전체 삭제"/>
+        
+        <Button
             android:id="@+id/btn_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="초기화"/>
 
-</LinearLayout>
+    </LinearLayout>
     
-    <ListView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:id="@+id/list_view"/>
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
 
-</LinearLayout>
-</LinearLayout>
+
+    </LinearLayout>
