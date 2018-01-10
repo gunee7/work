@@ -5,4 +5,7 @@
     <item name="navigation_chatting" type="id"/>
     <item name="navigation_mygive" type="id"/>
     <item name="navigation_more" type="id"/>
+    <item name="linearLayout2" type="id"/>
+    <item name="imageDog" type="id"/>
+    <item name="imagedog" type="id"/>
 </resources>

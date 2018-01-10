@@ -18,5 +18,9 @@
     <string name="title_horse">말</string>
     <string name="title_rabbit">토끼</string>
     <string name="title_givecoffee">기브커피</string>
-    
+    <string name="title_activity_menu6">Menu6Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
 </resources>
