@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    <FrameLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+    
+    <ImageView android:layout_height="50dp" android:layout_width="50dp" android:scaleType="centerCrop" android:background="#0f0" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:id="@+id/image_photo"/>
+    
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:id="@+id/text_name" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Medium Text" android:layout_toRightOf="@+id/image_photo" android:layout_toEndOf="@+id/image_photo"/>
+    
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/text_age" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Small Text" android:layout_toRightOf="@+id/image_photo" android:layout_toEndOf="@+id/image_photo" android:layout_below="@+id/text_name"/>
+    
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/image_check" android:src="@android:drawable/checkbox_off_background" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:layout_alignBottom="@+id/image_photo"/>
+
+</RelativeLayout>
+    
+    <ImageView android:layout_height="match_parent" android:layout_width="match_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:id="@+id/image_select" android:src="@drawable/select_item" android:visibility="gone"/>
+
+</FrameLayout>

@@ -2,56 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
-    
-    <item
-        android:title="Communicate">
+      
+    <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_login"
-                android:icon="@drawable/ic_android_black_24dp"
-                android:title="@string/drawer_menu_login"
-                android:visible="true"/>
+                android:icon="@android:drawable/btn_radio"
+                android:title="@string/drawer_menu_login"/>
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="@string/drawer_menu_register"/>
             
             <item
                 android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_android_black_24dp"
+                android:icon="@android:drawable/ic_input_add"
                 android:title="@string/drawer_menu_logout"
                 android:visible="false"/>
-            
             <item
-                android:id="@+id/nav_regist"
-                android:icon="@drawable/ic_android_black_24dp"
-                android:title="@string/drawer_menu_regist"
-                android:visible="true"/>
-            
-            <item
-                android:id="@+id/nav_edit"
-                android:icon="@drawable/ic_android_black_24dp"
-                android:title="@string/drawer_menu_edit"
-                android:visible="false"/>
+                android:id="@+id/nav_memedit"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="@string/drawer_menu_memedit"
+                android:visible="false" />
         </menu>
-
     </item>
     
-    
-    <group
-        android:checkableBehavior="single"
-        >
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Camera"/>
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery"/>
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow"/>
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools"/>
     </group>
+
 </menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GIVECOFFE</string>
+    <string name="title_home">기브빈</string>
+    <string name="title_dashboard1">친구</string>
+    <string name="title_dashboard2">채팅</string>
+    <string name="title_dashboard3">My기부</string>
+    <string name="title_notifications">....</string>
+</resources>

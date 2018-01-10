@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Dec 28 18:06:17 KST 2017
+0.baseType=DIRECTORY
+0.base=D\:\\workspace\\Lecher\\Android\\Work\\part2.adapterview\\ad23-01.ListViewSample\\st3radiolistview\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

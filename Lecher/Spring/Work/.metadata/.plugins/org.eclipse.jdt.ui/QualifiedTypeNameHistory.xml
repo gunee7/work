@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="junittest.Student"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.support.ManagedArray"/>
-<fullyQualifiedTypeName name="java23.jdbc.ServiceAuth"/>
 <fullyQualifiedTypeName name="java31.st3bookmanagement.JoinMember"/>
 <fullyQualifiedTypeName name="java23.jdbc.DBConnect2"/>
 <fullyQualifiedTypeName name="java31.st3bookmanagement.MainBookMg"/>
@@ -18,7 +15,6 @@
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java24.mybatis.model.ModelAuth"/>
 <fullyQualifiedTypeName name="javax.print.DocFlavor.BYTE_ARRAY"/>
 <fullyQualifiedTypeName name="oracle.net.aso.k"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="model.ModelProduct"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 </qualifiedTypeNameHistroy>

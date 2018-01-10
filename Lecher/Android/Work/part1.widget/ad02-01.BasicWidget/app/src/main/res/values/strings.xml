@@ -7,5 +7,16 @@
     <string name="button5">streeter</string>
     <string name="button6">misionary</string>
     <string name="button7">africa children</string>
-
+    <string name="title_activity_main3">activity_main3</string>
+    <string name="title_givebean">기브빈</string>
+    <string name="title_friend">친구</string>
+    <string name="title_chatting">채팅</string>
+    <string name="title_mygive">My기부</string>
+    <string name="title_more">더보기</string>
+    <string name="title_dog">강아지</string>
+    <string name="title_cat">고양이</string>
+    <string name="title_horse">말</string>
+    <string name="title_rabbit">토끼</string>
+    <string name="title_givecoffee">기브커피</string>
+    
 </resources>

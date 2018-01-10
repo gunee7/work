@@ -1,0 +1,4 @@
+#Thu Dec 28 18:07:42 KST 2017
+base.0=D\:\\workspace\\Lecher\\Android\\Work\\part2.adapterview\\ad23-01.ListViewSample\\st4checklistview\\build\\intermediates\\transforms\\dexMerger\\debug\\27
+path.0=classes.dex
+renamed.0=classes.dex

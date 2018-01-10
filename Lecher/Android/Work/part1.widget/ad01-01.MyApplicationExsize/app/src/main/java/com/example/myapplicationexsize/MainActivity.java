@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Toast.makeText( MainActivity.this,"기브에 오신것을 환영합니다", Toast.LENGTH_LONG).show();
-
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://givecoffeemall.com"));
+                startActivity(i);
 
             }
         });

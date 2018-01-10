@@ -13,23 +13,35 @@ import model.ModelProduct;
 import service.IServiceProduct;
 
 public class TestFirstAspect {
+    // SLF4J Logging
     private Logger logger = LoggerFactory.getLogger(this.getClass());
     
-    private static IServiceProduct service;
+    private static IServiceProduct service ;
     
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
-        
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:aop.xml");
-        
-        // RETRIEVE CONFIGURED INSTANCE
-        service = context.getBean("svrprod", IServiceProduct.class);
+        // create and configure beans
+        ApplicationContext context = context = new ClassPathXmlApplicationContext( "classpath:aop.xml");
 
+        // retrieve configured instance
+        service = context.getBean("svrprod", IServiceProduct.class);
     }
     
     @Test
     public void testGetProduct() {
         ModelProduct product = service.getProduct("bbb");
-        assertTrue(1000 == product.getPrice());
+        assertTrue( 1000 == product.getPrice() );
     }
+    
+    @Test
+    public void testGetNone() {
+        service.getNone();
+    }
+    
+    @Test(expected=Exception.class)
+    public void testGetException() throws Exception {
+        ModelProduct product = service.getException("bbb");
+        assertTrue( 1000 == product.getPrice() );
+    }
+    
 }

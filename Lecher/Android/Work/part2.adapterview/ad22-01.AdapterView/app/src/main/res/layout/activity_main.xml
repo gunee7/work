@@ -10,7 +10,7 @@
     
     <TextView
         android:id="@+id/textview1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="Hello World!"/>
     
@@ -25,7 +25,6 @@
         android:spinnerMode="dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
     </Spinner>
     
     <TextView
@@ -49,10 +48,6 @@
         android:id="@+id/listview1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
     </ListView>
-    
-    
-    
 
 </LinearLayout>

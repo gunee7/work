@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.android.basicwidget"
+<manifest xmlns:tools="http://schemas.android.com/tools"
+          package="com.android.basicwidget"
           xmlns:android="http://schemas.android.com/apk/res/android">
     
     <application
@@ -10,30 +11,57 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-        
-        </activity>
-        <activity android:name=".RadioActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-        
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+    
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/title_givebean">
+        </activity>
+    
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_friend">
+        </activity>
+        <activity
+            android:name=".MainActivity3"
+            android:label="@string/title_chatting">
+        </activity>
+        <activity
+            android:name=".MainActivity4"
+            android:label="@string/title_mygive">
+        </activity>
+        <activity
+            android:name=".MainActivity5"
+            android:label="@string/title_more">
+        </activity>
+    
+        <activity
+            android:name=".Menu1Activity"
+            android:label="@string/title_givebean">
+        </activity>
+    
+        <activity
+            android:name=".Menu2Activity"
+            android:label="@string/title_friend">
+        </activity>
+        <activity
+            android:name=".Menu3Activity"
+            android:label="@string/title_chatting">
+        </activity>
+        <activity
+            android:name=".Menu4Activity"
+            android:label="@string/title_mygive">
+        </activity>
+        <activity
+            android:name=".Menu5Activity"
+            android:label="@string/title_more">
+        </activity>
         
-        </activity>
-        <activity android:name=".WidthButtonActivity">
-        </activity>
-        <activity android:name=".HeightButtonActivity">
-        </activity>
-        <activity android:name=".ColorButtonActivity">
-        
-        </activity>
-        <activity android:name=".MarginActivity">
-        </activity>
-        <activity android:name=".PaddingActivity">
-        
-        </activity>
-        <activity android:name=".VisibleActivity">
-        </activity>
     </application>
 
 </manifest>

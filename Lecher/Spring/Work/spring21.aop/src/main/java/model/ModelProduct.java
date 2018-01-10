@@ -4,16 +4,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ModelProduct {
+    // SLF4J Logging
     private Logger logger = LoggerFactory.getLogger(this.getClass());
     
     private String name;
     private Integer price;
-    public Logger getLogger() {
-        return logger;
-    }
-    public void setLogger(Logger logger) {
-        this.logger = logger;
-    }
+    
+    // getter & setter
     public String getName() {
         return name;
     }
@@ -25,20 +22,22 @@ public class ModelProduct {
     }
     public void setPrice(Integer price) {
         this.price = price;
-    }
+    }    
+    
+    // toString
     @Override
     public String toString() {
-        return "ModelProduct [logger=" + logger + ", name=" + name + ", price="
-                + price + "]";
+        return "ModelProduct [name=" + name + ", price=" + price + "]";
     }
-    public ModelProduct( String name, Integer price) {
-        super();
-        this.name = name;
-        this.price = price;
-    }
+        
+    // constructor
     public ModelProduct() {
         super();
     }
-    
-    
+    public ModelProduct(String name, Integer price) {
+        super();
+        this.name = name;
+        this.price = price;
+    }    
+
 }

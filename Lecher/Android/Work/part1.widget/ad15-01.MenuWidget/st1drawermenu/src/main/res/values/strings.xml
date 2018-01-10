@@ -16,12 +16,12 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="drawer_menu_login">로그인</string>
-    <string name="drawer_menu_logout">로그아웃</string>
-    <string name="drawer_menu_regist">회원가입</string>
-    <string name="drawer_menu_edit">정보수정</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
     <string name="login_fail">로그인 실패</string>
+    <string name="drawer_menu_register">회원가입</string>
+    <string name="drawer_menu_login">Login</string>
+    <string name="drawer_menu_logout">Logout</string>
+    <string name="drawer_menu_memedit">회원 정보 수정</string>
+    <string name="file_preference">Settings</string>
+    <string name="error_login_fail">로그인 실패</string>
 </resources>

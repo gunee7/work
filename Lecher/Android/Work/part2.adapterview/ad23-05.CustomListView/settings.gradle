@@ -1,0 +1,1 @@
+include ':app', ':st1studentlistview', ':st2checkablelistview'

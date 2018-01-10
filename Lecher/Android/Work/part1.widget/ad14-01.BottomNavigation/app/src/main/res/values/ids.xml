@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="navigation_muffin" type="id"/>
+    <item name="navigation_donut" type="id"/>
+    <item name="navigation_waffle" type="id"/>
+    <item name="navigation_crawacint" type="id"/>
+</resources>

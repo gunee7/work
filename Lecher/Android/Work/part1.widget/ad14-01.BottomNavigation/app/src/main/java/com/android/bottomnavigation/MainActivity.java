@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.example.bottomnavigation.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity  {
 
     private Button button1 = null;
     private Button button2 = null;
@@ -27,82 +27,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         //선언
-        button1.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
 
-        @Override
-        public void onClick(View view) {
-            Toast.makeText(getApplicationContext(), "무명 클래스 리스터", Toast.LENGTH_SHORT).show();
-             process("AnonymousClass");
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "인라인 리스터", Toast.LENGTH_SHORT).show();
+
+                switch (v.getId()) {
+                    case R.id.button2:
+                        finish();
+                        break;
+
+                    default:
+                        break;
+
             }
-            private void process(String anonymousClass) {
-            }
-        });
-    }
 
-
-
-
-
-
-    button2.setOnClickListener(new View.OnClickListener() {
-
-    }
-    @Override
-    public void inlineclick(View view) {
-        Toast.makeText(getApplicationContext(), "인라인 리스터", Toast.LENGTH_SHORT).show();
-        switch (view.getId()) {
-            case R.id.button2 ;
-                finish();
-                break;
-
-            default:
+                }
+            });
         }
-});
-
-
-
-
-
-
-    public void inlineclick(View view) {
-        Toast.makeText(getApplicationContext(), "인라인 리스터", Toast.LENGTH_SHORT).show();
-
-        switch (view.getId()) {
-            case R.id.button2;
-            finish();
-            break;
-
-            default:
-                break;
         }
-    }
 
 
-
-
-
-
-    button3.setOnClickListener(new View.OnClickListener() {
-
-
-    @Override
-    public void onClick(View view) {
-        Toast.makeText(getApplicationContext(), "implements 리스터", Toast.LENGTH_SHORT).show();
-
-    }
-    }
-
-    @Override
-    public void onClick(View view) {
-
-    });
-
-
-    private class innerclass implements View.OnClickListener {
-        @Override
-        public void onClick(View view) {
-            Toast.makeText(getApplicationContext(), "내부 클래스 리스터", Toast.LENGTH_SHORT).show();
-
-        }
-    }
-}

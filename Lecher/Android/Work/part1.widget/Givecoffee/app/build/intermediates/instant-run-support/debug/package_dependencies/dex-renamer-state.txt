@@ -1,0 +1,4 @@
+#Thu Jan 04 14:04:18 KST 2018
+base.0=D\:\\workspace\\Lecher\\Android\\Work\\part1.widget\\Givecoffee\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\29
+path.0=classes.dex
+renamed.0=classes.dex

@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="2.인라인 리스터"
-        android:onClick="inlineclick"/>
+        android:onClick="onClick"/>
     
     <Button
         android:id="@+id/button3"
