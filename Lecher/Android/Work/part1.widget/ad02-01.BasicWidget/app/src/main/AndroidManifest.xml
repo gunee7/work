@@ -13,7 +13,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-        
+            
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -34,31 +34,7 @@
             android:label="@string/title_mygive">
         </activity>
         <activity
-            android:name=".MainActivity5"
-            android:label="@string/title_more">
-        </activity>
-        <activity
-            android:name=".Menu1Activity"
-            android:label="@string/title_givebean">
-        </activity>
-        <activity
-            android:name=".Menu2Activity"
-            android:label="@string/title_friend">
-        </activity>
-        <activity
-            android:name=".Menu3Activity"
-            android:label="@string/title_chatting">
-        </activity>
-        <activity
-            android:name=".Menu4Activity"
-            android:label="@string/title_mygive">
-        </activity>
-        <activity
-            android:name=".Menu5Activity"
-            android:label="@string/title_more">
-        </activity>
-        <activity
-            android:name=".mainActivity6"
+            android:name=".Menu6Activity"
             android:label="@string/title_activity_menu6">
         </activity>
     </application>

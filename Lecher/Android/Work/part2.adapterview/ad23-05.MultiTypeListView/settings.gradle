@@ -1,1 +1,1 @@
-include ':app', ':simplemultitype'
+include ':st3actor'

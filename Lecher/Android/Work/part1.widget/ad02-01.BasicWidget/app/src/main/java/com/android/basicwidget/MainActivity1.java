@@ -63,7 +63,7 @@ public class MainActivity1 extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "친구를 찾아보세요", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity21.class);
                 startActivity(i); //새창 띄우기
 
 
@@ -100,7 +100,7 @@ public class MainActivity1 extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "더많은 메뉴로 넘어갑니다", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), MainActivity5.class);
+                Intent i = new Intent(getApplicationContext(), Menu6Activity.class);
                 startActivity(i); //새창 띄우기
 
             }

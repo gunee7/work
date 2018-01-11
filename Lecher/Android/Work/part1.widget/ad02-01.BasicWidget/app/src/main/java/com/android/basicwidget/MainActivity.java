@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "give coffee에 오신걸 환영합니다", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), mainActivity6.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity1.class);
                 startActivity(i); //새창 띄우기
 
             }

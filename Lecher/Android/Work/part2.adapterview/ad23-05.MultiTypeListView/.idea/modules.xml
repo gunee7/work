@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ad23-05.MultiTypeListView.iml" filepath="$PROJECT_DIR$/ad23-05.MultiTypeListView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/simplemultitype/simplemultitype.iml" filepath="$PROJECT_DIR$/simplemultitype/simplemultitype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st3actor/st3actor.iml" filepath="$PROJECT_DIR$/st3actor/st3actor.iml" />
     </modules>
   </component>
 </project>

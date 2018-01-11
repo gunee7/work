@@ -103,7 +103,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "더많은 메뉴로 넘어갑니다", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), MainActivity5.class);
+                Intent i = new Intent(getApplicationContext(), Menu6Activity.class);
                 startActivity(i); //새창 띄우기
 
             }
