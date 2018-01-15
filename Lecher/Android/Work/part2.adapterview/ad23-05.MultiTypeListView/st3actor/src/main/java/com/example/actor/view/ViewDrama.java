@@ -8,13 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.actor.R;
 import com.example.actor.model.ModelDrama;
 
 
-public class ViewDrama extends RelativeLayout{
+public class ViewDrama extends RelativeLayout {
 
     private ImageView imagePicture = null;
     private TextView textTitle = null;

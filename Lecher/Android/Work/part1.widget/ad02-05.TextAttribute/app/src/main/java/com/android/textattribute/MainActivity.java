@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 setTitle(R.string.app_name2);
 
                 // txt1.size변경
-                txt1.setTextSize(30);
+                txt1.setTextSize(10);
 
                 // txt2.color변경
                 txt2.setTextColor(Color.BLUE);
@@ -51,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 txt3.setTypeface(txt3.getTypeface(), Typeface.BOLD | Typeface.ITALIC);
                 txt3.setTypeface(txt3.getTypeface(), Typeface.BOLD_ITALIC);
 
+                txt4.setTextSize(5);
+                txt5.setTextSize(15);
+                txt6.setTextSize(25);
 
             }
         });

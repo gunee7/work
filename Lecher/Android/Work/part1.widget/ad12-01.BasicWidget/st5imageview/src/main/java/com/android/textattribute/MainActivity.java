@@ -6,13 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView txt1 = null;
-    private TextView txt2 = null;
-    private TextView txt3 = null;
+    private ImageView imageView1 = null;
+    private ImageView imageView2 = null;
+    private ImageView imageView3 = null;
     private Button   btn1 = null;
 
     @Override
@@ -20,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txt1 = findViewById(R.id.txt1);
-        txt2 = findViewById(R.id.txt2);
-        txt3 = findViewById(R.id.txt3);
+        imageView1 = findViewById(R.id.imageView1);
+        imageView2 = findViewById(R.id.imageView2);
+        imageView3 = findViewById(R.id.imageView3);
 
         // 3. 위젯 핸들러 설정
         Button btn1 = null;
@@ -35,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 setTitle(R.string.app_name2);
 
                 // txt1 size 변경.
-                txt1.setTextSize(30);
+                imageView1.setText(30);
 
                 // txt2. color 변경
-                txt2.setTextColor(Color.BLUE);
+                imageView2.setTextColor(Color.BLUE);
 
                 // txt3. italic 변경
-                txt3.setTypeface(txt3.getTypeface(), Typeface.BOLD | Typeface.ITALIC);
-                txt3.setTypeface(txt3.getTypeface(), Typeface.BOLD_ITALIC);
+                imageView3.setTypeface(imageView3.getTypeface(), Typeface.BOLD | Typeface.ITALIC);
+                imageView3.setTypeface(imageView3.getTypeface(), Typeface.BOLD_ITALIC);
 
 
             }

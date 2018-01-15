@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout parent;
     private Button btn2;
     private Button btn3;
+    private android.view.View child;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

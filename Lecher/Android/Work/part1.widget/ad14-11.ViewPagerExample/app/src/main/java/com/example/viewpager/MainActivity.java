@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_two;
     private Button btn_three;
     private ViewPager pager ;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             switch ( v.getId() ) {
                 case R.id.btn_one:
                     pager.setCurrentItem(0, true);
+
                     break;
                 case R.id.btn_two:
                     pager.setCurrentItem(1, true);

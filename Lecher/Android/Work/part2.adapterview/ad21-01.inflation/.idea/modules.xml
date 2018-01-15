@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ad21-01.inflation.iml" filepath="$PROJECT_DIR$/ad21-01.inflation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st1layoutinflater/st1layoutinflater.iml" filepath="$PROJECT_DIR$/st1layoutinflater/st1layoutinflater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/st5customtoast/st5customtoast.iml" filepath="$PROJECT_DIR$/st5customtoast/st5customtoast.iml" />
+    </modules>
+  </component>
+</project>

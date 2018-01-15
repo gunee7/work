@@ -22,5 +22,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="clickmsg2">911 응급전화걸기</string>
+    <string name="clickmsg3">갤러리 열기</string>
 
 </resources>

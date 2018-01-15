@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         listview1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String text = (String)listview11.getItemAtPosition(position);
+                String text = (String)listview1.getItemAtPosition(position);
                 Toast.makeText(MainActivity.this, "item : " + text, Toast.LENGTH_SHORT).show();
             }
         });

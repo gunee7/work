@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_action_search"/>
+    <drawable name="ic_action_camera"/>
+    <drawable name="ic_dehaze_black_24dp"/>
+</resources>

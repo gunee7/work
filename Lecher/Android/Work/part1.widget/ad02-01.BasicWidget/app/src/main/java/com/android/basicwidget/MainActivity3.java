@@ -148,9 +148,9 @@ public class MainActivity3 extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "과부님들", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "거리의 객들", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.daum.com"));
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com"));
                 startActivity(i);
             }
         });
@@ -159,9 +159,12 @@ public class MainActivity3 extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "거리의 객들", Toast.LENGTH_SHORT).show();
+                //이 부분에 버튼을클릭할때 동작할 코드를 넣음
+                Toast.makeText(getApplicationContext(),  R.string.clickmsg3,
+                        Toast.LENGTH_LONG).show();
 
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com"));
+                String url = "content://media/internal/images/media";
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(i);
             }
         });
@@ -181,9 +184,11 @@ public class MainActivity3 extends AppCompatActivity {
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "독거노인들", Toast.LENGTH_SHORT).show();
+                //이 부분에 버튼을클릭할때 동작할 코드를 넣음
+                Toast.makeText(getApplicationContext(), R.string.clickmsg2,
+                        Toast.LENGTH_LONG).show();
 
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.amazone.com"));
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("tel://119"));
                 startActivity(i);
             }
         });

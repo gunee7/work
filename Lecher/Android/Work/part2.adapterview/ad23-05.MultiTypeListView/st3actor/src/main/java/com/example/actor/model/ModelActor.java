@@ -21,6 +21,10 @@ public class ModelActor {
     public List<ModelDrama> getDramas() { return dramas; }
     public List<ModelComment> getComments() { return comments; }
 
+    public void setMovies(List<ModelMovie> movies) { this.movies = movies; }
+    public void setDramas(List<ModelDrama> dramas) { this.dramas = dramas; }
+    public void setComments(List<ModelComment> comments) { this.comments = comments; }
+
     public Drawable getImagePhoto() {
         return imagePhoto;
     }

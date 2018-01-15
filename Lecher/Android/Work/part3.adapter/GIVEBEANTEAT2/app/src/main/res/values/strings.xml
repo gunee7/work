@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GIVEBEANTEAT2</string>
+    <string name="drawer_menu_login"/>
+    <string name="drawer_menu_register"/>
+    <string name="drawer_menu_logout"/>
+    <string name="drawer_menu_memedit"/>
+</resources>
