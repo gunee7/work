@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.content.Intent;
+import android.widget.ImageView;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -19,9 +21,11 @@ public class MainActivity extends AppCompatActivity
     // 상수 
     private static final int REQUEST_CODE_LOGIN = 9999;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -40,7 +44,11 @@ public class MainActivity extends AppCompatActivity
         SharedPreferences pref = getSharedPreferences( CommonCode.FILE_PREFERECE, MODE_PRIVATE);
         boolean loginStatus = pref.getBoolean( CommonCode.LOGIN_STATUS, false);
         setShowHideNavigation( loginStatus );
+
+
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -68,10 +76,26 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent i = new Intent(MainActivity.this, WebviewActivity.class);
+            startActivity(i); //새창 띄우기
+
             return true;
+        } else if (id == R.id.action_search) {
+            Intent i = new Intent(MainActivity.this, WebviewActivity.class);
+            startActivity(i); //새창 띄우기
+
+            return true;
+
         } else if (id == R.id.action_pref) {
+            Intent i = new Intent(MainActivity.this, WebviewActivity.class);
+            startActivity(i); //새창 띄우기
+
             return true;
+
         } else if (id == R.id.action_pref2) {
+            Intent i = new Intent(MainActivity.this, WebviewActivity.class);
+            startActivity(i); //새창 띄우기
+
             return true;
         }
 

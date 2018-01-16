@@ -4,4 +4,18 @@
     <item name="edtText" type="id"/>
     <item name="chkSound" type="id"/>
     <item name="btnSave" type="id"/>
+    <item name="nav_view" type="id"/>
+    <item name="drawer_layout" type="id"/>
+    <item name="nav_camera" type="id"/>
+    <item name="nav_gallery" type="id"/>
+    <item name="nav_slideshow" type="id"/>
+    <item name="nav_manage" type="id"/>
+    <item name="nav_login" type="id"/>
+    <item name="nav_logout" type="id"/>
+    <item name="nav_regist" type="id"/>
+    <item name="nav_edit" type="id"/>
+    <item name="action_pref" type="id"/>
+    <item name="action_pref2" type="id"/>
+    <item name="nav_register" type="id"/>
+    <item name="nav_memedit" type="id"/>
 </resources>

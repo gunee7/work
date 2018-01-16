@@ -8,12 +8,13 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
 
     private Button btnGo;
-    private Button btnPrev;
+    private ImageView btnPrev;
     private EditText txtUrl;
     private WebView webView;
 

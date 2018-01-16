@@ -1,10 +1,7 @@
 package com.example.menuwidget;
 
-import android.content.ClipData;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.widget.Toast;
 
 import com.example.st1drawermenu.R;
 
@@ -22,10 +20,13 @@ public class MainActivity extends AppCompatActivity
 
     private static final int REQUEST_CODE_LOGIN = 0;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         SharedPreferences pref = getSharedPreferences(CommonCode.FILE_PRIFERENCE, MODE_PRIVATE);
 
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -67,11 +70,15 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -79,8 +86,23 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
+        if (id == R.id.action_search) {
+
+
+            Toast.makeText(this, "검색 클릭", Toast.LENGTH_SHORT).show();
+
+            Intent i = new Intent(getApplicationContext(), Webview.class);
+            startActivity(i); //새창 띄우기
+
+
+
+            return true;
+        }
+
+
         return super.onOptionsItemSelected(item);
-    }
+        }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -144,4 +166,6 @@ public class MainActivity extends AppCompatActivity
         editor.putBoolean(CommonCode.LOGIN_STATUS, value);
         editor.apply();
     }
+
+
 }
