@@ -4,32 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context="com.example.serialization.MainActivity">
+    android:layout_height="match_parent"
+    tools:context="com.example.serialization.SubActivity">
     
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    
-    <Button
-        android:id="@+id/btn5"
+    <TextView
+        android:id="@+id/text"
+        android:textSize="60sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

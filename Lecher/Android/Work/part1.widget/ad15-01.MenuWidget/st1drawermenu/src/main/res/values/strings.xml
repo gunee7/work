@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MenuWidget</string>
+    <string name="app_name">GIVEBEAN</string>
     
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -24,4 +24,8 @@
     <string name="drawer_menu_memedit">회원 정보 수정</string>
     <string name="file_preference">Settings</string>
     <string name="error_login_fail">로그인 실패</string>
+    <string name="action_search">searching</string>
+    <string name="clickmsg2">911 응급전화걸기</string>
+    <string name="clickmsg3">갤러리 열기</string>
+
 </resources>
