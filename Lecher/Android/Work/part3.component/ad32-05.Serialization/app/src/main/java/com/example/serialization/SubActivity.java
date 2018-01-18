@@ -18,30 +18,33 @@ public class SubActivity extends AppCompatActivity {
         Intent i = getIntent();
 
         String d1 = i.getStringExtra("data");
-        if (d1 != null && !d1.isEmpty())
+        if( d1 != null && !d1.isEmpty() ) {
             text.setText(text.getText() + " : " + d1);
+        }
 
-        int[] array = i.getIntArrayExtra("data");
-        if (array != null) {
-            for (int val : array)
-                text.setText(text.getText() + " : " + val + " ");
+        int [] array = i.getIntArrayExtra("data" );
+        if( array != null ) {
+            for( int val : array )
+                text.setText( text.getText() + " : " + val + " " );
         }
 
         ModelSerial s1 = (ModelSerial) i.getSerializableExtra("serial");
-        if (s1 != null)
+        if( s1 != null ) {
             text.setText(text.getText() + " : " + s1.toString());
         }
-        ModelParcel p1 = i.getParcelableExtra("parcel");
-        if (p1 != null)
-            text.setText(text.getText() + " : " + p1.toString());
 
+        ModelParcel p1 = i.getParcelableExtra("parcel" );
+        if( p1 != null ) {
+            text.setText( text.getText() + " : " + p1.toString() );
         }
+
         Bundle bundle = i.getBundleExtra("bundle");
+        if( bundle != null ){
+            int    idata = bundle.getInt("idata", 0 );
+            String sdata = bundle.getString("sdata", "");
 
-
-
-
-
+            text.setText( text.getText() + " : " + idata + " : " + sdata );
+        }
 
 
     }

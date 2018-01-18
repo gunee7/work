@@ -3,19 +3,10 @@ package com.example.serialization;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by Administrator on 2018-01-17.
- */
-
 public class ModelParcel implements Parcelable {
 
     private int    idata = 0;
     private String sdata = "";
-
-    protected ModelParcel(Parcel in) {
-        idata = in.readInt();
-        sdata = in.readString();
-    }
 
     public int getIdata() {
         return idata;
@@ -41,6 +32,14 @@ public class ModelParcel implements Parcelable {
                 '}';
     }
 
+    public ModelParcel() {
+    }
+
+    protected ModelParcel(Parcel in) {
+        idata = in.readInt();
+        sdata = in.readString();
+    }
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(idata);
@@ -64,5 +63,3 @@ public class ModelParcel implements Parcelable {
         }
     };
 }
-
-

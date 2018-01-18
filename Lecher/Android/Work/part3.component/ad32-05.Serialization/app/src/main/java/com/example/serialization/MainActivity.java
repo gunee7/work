@@ -1,6 +1,5 @@
 package com.example.serialization;
 
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -55,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
                     i.putExtra("serial", serial );
                     break;
                 case R.id.btn4:
-                    // Parcelable을 이용한 데이터 전달
+                    // Parcelable을 이용한 모델 데이터 전달
                     ModelParcel parcel = new ModelParcel();
-                    parcel.setIdata(20);
-                    parcel.setIdata();
-                    i.pa
+                    parcel.setIdata( 20 );
+                    parcel.setSdata( "parcelable" );
+                    i.putExtra("parcel", parcel);
                     break;
                 case R.id.btn5:
                     // Bunndle을 이용한 데이터 전달
@@ -67,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     bundle.putInt("idata", 30);
                     bundle.putString("sdata", "bundle data");
 
-                    i.putExtra("bundle")
-
+                    i.putExtra("bundle", bundle);
                     break;
             }
             startActivity( i );

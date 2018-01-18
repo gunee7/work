@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">text1</string>
+    <string name="_2_framelayout"><![CDATA[프래그먼트 2 /> </FrameLayout>]]></string>
+</resources>

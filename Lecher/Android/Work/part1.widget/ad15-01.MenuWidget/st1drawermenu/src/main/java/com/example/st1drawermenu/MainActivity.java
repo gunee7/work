@@ -3,6 +3,7 @@ package com.example.st1drawermenu;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,6 +16,8 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.TabWidget;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
@@ -22,6 +25,10 @@ public class MainActivity extends AppCompatActivity
 
     // 상수 
     private static final int REQUEST_CODE_LOGIN = 9999;
+
+
+    private TabWidget tabs ;
+    private FrameLayout tabcontent;
 
     private Button btngivebean;
     private Button btnfriend;
@@ -41,6 +48,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tabs = findViewById(R.id.tabs);
+        tabcontent = findViewById(R.id.tabcontent);
 
         btngivebean = findViewById(R.id.btngivebean);
         btnfriend = findViewById(R.id.btnfriend);
@@ -74,6 +84,8 @@ public class MainActivity extends AppCompatActivity
         boolean loginStatus = pref.getBoolean(CommonCode.LOGIN_STATUS, false);
         setShowHideNavigation(loginStatus);
 
+
+
         btngivebean.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,53 +98,8 @@ public class MainActivity extends AppCompatActivity
         });
 
 
-        btnfriend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "친구를 찾아보세요", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getApplicationContext(), MainContent2.class);
-                startActivity(i); //새창 띄우기
 
 
-            }
-        });
-
-
-        btnchat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "채팅을 시작합니다", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getApplicationContext(), MainContent3.class);
-                startActivity(i); //새창 띄우기
-
-            }
-        });
-
-
-        btnmygive.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "나의 기부", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getApplicationContext(), MainContent4.class);
-                startActivity(i); //새창 띄우기
-
-            }
-        });
-
-
-        btnmore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "더많은 메뉴로 넘어갑니다", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getApplicationContext(), MainContent5.class);
-                startActivity(i); //새창 띄우기
-
-            }
-        });
 
 
 
@@ -225,6 +192,7 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
 
     @Override
     public void onBackPressed() {
@@ -321,5 +289,6 @@ public class MainActivity extends AppCompatActivity
             menu.findItem(R.id.nav_memedit).setVisible(isVisible);
         }
     }
+
 
 }
