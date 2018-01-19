@@ -5,11 +5,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -27,22 +29,9 @@ public class MainActivity extends AppCompatActivity
     private static final int REQUEST_CODE_LOGIN = 9999;
 
 
-    private TabWidget tabs ;
+    private TabWidget tabs;
     private FrameLayout tabcontent;
 
-    private Button btngivebean;
-    private Button btnfriend;
-    private Button btnchat;
-    private Button btnmygive;
-    private Button btnmore;
-
-    private Button btnA1;
-    private Button btnA2;
-    private Button btnA3;
-    private Button btnA4;
-    private Button btnA5;
-    private Button btnA6;
-    private Button btnA7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,19 +41,6 @@ public class MainActivity extends AppCompatActivity
         tabs = findViewById(R.id.tabs);
         tabcontent = findViewById(R.id.tabcontent);
 
-        btngivebean = findViewById(R.id.btngivebean);
-        btnfriend = findViewById(R.id.btnfriend);
-        btnchat = findViewById(R.id.btnchat);
-        btnmygive = findViewById(R.id.btnmygive);
-        btnmore = findViewById(R.id.btnmore);
-
-        btnA1 = findViewById(R.id.btnA1);
-        btnA2 = findViewById(R.id.btnA2);
-        btnA3 = findViewById(R.id.btnA3);
-        btnA4 = findViewById(R.id.btnA4);
-        btnA5 = findViewById(R.id.btnA5);
-        btnA6 = findViewById(R.id.btnA6);
-        btnA7 = findViewById(R.id.btnA7);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -84,111 +60,6 @@ public class MainActivity extends AppCompatActivity
         boolean loginStatus = pref.getBoolean(CommonCode.LOGIN_STATUS, false);
         setShowHideNavigation(loginStatus);
 
-
-
-        btngivebean.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "친구를 찾아보세요", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i); //새창 띄우기
-
-            }
-        });
-
-
-
-
-
-
-
-        btnA1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "가난한 사람들", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.givecoffeemall.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "배고픈 사람들", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "고아들", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naver.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "거리의 객들", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //이 부분에 버튼을클릭할때 동작할 코드를 넣음
-                Toast.makeText(getApplicationContext(),  R.string.clickmsg3,
-                        Toast.LENGTH_LONG).show();
-
-                String url = "content://media/internal/images/media";
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(i);
-            }
-        });
-
-
-        btnA6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //이 부분에 버튼을클릭할때 동작할 코드를 넣음
-                Toast.makeText(getApplicationContext(), R.string.clickmsg2,
-                        Toast.LENGTH_LONG).show();
-
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("tel://119"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "끝내기", Toast.LENGTH_SHORT).show();
-
-                switch (view.getId()) {
-                    case R.id.btnA7:
-                        finish();
-                        break;
-
-                    default:
-                        break;
-                }
-            }
-        });
 
 
     }
@@ -275,6 +146,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+
     /**
      * @param isVisible : 로그인이 안되어 있으면 false 인자로
      *                  로그인이 되어 있는 true를 인자로 받는다.
@@ -291,4 +163,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-}
+    }
+
+

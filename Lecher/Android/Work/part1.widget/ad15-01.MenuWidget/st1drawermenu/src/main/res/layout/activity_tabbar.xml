@@ -1,0 +1,103 @@
+<?xml version="1.0"
+    encoding="utf-8"?>
+<android.support.v4.app.FragmentTabHost
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/user_info_line"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                tools:context=".TabBarActivity">
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:background="@android:color/darker_gray"
+        android:longClickable="false"
+        android:orientation="horizontal">
+        
+        <TabWidget
+            android:id="@+id/tabwidget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <Button
+                android:id="@+id/btngivebean"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="기브빈"
+                android:textColor="@color/colorAccent"/>
+            
+            <Button
+                android:id="@+id/btnfriend"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="친구"
+                android:textColor="@android:color/background_dark"/>
+            
+            <Button
+                android:id="@+id/btnchat"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="채팅"/>
+            
+            <Button
+                android:id="@+id/btnmygive"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="My기부"/>
+            
+            <Button
+                android:id="@+id/btnview"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="****"/>
+        
+        </TabWidget>
+    
+    </LinearLayout>
+    
+    
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerInParent="false">
+        
+    
+    </FrameLayout>
+
+</android.support.v4.app.FragmentTabHost>
+
