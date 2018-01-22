@@ -1,6 +1,7 @@
 package com.example.st3toolbar;
 
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.content.Intent;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_favorite:
                 // User chose the "Favorite" action, mark the current item
                 Toast.makeText(this, "clicked a favorite", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                startActivity(i);
                 return true;
 
             default:
