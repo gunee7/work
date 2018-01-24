@@ -12,24 +12,23 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
     
-        
         <include
             layout="@layout/activity_appbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
-        
+    
         <android.support.design.widget.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMode="fixed"
-            app:tabGravity="fill">
+            android:background="?attr/colorAccent"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
         </android.support.design.widget.TabLayout>
         
     
     </android.support.design.widget.AppBarLayout>
-    
     
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
@@ -41,14 +40,5 @@
         
         
     </android.support.v4.view.ViewPager>
-    
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/activity_main_drawer"/>
 
 </android.support.design.widget.CoordinatorLayout>
