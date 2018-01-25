@@ -5,12 +5,21 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**
@@ -18,14 +27,13 @@ import android.widget.Toast;
  */
 public class Tab2Fragment extends Fragment {
 
-    private ImageButton imagebtnB1 = null;
-    private ImageButton imagebtnB2 = null;
-    private ImageButton imagebtnB3 = null;
-    private ImageButton imagebtnB4 = null;
-    private ImageButton imagebtnB5 = null;
-    private ImageButton imagebtnB6 = null;
-    private Button imagebtnB7 = null;
-
+    // 위젯 선언. 필드에
+    private Button   btn_add, btn_modify, btn_delete;
+    private List<String> mData = null;
+    private ListView listview1;
+    private EditText edittext1;
+    private List<String> list;
+    private ArrayAdapter<String> adapter = null;
 
     public Tab2Fragment() {
         // Required empty public constructor
@@ -38,90 +46,104 @@ public class Tab2Fragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_tab2, container, false);
 
-        imagebtnB1 = view.findViewById(R.id.imagebtnB1);
-        imagebtnB2 = view.findViewById(R.id.imagebtnB2);
-        imagebtnB3 = view.findViewById(R.id.imagebtnB3);
-        imagebtnB4 = view.findViewById(R.id.imagebtnB4);
-        imagebtnB5 = view.findViewById(R.id.imagebtnB5);
-        imagebtnB6 = view.findViewById(R.id.imagebtnB6);
-        imagebtnB7 = view.findViewById(R.id.imagebtnB7);
+        // 위젯 찾기
+        btn_add    = view.findViewById(R.id.btn_add    );
+        btn_delete = view.findViewById(R.id.btn_delete );
+        btn_modify = view.findViewById(R.id.btn_modify );
+        listview1  = view.findViewById(R.id.listview1  );
+        edittext1  = view.findViewById(R.id.edittext1  );
 
+        // 위젯  설정(리스너)
+        ClickHandler handler = new ClickHandler();
+        btn_add   .setOnClickListener( handler );
+        btn_modify.setOnClickListener( handler );
+        btn_delete.setOnClickListener( handler );
 
-
-        imagebtnB1.setOnClickListener(new View.OnClickListener() {
+        listview1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "기브커피몰로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.givecoffeemall.com"));
-                startActivity(i);
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String text = list.get( position );
+                edittext1.setText( text );
             }
         });
 
 
-        imagebtnB2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "구글로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-                startActivity(i);
-            }
-        });
+        // 데이터 만들기
+        // array.xml에서 데이터 가져와 배열에 담기.
+        String[] items = getResources().getStringArray( R.array.items );
+        list = new ArrayList<String>( Arrays.asList( items ) ); // 배열을 리스트로 변환
 
+        mData = makeData();
+        //ArrayAdapter 생성
+        // adapter 생성 & adapter 데이터 추가
+        adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,mData);
+        ///ListView와 ArrayAdapter 연결
 
-        imagebtnB3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "네이버로 이동합니다", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naver.com"));
-                startActivity(i);
-            }
-        });
-
-
-        imagebtnB4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "유튜브로 이동합니다", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com"));
-                startActivity(i);
-            }
-        });
-
-
-        imagebtnB5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "갤러리 사진파일로 이동합니다.", Toast.LENGTH_SHORT).show();
-                String url = "content://media/internal/images/media";
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(i);
-            }
-        });
-
-
-        imagebtnB6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "응급전화 119로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("tel://119"));
-                startActivity(i);
-            }
-        });
-
-
-        imagebtnB7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "카카오로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kakaocorp.com"));
-                startActivity(i);
-            }
-        });
-
-
-        // Inflate the layout for this fragment
+        // adapter 연결
+        listview1.setAdapter( adapter );
         return view;
-
     }
 
+    private List<String> makeData() {
+            List<String> data = new ArrayList<>();
+            data.add("item 01");
+            data.add("item 02");
+            data.add("item 03");
+            data.add("item 04");
+            data.add("item 05");
+            return data;
+        }
+
+    private class ClickHandler implements View.OnClickListener {
+
+
+        @Override
+        public void onClick(View v) {
+            int position = -1;
+            String temp = "";
+            SparseBooleanArray sarray = null;
+
+            switch ( v.getId() ) {
+                case R.id.btn_add: // 데이터 추가
+                    temp = edittext1.getText().toString();
+                    list.add( temp );
+                    adapter.notifyDataSetChanged(); // ListView 새로고침.
+                    listview1.smoothScrollToPosition( list.size() -1 ); // 마지막 레코드로 이동.
+
+                    edittext1.setText("");  // 입력값 지우기
+                    break;
+                case R.id.btn_modify: // 데이터 수정
+                    // 선택된 체크박스의 인덱스 번호 가져오기.
+                    sarray = listview1.getCheckedItemPositions();
+
+                    temp = edittext1.getText().toString();
+                    for(int i=0; i<sarray.size(); i++){
+                        position = sarray.keyAt( i );
+                        list.set( position, temp);
+                    }
+                    adapter.notifyDataSetChanged(); // ListView 새로고침.
+                    listview1.smoothScrollToPosition( position ); // 수정하는 레코드로 이동.
+
+                    edittext1.setText("");  // 입력값 지우기
+                    break;
+                case R.id.btn_delete: // 데이터 삭제.
+                    // 선택된 레코드의 인덱스 번호 가져오기.
+                    sarray = listview1.getCheckedItemPositions();
+
+                    for(int i=sarray.size()-1; i>=0; i--){
+                        position = sarray.keyAt( i );
+                        list.remove( position );
+                    }
+                    adapter.notifyDataSetChanged(); // ListView 새로고침.
+                    listview1.clearChoices();  // radio 선택 해제
+
+                    list.remove( position );
+                    break;
+            }
+
+        }
+
+    }
 }
+
+

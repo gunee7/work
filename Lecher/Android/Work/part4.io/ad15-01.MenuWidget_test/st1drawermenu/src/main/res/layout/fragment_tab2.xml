@@ -1,65 +1,55 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
              tools:context=".AppBarMainActivity">
     
-     <LinearLayout
+    <ListView
+        android:id="@+id/listview1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:choiceMode="multipleChoice" />
     
-        <ImageButton
-            android:id="@+id/imagebtnB1"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/coffee"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#57a79b"/>
     
-        <ImageButton
-            android:id="@+id/imagebtnB2"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/google"/>
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="값을 입력하세요"/>
     
-        <ImageButton
-            android:id="@+id/imagebtnB3"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/naver"/>
-    
-        <ImageButton
-            android:id="@+id/imagebtnB4"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/youtube"/>
-    
-        <ImageButton
-            android:id="@+id/imagebtnB5"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/camera"/>
-    
-        <ImageButton
-            android:id="@+id/imagebtnB6"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/hotline"/>
-    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
         <Button
-            android:id="@+id/imagebtnB7"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:text="끝내기"/>
-
-
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add" />
+        
+        <Button
+            android:id="@+id/btn_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modify" />
+        
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" />
+    
     </LinearLayout>
 
-
-</FrameLayout>
+</LinearLayout>

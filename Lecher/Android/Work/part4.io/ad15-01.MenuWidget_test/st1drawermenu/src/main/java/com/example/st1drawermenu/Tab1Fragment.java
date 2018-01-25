@@ -1,129 +1,121 @@
 package com.example.st1drawermenu;
 
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tab1Fragment  extends Fragment {
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Tab1Fragment extends Fragment {
+    private String mParam1;
+    private String mParam2;
 
-    private Button btnA1 = null;
-    private Button btnA2 = null;
-    private Button btnA3 = null;
-    private Button btnA4 = null;
-    private Button btnA5 = null;
-    private Button btnA6 = null;
-    private Button btnA7 = null;
+    private List<String> mData = null;
+    private ListView     mlistView = null;
+    private ArrayAdapter<String> mAdapter = null;
+
+    private View inflatedView = null;
+    private Button btnAdd = null;
+    private EditText editText = null;
 
 
     public Tab1Fragment() {
-        // Required empty public constructor
+
     }
 
+
+
+    public static Tab1Fragment newInstance(String param1, String param2) {
+        Tab1Fragment fragment = new Tab1Fragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_tab1, container, false);
+        inflatedView = inflater.inflate(R.layout.fragment_tab1, container, false);
+        return inflatedView;
+    }
 
-        btnA1 = view.findViewById(R.id.btnA1);
-        btnA2 = view.findViewById(R.id.btnA2);
-        btnA3 = view.findViewById(R.id.btnA3);
-        btnA4 = view.findViewById(R.id.btnA4);
-        btnA5 = view.findViewById(R.id.btnA5);
-        btnA6 = view.findViewById(R.id.btnA6);
-        btnA7 = view.findViewById(R.id.btnA7);
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        //ListView찾기
+        mlistView = inflatedView.findViewById(R.id.list_view);
+        mData = makeData();
+        //ArrayAdapter 생성
 
-        btnA1.setOnClickListener(new View.OnClickListener() {
+        mAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,mData);
+        ///ListView와 ArrayAdapter 연결
+
+        mlistView.setAdapter(mAdapter);
+
+        editText = inflatedView.findViewById(R.id.edit_text);
+
+        btnAdd = inflatedView.findViewById(R.id.btn_add);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "기브커피몰로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.givecoffeemall.com"));
-                                startActivity(i);
+            public void onClick(View v) {
+                mData.add(editText.getText().toString());
+                mAdapter.notifyDataSetChanged();
+                mlistView.smoothScrollByOffset( mAdapter.getCount() -1 -mlistView.getHeaderViewsCount());
             }
         });
-
-
-        btnA2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "구글로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "네이버로 이동합니다", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naver.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "유튜브로 이동합니다", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "갤러리 사진파일로 이동합니다.", Toast.LENGTH_SHORT).show();
-                String url = "content://media/internal/images/media";
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(i);
-            }
-        });
-
-
-        btnA6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(), "응급전화 119로 이동합니다.", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("tel://119"));
-                startActivity(i);
-            }
-        });
-
-
-        btnA7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.btnA7:
-
-                        break;
-
-                    default:
-                        break;
-                }
-            }
-        });
-
-        // Inflate the layout for this fragment
-        return view;
 
     }
 
+    private List<String> makeData() {
+        List<String> data = new ArrayList<>();
+        data.add("item 01");
+        data.add("item 02");
+        data.add("item 03");
+        data.add("item 04");
+        data.add("item 05");
+        data.add("item 06");
+        data.add("item 07");
+        data.add("item 08");
+        data.add("item 09");
+        data.add("item 10");
+        data.add("item 11");
+        data.add("item 12");
+        data.add("item 13");
+        data.add("item 14");
+        data.add("item 15");
+        data.add("item 16");
+        data.add("item 17");
+        data.add("item 18");
+        data.add("item 19");
+        data.add("item 20");
+        return data;
+    }
 }
 
