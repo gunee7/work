@@ -73,26 +73,15 @@ public class Tab2Fragment extends Fragment {
         String[] items = getResources().getStringArray( R.array.items );
         list = new ArrayList<String>( Arrays.asList( items ) ); // 배열을 리스트로 변환
 
-        mData = makeData();
-        //ArrayAdapter 생성
-        // adapter 생성 & adapter 데이터 추가
-        adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,mData);
-        ///ListView와 ArrayAdapter 연결
+
+        adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_multiple_choice, list );
 
         // adapter 연결
         listview1.setAdapter( adapter );
         return view;
     }
 
-    private List<String> makeData() {
-            List<String> data = new ArrayList<>();
-            data.add("item 01");
-            data.add("item 02");
-            data.add("item 03");
-            data.add("item 04");
-            data.add("item 05");
-            return data;
-        }
+
 
     private class ClickHandler implements View.OnClickListener {
 
@@ -109,7 +98,6 @@ public class Tab2Fragment extends Fragment {
                     list.add( temp );
                     adapter.notifyDataSetChanged(); // ListView 새로고침.
                     listview1.smoothScrollToPosition( list.size() -1 ); // 마지막 레코드로 이동.
-
                     edittext1.setText("");  // 입력값 지우기
                     break;
                 case R.id.btn_modify: // 데이터 수정

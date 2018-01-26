@@ -22,6 +22,7 @@ public class MainActivity extends AppBarMainActivity
 
     // 상수 
     private static final int REQUEST_CODE_LOGIN = 9999;
+    private static final int REQUEST_CODE_REGISTER = 9999;
 
     private ViewPager pager;
     private TabLayout tabLayout;
@@ -138,6 +139,11 @@ public class MainActivity extends AppBarMainActivity
 
         } else if (id == R.id.nav_logout) {
             setShowHideNavigation( false );
+        }
+        else if (id == R.id.nav_register) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ RegisterActivity.class);
+            startActivityForResult( i, REQUEST_CODE_REGISTER);
         }
         else if (id == R.id.nav_manage) {
         }

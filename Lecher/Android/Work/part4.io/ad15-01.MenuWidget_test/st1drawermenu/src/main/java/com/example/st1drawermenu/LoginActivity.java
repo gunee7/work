@@ -1,13 +1,14 @@
 package com.example.st1drawermenu;
 
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
-
 import android.content.Intent; // 직접 타이핑
 
 public class LoginActivity extends AppCompatActivity  {
@@ -66,6 +67,17 @@ public class LoginActivity extends AppCompatActivity  {
                     // 로그인 실패시
                     Toast.makeText(LoginActivity.this, R.string.error_login_fail, Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+
+        TextView registerButton = findViewById(R.id.registerButton);
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(registerIntent);
+
             }
         });
 
