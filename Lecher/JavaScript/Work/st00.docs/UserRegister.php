@@ -1,7 +1,7 @@
 <?php
   $con = mysqli_connect("localhost", "givetest", "gbgb18gb!!", "givetest");
 
-  $userId = $_POST["userID"];
+  $userID = $_POST["userID"];
   $userPassword = $_POST["userPassword"];
   $userGender = $_POST["userGender"];
   $userMajor = $_POST["userMajor"];

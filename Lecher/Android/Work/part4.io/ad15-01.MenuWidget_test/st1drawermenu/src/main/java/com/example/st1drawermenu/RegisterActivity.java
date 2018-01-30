@@ -1,6 +1,7 @@
 package com.example.st1drawermenu;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -31,7 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String userGender;
     private String userMajor;
     private String userEmail;
-    private AlertDialog.Builder dialog;
+    private AlertDialog dialog;
     private boolean validate = false;
 
 
@@ -45,11 +47,11 @@ public class RegisterActivity extends AppCompatActivity {
         adapter = ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        final EditText idText = findViewById(R.id.idText);
-        final EditText passwordText = findViewById(R.id.passwordText);
-        final EditText emailText = findViewById(R.id.idText);
+        final EditText idText = (EditText) findViewById(R.id.idText);
+        final EditText passwordText = (EditText)findViewById(R.id.passwordText);
+        final EditText emailText = (EditText) findViewById(R.id.idText);
 
-        RadioGroup genderGruop = findViewById(R.id.genderGroup);
+        RadioGroup genderGruop = (RadioGroup) findViewById(R.id.genderGroup);
         int genderGruopID = genderGruop.getCheckedRadioButtonId();
         userGender = ((RadioButton) findViewById(genderGruopID)).getText().toString();
 
@@ -61,24 +63,25 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        final Button validateButton = findViewById(R.id.validateButton);
+        final Button validateButton = (Button) findViewById(R.id.validateButton);
         validateButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 String userID = idText.getText().toString();
                 if (validate) {
                     return;
                 }
+
                 if (userID.equals("")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                     dialog = builder.setMessage("아이디는 빈 칸일 수 없습니다.")
-                            ,setPositiveButton("확인",null)
-                            ,create();
+                            .setPositiveButton("확인",null)
+                            .create();
                     dialog.show();
                     return;
                 }
 
-                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                Response.Listener <String> responselistener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
@@ -87,8 +90,8 @@ public class RegisterActivity extends AppCompatActivity {
                             if (success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("사용할 수 있는 아이디입니다.")
-                                        , setPositiveButton("확인", null)
-                                        , create();
+                                        .setPositiveButton("확인", null)
+                                        .create();
                                 dialog.show();
                                 idText.setEnabled(false);
                                 validate = true;
@@ -97,8 +100,8 @@ public class RegisterActivity extends AppCompatActivity {
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("사용할 수 없는 아이디입니다.")
-                                        , setNegativeButton("확인", null)
-                                        , create();
+                                        .setNegativeButton("확인", null)
+                                        .create();
                                 dialog.show();
                             }
                         } catch (Exception e) {
@@ -106,13 +109,13 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 };
-                ValidateRequest validateRequest = new ValidateRequest(userID, responseListener);
+                ValidateRequest validateRequest = new ValidateRequest(userID, responselistener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(validateRequest);
             }
         });
 
-        Button registerButton = findViewById(R.id.registerButton);
+        Button registerButton = (Button) findViewById(R.id.registerButton);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -124,17 +127,17 @@ public class RegisterActivity extends AppCompatActivity {
                 if (!validate) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                     dialog = builder.setMessage("먼저 중복체크를 해주세요")
-                            , setNegativeButton("확인", null)
-                            , create();
+                            .setNegativeButton("확인", null)
+                            .create();
                     dialog.show();
                     return;
                 }
 
-                if (userID.equals("") || userPassword.equals("") || userMajor.equals("") || userEmail.equals("") || userGender.equals("") {
+                if (userID.equals("") || userPassword.equals("") || userMajor.equals("") || userEmail.equals("") || userGender.equals("")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                     dialog = builder.setMessage("빈 칸 없이 입력해주세요")
-                            , setNegativeButton("확인", null)
-                            , create();
+                            .setNegativeButton("확인", null)
+                            .create();
                     dialog.show();
                     return;
                 }
@@ -148,16 +151,16 @@ public class RegisterActivity extends AppCompatActivity {
                             if (success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("회원 등록에 성공했습니다.")
-                                        , setPositiveButton("확인", null)
-                                        , create();
+                                        .setPositiveButton("확인", null)
+                                .create();
                                 dialog.show();
                                 finish();
                             }
                             else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("회원 등록에 실패했습니다.")
-                                        , setNegativeButton("확인", null)
-                                        , create();
+                                        .setNegativeButton("확인", null)
+                                .create();
                                 dialog.show();
                             }
                         } catch (Exception e) {
@@ -171,6 +174,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     protected void onStop() {

@@ -46,7 +46,7 @@
         </LinearLayout>
     
         <EditText
-            android:id="@+id/edtID"
+            android:id="@+id/idText"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="아이디"
@@ -60,7 +60,7 @@
             android:background="@color/colorPrimary2"/>
     
         <EditText
-            android:id="@+id/edtPW"
+            android:id="@+id/passwordText"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="비밀번호"
@@ -76,7 +76,7 @@
         
     
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/loginButton"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
