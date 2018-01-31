@@ -14,7 +14,7 @@
   $response = array();
   $response["success"] = false;
 
-  while (mysql_stmt_fetch($statement)){
+  while(mysqli_stmt_fetch($statement)){
     $response["success"] = true;
     $response["userID"] = $userID;
   }

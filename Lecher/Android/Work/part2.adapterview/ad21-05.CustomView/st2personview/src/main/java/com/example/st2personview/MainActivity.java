@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     // 위젯 선언
     private  PersonView personview1;
     private  PersonView personview2;
-    private ImageView imageselect;
+    private ImageView image_picture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 위젯 찾기
-        imageselect = findViewById(R.id.image_select);
+        image_picture = findViewById(R.id.image_select);
         personview1 = findViewById(R.id.view_person1);
         personview2 = findViewById(R.id.view_person2);
 
         // 위젯 설정
-        imageselect.setOnClickListener(new View.OnClickListener() {
+        image_picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imageselect.setVisibility(View.GONE);
+                image_picture.setVisibility(View.GONE);
             }
         });
 
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     PersonView.OnImageClickListener handler = new PersonView.OnImageClickListener() {
         @Override
         public void onImageClick(PersonView view, PersonData person) {
-            imageselect.setImageDrawable( person.getPhoto() );
-            imageselect.setVisibility( View.VISIBLE );
+            image_picture.setImageDrawable( person.getPhoto() );
+            image_picture.setVisibility( View.VISIBLE );
         }
     };
 
