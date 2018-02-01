@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.example.st1drawermenu.Fragment.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab2Fragment;
@@ -17,6 +18,7 @@ public class AppBarMainActivity extends AppCompatActivity {
 
     private ViewPager pager;
     private TabLayout tabLayout;
+    private ImageView main_logo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,7 @@ public class AppBarMainActivity extends AppCompatActivity {
 
         pager = findViewById(R.id.pager);
         tabLayout = findViewById(R.id.tab_layout);
+        main_logo = findViewById(R.id.main_logo);
 
         tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_email).setText("1"));
         tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_dialer).setText("2"));

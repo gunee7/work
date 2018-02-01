@@ -17,10 +17,11 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_weight="1"
-            android:background="?attr/colorPrimary"
+            android:background="#eea4f1"
             app:popupTheme="@style/AppTheme.PopupOverlay">
         
             <ImageView
+                android:id="@+id/main_logo"
                 android:layout_width="55dp"
                 android:layout_height="50dp"
                 android:src="@drawable/givecoffee"/>
@@ -52,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabMode="fixed"
+            android:background="#cea4E1"
             app:tabGravity="fill">
         </android.support.design.widget.TabLayout>
 

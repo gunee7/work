@@ -1,26 +1,30 @@
 package com.example.st1drawermenu.Fragment.Tab1;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.st1drawermenu.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Tab1Adapter extends ArrayAdapter<Tab1Model>{
 
     private Context context;
 
-    public Tab1Adapter(@NonNull Tab1Fragment context, int resource, @NonNull ArrayList<Object> objects) {
+    public Tab1Adapter(@NonNull Context context, int resource, @NonNull List<Tab1Model> objects) {
         super(context, resource, objects);
         this.context = context;
     }
+
 
     private class ViewHolder {
         TextView name       ;
