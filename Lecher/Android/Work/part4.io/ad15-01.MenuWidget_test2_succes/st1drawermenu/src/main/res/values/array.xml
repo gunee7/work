@@ -25,4 +25,101 @@
         <item>역사교육과</item>
         <item>영어교육과</item>
     </string-array>
+    
+    <string-array name="menu_title">
+        <item>에스프레소 </item>
+        <item>꼰빠냐     </item>
+        <item>기브커피              </item>
+        <item>커피ICE          </item>
+        <item>카페라떼          </item>
+        <item>카페라떼ICE       </item>
+        <item>바닐라라떼        </item>
+        <item>바닐라라떼ICE     </item>
+        <item>카푸치노          </item>
+        <item>카푸치노ICE       </item>
+        <item>카페모카          </item>
+        <item>카페모카ICE       </item>
+        <item>화이트모카        </item>
+        <item>화이트모카ICE     </item>
+        <item>카라멜마끼아또    </item>
+        <item>카라멜마끼아또ICE </item>
+    </string-array>
+    
+    <string-array name="Base">
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+        <item>Base</item>
+    </string-array>
+    
+    
+    <string-array name="SizeUp">
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+        <item>SizeUp</item>
+    </string-array>
+    
+    <string-array name="menupay_title">
+        <item>2900 W</item>
+        <item>2900 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+    </string-array>
+    
+    <string-array name="menupay_sizeup">
+        <item>3400 W</item>
+        <item>3400 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>3900 W</item>
+        <item>4500 W</item>
+        <item>4500 W</item>
+        <item>4500 W</item>
+        <item>4500 W</item>
+        <item>4500 W</item>
+        <item>4500 W</item>
+    </string-array>
+    
 </resources>

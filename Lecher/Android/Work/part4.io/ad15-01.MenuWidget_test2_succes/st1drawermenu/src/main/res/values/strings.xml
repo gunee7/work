@@ -30,5 +30,27 @@
     <string name="hello_blank_fragment1">이메일보내주세요</string>
     <string name="slide_1_title">Hello GiveCoffee</string>
     <string name="slide_1_desc">The easiest way to order coffee from your favourite givecoffee!</string>
+    <string name="title_activity_sub_menu">SubMenuActivity</string>
+    
+    
+    <string name="menu_size_base">Base</string>
+    <string name="menu_size_sizeup">SizeUP</string>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
 
 </resources>

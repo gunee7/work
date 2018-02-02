@@ -11,4 +11,5 @@
     
     <dimen name="img_width">120dp</dimen>
     <dimen name="img_height">120dp</dimen>
+    <dimen name="customdp">120dp</dimen>
 </resources>

@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".AppBarMainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <Button
+            android:id="@+id/btnA1"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="기브커피몰"/>
+        
+        <Button
+            android:id="@+id/btnA2"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="구글"/>
+        
+        
+        <Button
+            android:id="@+id/btnA3"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="네이버"/>
+        
+        
+        <Button
+            android:id="@+id/btnA4"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="유튜브"/>
+        
+        
+        <Button
+            android:id="@+id/btnA5"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="사진"/>
+        
+        
+        <Button
+            android:id="@+id/btnA6"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="?attr/actionModeSplitBackground"
+            android:text="응급전화 119"/>
+        
+        
+        <Button
+            android:id="@+id/btnA7"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@android:color/holo_purple"
+            android:text="끝내기"/>
+    
+    
+    </LinearLayout>
+
+</FrameLayout>
