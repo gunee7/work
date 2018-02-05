@@ -18,15 +18,14 @@
         <ImageView
             android:id="@+id/menu_image"
             android:layout_width="wrap_content"
-            android:layout_height="365dp"
-            android:src="@drawable/espresso"/>
+            android:layout_height="365dp"/>
     
         <TextView
             android:id="@+id/coffee_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@array/menu_title"
+            android:text="@array/menu_latte_name"
             android:textColor="@android:color/black"
             android:textSize="@dimen/slide_title1"
             android:textStyle="bold"/>

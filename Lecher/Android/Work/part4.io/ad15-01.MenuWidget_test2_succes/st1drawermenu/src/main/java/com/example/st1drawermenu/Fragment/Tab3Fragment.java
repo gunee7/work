@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
 import com.example.st1drawermenu.R;
 
 import java.util.ArrayList;
@@ -41,8 +42,8 @@ public class Tab3Fragment  extends Fragment {
 
 
 
-    public static com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment newInstance(String param1, String param2) {
-        com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment fragment = new com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment();
+    public static Tab2Fragment newInstance(String param1, String param2) {
+        Tab2Fragment fragment = new Tab2Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

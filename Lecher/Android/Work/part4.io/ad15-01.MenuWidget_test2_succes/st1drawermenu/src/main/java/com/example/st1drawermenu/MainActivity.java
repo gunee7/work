@@ -19,11 +19,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment;
-import com.example.st1drawermenu.Fragment.Tab2Fragment;
+import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
+import com.example.st1drawermenu.Fragment.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4Fragment;
-import com.example.st1drawermenu.Fragment.Tab5Fragment;
+import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
 import com.example.st1drawermenu.LoginPackage.CommonCode;
 import com.example.st1drawermenu.LoginPackage.LoginActivity;
 import com.example.st1drawermenu.LoginPackage.RegisterActivity;
@@ -233,9 +233,9 @@ public class MainActivity extends AppBarMainActivity
 
             switch (position) {
                 case 0:
-                    return new Tab2Fragment();
-                case 1:
                     return new Tab1Fragment();
+                case 1:
+                    return new Tab2Fragment();
                 case 2:
                     return new Tab3Fragment();
                 case 3:

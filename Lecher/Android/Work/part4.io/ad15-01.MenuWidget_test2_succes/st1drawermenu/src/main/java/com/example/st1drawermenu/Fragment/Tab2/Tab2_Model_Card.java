@@ -1,8 +1,8 @@
-package com.example.st1drawermenu.Fragment.Tab1;
+package com.example.st1drawermenu.Fragment.Tab2;
 
 import android.graphics.drawable.Drawable;
 
-public class Tab1_Model_Card {
+public class Tab2_Model_Card {
 
     private Drawable imageCoffee;
     private String   textCoffee ;
@@ -31,7 +31,7 @@ public class Tab1_Model_Card {
 
     @Override
     public String toString() {
-        return "Tab1_Model_Card{" +
+        return "Tab2_Model_Card{" +
                 "imageCoffee=" + imageCoffee +
                 ", textCoffee='" + textCoffee + '\'' +
                 '}';
@@ -40,10 +40,10 @@ public class Tab1_Model_Card {
     /*-----------------------------------------*/
     /*constructor*/
 
-    public Tab1_Model_Card() {
+    public Tab2_Model_Card() {
     }
 
-    public Tab1_Model_Card(Drawable imageCoffee, String textCoffee) {
+    public Tab2_Model_Card(Drawable imageCoffee, String textCoffee) {
         this.imageCoffee = imageCoffee;
         this.textCoffee = textCoffee;
     }

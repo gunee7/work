@@ -15,22 +15,22 @@ import com.example.st1drawermenu.R;
 public class SubMenuActivity extends AppCompatActivity {
 
     private int[] images = {
-            R.drawable.espresso,
-            R.drawable.espressoconpania,
-            R.drawable.hotcoffeehtml,
-            R.drawable.icecoffeehtml,
-            R.drawable.hotcafelatte,
-            R.drawable.icecafelatte,
-            R.drawable.hotbanilalatte,
-            R.drawable.icebanilalatte,
-            R.drawable.hotcapuchino,
-            R.drawable.icecapuchino,
-            R.drawable.hotcafemocha,
-            R.drawable.icecafemocha,
-            R.drawable.hotwhitechocomacha,
-            R.drawable.icewhitechocomacha,
-            R.drawable.hotcaramelmachato,
-            R.drawable.icecaramelmachato
+            R .drawable.coffee1_espresso,
+            R.drawable.coffee2_espressoconpania,
+            R.drawable.coffee3_hotcoffeehtml,
+            R.drawable.coffee4_icecoffeehtml,
+            R.drawable.coffee5_hotcafelatte,
+            R.drawable.coffee6_icecafelatte,
+            R.drawable.coffee7_hotbanilalatte,
+            R.drawable.coffee8_icebanilalatte,
+            R.drawable.coffee9_hotcapuchino,
+            R.drawable.coffee10_icecapuchino,
+            R.drawable.coffee11_hotcafemocha,
+            R.drawable.coffee12_icecafemocha,
+            R.drawable.coffee13_hotwhitechocomacha,
+            R.drawable.coffee14_icewhitechocomacha,
+            R.drawable.coffee15_hotcaramelmachato,
+            R.drawable.coffee16_icecaramelmachato
     };
 
     private ImageView coffeeImage = null;
@@ -40,6 +40,7 @@ public class SubMenuActivity extends AppCompatActivity {
     private Button    btn_miuns     = null;
     private Button    btn_plus       = null;
     private EditText  count_number   = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,8 +59,8 @@ public class SubMenuActivity extends AppCompatActivity {
         count_number = findViewById( R.id.count_number);
 
         // 커피 이름 데이터
-        String[] coffeeName = getResources().getStringArray(R.array.menu_title);
-        String[] coffeepay = getResources().getStringArray(R.array.menupay_title);
+        String[] coffeeName = getResources().getStringArray(R.array.menu_coffee_name);
+        String[] coffeepay = getResources().getStringArray(R.array.menupay_coffee);
         String[] coffeepaySizwup = getResources().getStringArray(R.array.menupay_sizeup);
 
         coffeeImage.setImageDrawable( getResources().getDrawable( images[position]) );

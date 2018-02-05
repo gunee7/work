@@ -1,4 +1,4 @@
-package com.example.st1drawermenu.Fragment.Tab1;
+package com.example.st1drawermenu.Fragment.Tab2;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -14,14 +14,14 @@ import com.example.st1drawermenu.R;
 
 import java.util.List;
 
-public class Tab1_Adapter_Card extends ArrayAdapter<Tab1_Model_Card> {
+public class Tab2_Adapter_Card extends ArrayAdapter<Tab2_Model_Card> {
 
     public  Context context            = null;
     private ViewHolder holder         = null;
     private LayoutInflater inflater  = null;
     private View inflaterView;
 
-    public Tab1_Adapter_Card(@NonNull Context context, int resource, @NonNull List<Tab1_Model_Card> objects) {
+    public Tab2_Adapter_Card(@NonNull Context context, int resource, @NonNull List<Tab2_Model_Card> objects) {
         super(context, resource, objects);
         this.context = context;
     }
@@ -37,7 +37,7 @@ public class Tab1_Adapter_Card extends ArrayAdapter<Tab1_Model_Card> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         inflater = LayoutInflater.from( context );
-        inflaterView = inflater.inflate( R.layout.fragment_tab1_custom , parent , false );
+        inflaterView = inflater.inflate( R.layout.fragment_tab2_custom, parent , false );
 
         holder = ( ViewHolder ) inflaterView.getTag();
 
