@@ -62,119 +62,290 @@
         <item>화이트초코라떼_아이스</item>
     </string-array>
     
-    
-    
-    
-    
-    <string-array name="Base">
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
-        <item>Base</item>
+    <string-array name="menu_beverage_name">
+        <item>초코라떼</item>
+        <item>초코라떼_아이스</item>
+        <item>녹차라떼</item>
+        <item>녹차라떼_아이스</item>
+        <item>밀크티라떼</item>
+        <item>밀크티라떼_아이스</item>
+        <item>민트초코라떼</item>
+        <item>민트초코라떼_아이스</item>
+        <item>오곡라떼</item>
+        <item>오곡라떼_아이스</item>
+        <item>토피넛라떼</item>
+        <item>토피넛라떼_아이스</item>
+        <item>화이트초코라떼</item>
+        <item>화이트초코라떼_아이스</item>
+        <item>초코라떼</item>
+        <item>초코라떼_아이스</item>
+        <item>녹차라떼</item>
+        <item>녹차라떼_아이스</item>
+        <item>밀크티라떼</item>
+        <item>밀크티라떼_아이스</item>
+        <item>민트초코라떼</item>
+        <item>민트초코라떼_아이스</item>
+        <item>오곡라떼</item>
+        <item>오곡라떼_아이스</item>
+        <item>오곡라떼_아이스</item>
     </string-array>
     
+    <string-array name="menu_tea_name">
+        <item>초코라떼</item>
+        <item>초코라떼_아이스</item>
+        <item>녹차라떼</item>
+        <item>녹차라떼_아이스</item>
+        <item>밀크티라떼</item>
+        <item>밀크티라떼_아이스</item>
+        <item>민트초코라떼</item>
+        <item>민트초코라떼_아이스</item>
+    </string-array>
     
-    <string-array name="SizeUp">
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
-        <item>SizeUp</item>
+    <string-array name="menu_sidemenu_name">
+        <item>초코라떼</item>
+        <item>초코라떼_아이스</item>
+        <item>녹차라떼</item>
+        <item>녹차라떼_아이스</item>
+        <item>밀크티라떼</item>
+        <item>밀크티라떼_아이스</item>
+        <item>민트초코라떼</item>
+        <item>민트초코라떼_아이스</item>
+        <item>오곡라떼</item>
+        <item>오곡라떼_아이스</item>
+        <item>토피넛라떼</item>
+        <item>토피넛라떼_아이스</item>
+        <item>화이트초코라떼</item>
+        <item>화이트초코라떼_아이스</item>
+        <item>초코라떼</item>
+        <item>초코라떼_아이스</item>
+        <item>녹차라떼</item>
+        <item>녹차라떼_아이스</item>
+        <item>밀크티라떼</item>
+        <item>밀크티라떼_아이스</item>
+        <item>민트초코라떼</item>
+        <item>민트초코라떼_아이스</item>
+        <item>오곡라떼</item>
+        <item>오곡라떼_아이스</item>
+        <item>토피넛라떼</item>
+        <item>토피넛라떼_아이스</item>
+        <item>화이트초코라떼</item>
+        <item>화이트초코라떼_아이스</item>
+        <item>화이트초코라떼_아이스</item>
+        
     </string-array>
     
     <string-array name="menupay_coffee">
-        <item>2900 W</item>
-        <item>2900 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
     </string-array>
     
-    <string-array name="menupay_sizeup">
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
+    <string-array name="menupay_coffee_sizeup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
     </string-array>
     
     <string-array name="menupay_latte">
-        <item>2900 W</item>
-        <item>2900 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
     </string-array>
     
     <string-array name="menupay_latte_sizeup">
-        <item>3400 W</item>
-        <item>3400 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>3900 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
-        <item>4500 W</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
     </string-array>
     
+    
+    <string-array name="menupay_beverage">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="menupay_beverage_sizeup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="menupay_tea">
+    <item>2900</item>
+    <item>2900</item>
+    <item>3400</item>
+    <item>3400</item>
+    <item>3400</item>
+    <item>3400</item>
+    <item>3400</item>
+    <item>3400</item>
+</string-array>
+    
+    <string-array name="menupay_tea_sizeup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="menupay_sidemenu">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="menupay_sidemenu_sizeup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
 </resources>

@@ -32,14 +32,17 @@ public class Tab2Fragment extends Fragment {
     private Tab2_Adapter_Card tab1Adapter;
     private GridView tab1GridView;
     private List<Tab2_Model_Card> data;
-    private int[] coffee_images = Tab2MenuButton.caffee_icon;
-    private int[] latte_iamges =  Tab2MenuButton.lattee_icon;
+    private int[] coffee_images    = Tab2MenuButton.caffee_icon;
+    private int[] latte_iamges     =  Tab2MenuButton.lattee_icon;
+    private int[] beverage_images  = Tab2MenuButton.beverage_icon;
+    private int[] tea_iamges       =  Tab2MenuButton.tea_icon;
+    private int[] sidemenu_images  = Tab2MenuButton.sidemenu_icon;
     private Button btn_menu1 = null;
     private Button btn_menu2 = null;
     private Button btn_menu3 = null;
     private Button btn_menu4 = null;
     private Button btn_menu5 = null;
-
+    private int getid = 0;
 
 
     public Tab2Fragment() {
@@ -102,10 +105,10 @@ public class Tab2Fragment extends Fragment {
         tab1GridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                 // intent 여기안에서 하기
                 Intent i = new Intent ( getContext(), SubMenuActivity.class);
-                i.putExtra( "position" , position);
+                i.putExtra( "position" , position );
+                i.putExtra( "name"     , getid );
                 startActivity(i);
             }
         });
@@ -124,28 +127,48 @@ public class Tab2Fragment extends Fragment {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.btn_menu1:
-                    data = MakeData1( 0 , 15 );
+                    data = MakeData1( 0 , coffee_images.length-1 );
                     tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
                     tab1Adapter.notifyDataSetChanged();
                     tab1GridView.setAdapter( tab1Adapter );
 
+                    getid = v.getId();
 
                     break;
                 case R.id.btn_menu2:
-                    data = MakeData2( 0 , 13 );
+                    data = MakeData2( 0 , latte_iamges.length-1 );
                     tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
                     tab1Adapter.notifyDataSetChanged();
                     tab1GridView.setAdapter( tab1Adapter );
 
+                    getid = v.getId();
 
                     break;
                 case R.id.btn_menu3:
+                    data = MakeData3( 0 , beverage_images.length-1 );
+                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1GridView.setAdapter( tab1Adapter );
+
+                    getid = v.getId();
 
                     break;
                 case R.id.btn_menu4:
+                    data = MakeData4( 0 , tea_iamges.length-1 );
+                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1GridView.setAdapter( tab1Adapter );
+
+                    getid = v.getId();
 
                     break;
                 case R.id.btn_menu5:
+                    data = MakeData5( 0 , sidemenu_images.length-1 );
+                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1GridView.setAdapter( tab1Adapter );
+
+                    getid = v.getId();
 
                     break;
             }
@@ -168,19 +191,61 @@ public class Tab2Fragment extends Fragment {
     }
     private List<Tab2_Model_Card> MakeData2( int start, int end ) {
 
-        String[] coffeeName = getResources().getStringArray(R.array.menu_latte_name);
+        String[] latteName = getResources().getStringArray(R.array.menu_latte_name);
         List<Tab2_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab2_Model_Card item = new Tab2_Model_Card();
             item.setImageCoffee(getResources().getDrawable(latte_iamges[i]));
-            item.setTextCoffee( coffeeName[i] );
+            item.setTextCoffee( latteName[i] );
 
             list.add(item);
         }
 
         return list;
     }
+    private List<Tab2_Model_Card> MakeData3( int start, int end ) {
 
+        String[] beverageName = getResources().getStringArray(R.array.menu_beverage_name);
+        List<Tab2_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab2_Model_Card item = new Tab2_Model_Card();
+            item.setImageCoffee(getResources().getDrawable(beverage_images[i]));
+            item.setTextCoffee( beverageName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }private List<Tab2_Model_Card> MakeData4( int start, int end ) {
+
+        String[] teaName = getResources().getStringArray(R.array.menu_tea_name);
+        List<Tab2_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab2_Model_Card item = new Tab2_Model_Card();
+            item.setImageCoffee(getResources().getDrawable(tea_iamges[i]));
+            item.setTextCoffee( teaName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }private List<Tab2_Model_Card> MakeData5( int start, int end ) {
+
+        String[] sidemenuName = getResources().getStringArray(R.array.menu_sidemenu_name);
+        List<Tab2_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab2_Model_Card item = new Tab2_Model_Card();
+            item.setImageCoffee(getResources().getDrawable(sidemenu_images[i]));
+            item.setTextCoffee( sidemenuName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
 
 }
