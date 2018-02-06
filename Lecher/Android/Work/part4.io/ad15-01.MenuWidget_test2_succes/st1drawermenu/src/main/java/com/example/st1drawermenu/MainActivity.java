@@ -19,6 +19,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.st1drawermenu.AppBar.AppBarMainActivity;
+import com.example.st1drawermenu.AppBar.SearchActivity;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
 import com.example.st1drawermenu.Fragment.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3Fragment;
@@ -27,6 +29,7 @@ import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
 import com.example.st1drawermenu.LoginPackage.CommonCode;
 import com.example.st1drawermenu.LoginPackage.LoginActivity;
 import com.example.st1drawermenu.LoginPackage.RegisterActivity;
+import com.example.st1drawermenu.AppBar.CartActivity;
 
 public class MainActivity extends AppBarMainActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -39,6 +42,8 @@ public class MainActivity extends AppBarMainActivity
     private TabLayout tabLayout;
 
     private ImageView main_logo;
+    private ImageView cart;
+    private ImageView search_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +116,33 @@ public class MainActivity extends AppBarMainActivity
 
             }
         });
+
+
+
+        cart = findViewById(R.id.cart);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "장바구니로 이동합니다.", Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(getApplicationContext(), CartActivity.class);
+                startActivity(i); //새창 띄우기
+
+            }
+        });
+
+        search_button = findViewById(R.id.search_button);
+        search_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "검색창으로 이동합니다.", Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(getApplicationContext(), SearchActivity.class);
+                startActivity(i); //새창 띄우기
+
+            }
+        });
+
     }
 
     @Override

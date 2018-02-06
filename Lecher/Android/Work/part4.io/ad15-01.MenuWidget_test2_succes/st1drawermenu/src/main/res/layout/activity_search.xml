@@ -3,13 +3,13 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context=".AppBar.AppBarMainActivity">
+              tools:context="com.example.st1drawermenu.AppBar.SearchActivity">
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        
+    
         <EditText
             android:id="@+id/edit_text"
             android:layout_width="0dp"
@@ -23,7 +23,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="add"/>
+
     </LinearLayout>
+    
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </WebView>
     
     <ListView
         android:id="@+id/list_view"
@@ -34,3 +42,5 @@
 
 
 </LinearLayout>
+
+

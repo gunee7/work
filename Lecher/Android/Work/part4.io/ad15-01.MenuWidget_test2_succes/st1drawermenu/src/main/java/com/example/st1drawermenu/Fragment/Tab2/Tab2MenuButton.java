@@ -1,4 +1,6 @@
-package com.example.st1drawermenu;
+package com.example.st1drawermenu.Fragment.Tab2;
+
+import com.example.st1drawermenu.R;
 
 public class Tab2MenuButton {
     public static final int[] caffee_icon = {

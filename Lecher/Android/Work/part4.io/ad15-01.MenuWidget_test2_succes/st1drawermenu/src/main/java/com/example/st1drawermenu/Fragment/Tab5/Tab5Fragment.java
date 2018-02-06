@@ -13,7 +13,7 @@ import android.content.Intent;
 
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.SubMenuActivity5;
-import com.example.st1drawermenu.Tab2MenuButton;
+import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
 
 import java.util.ArrayList;
 import java.util.List;

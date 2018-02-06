@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.st1drawermenu.R;
-import com.example.st1drawermenu.Tab2MenuButton;
+import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
 
 public class SubMenuActivity extends AppCompatActivity {
 
@@ -28,6 +28,7 @@ public class SubMenuActivity extends AppCompatActivity {
     private Button    btn_miuns     = null;
     private Button    btn_plus       = null;
     private EditText  count_number   = null;
+    private Button    choice     = null;
 
 
     @Override
@@ -46,6 +47,7 @@ public class SubMenuActivity extends AppCompatActivity {
         btn_miuns           = findViewById( R.id.btn_minus);
         btn_plus            = findViewById( R.id.btn_plus);
         count_number        = findViewById( R.id.count_number);
+        choice        = findViewById( R.id.choice);
 
         if (menuname == R.id.btn_menu2){
             String[] latteName      = getResources().getStringArray(R.array.menu_latte_name);
@@ -98,6 +100,18 @@ public class SubMenuActivity extends AppCompatActivity {
             coffeepayText      .setText( coffeepay[position]);
             coffeepaySizwupText.setText( coffeepaySizwup[position]);
         }
+
+
+        choice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(), "장바구니로 이동합니다.", Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(getApplicationContext(), QrcodeActivity.class);
+                startActivity(i); //새창 띄우기
+            }
+        });
 
     }
 

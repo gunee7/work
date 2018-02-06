@@ -1,4 +1,4 @@
-package com.example.st1drawermenu;
+package com.example.st1drawermenu.AppBar;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -12,6 +12,7 @@ import com.example.st1drawermenu.Fragment.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4Fragment;
 import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
+import com.example.st1drawermenu.R;
 
 public class AppBarMainActivity extends AppCompatActivity {
 

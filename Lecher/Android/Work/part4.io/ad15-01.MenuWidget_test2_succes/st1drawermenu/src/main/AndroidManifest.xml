@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:label="기브커피"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".LoginPackage.LoginActivity">
@@ -33,6 +33,12 @@
         <activity android:name=".LoginPackage.RegisterActivity">
         </activity>
         <activity android:name=".SubuMenu.SubMenuActivity">
+        </activity>
+        <activity android:name=".AppBar.CartActivity">
+        </activity>
+        <activity android:name=".SubuMenu.QrcodeActivity">
+        </activity>
+        <activity android:name=".AppBar.SearchActivity">
         </activity>
     </application>
 

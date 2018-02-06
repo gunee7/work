@@ -3,7 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-             tools:context=".AppBar.AppBarMainActivity">
+              tools:context="com.example.st1drawermenu.AppBar.CartActivity">
     
     <ListView
         android:id="@+id/listview1"
@@ -53,3 +53,7 @@
     </LinearLayout>
 
 </LinearLayout>
+
+
+
+    

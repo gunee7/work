@@ -14,7 +14,6 @@ import android.content.Intent;
 
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
-import com.example.st1drawermenu.Tab2MenuButton;
 
 import java.util.ArrayList;
 import java.util.List;
