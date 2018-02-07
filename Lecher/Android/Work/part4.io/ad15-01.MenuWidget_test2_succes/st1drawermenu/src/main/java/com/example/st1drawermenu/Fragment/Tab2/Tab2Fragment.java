@@ -25,10 +25,10 @@ public class Tab2Fragment extends Fragment {
     private String mParam1;
 
 
-    private View         inflatedview     = null ;
-    private Tab2_Adapter_Card tab1Adapter;
-    private GridView tab1GridView;
-    private List<Tab2_Model_Card> data;
+    private View         inflatedview2     = null ;
+    private Tab2_Adapter_Card tab2Adapter;
+    private GridView tab2GridView;
+    private List<Tab2_Model_Card> data2;
     private int[] coffee_images    = Tab2MenuButton.caffee_icon;
     private int[] latte_iamges     =  Tab2MenuButton.lattee_icon;
     private int[] beverage_images  = Tab2MenuButton.beverage_icon;
@@ -39,7 +39,7 @@ public class Tab2Fragment extends Fragment {
     private Button btn_menu3 = null;
     private Button btn_menu4 = null;
     private Button btn_menu5 = null;
-    private int getid = 0;
+    private int getid2 = 0;
 
 
     public Tab2Fragment() {
@@ -71,21 +71,21 @@ public class Tab2Fragment extends Fragment {
 
 
         // Inflate the layout for this fragment
-        inflatedview = inflater.inflate(R.layout.fragment_tab2, container, false);
+        inflatedview2 = inflater.inflate(R.layout.fragment_tab2, container, false);
 
-        data = MakeData1( 0 , coffee_images.length - 1 );
+        data2 = MakeData1( 0 , coffee_images.length - 1 );
 
-        tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
-        tab1GridView = inflatedview.findViewById( R.id.gridView );
-        tab1GridView.setAdapter( tab1Adapter );
+        tab2Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data2 );
+        tab2GridView = inflatedview2.findViewById( R.id.gridView );
+        tab2GridView.setAdapter( tab2Adapter );
 
-        btn_menu1 = inflatedview.findViewById( R.id.btn_menu1 );
-        btn_menu2 = inflatedview.findViewById( R.id.btn_menu2 );
-        btn_menu3 = inflatedview.findViewById( R.id.btn_menu3 );
-        btn_menu4 = inflatedview.findViewById( R.id.btn_menu4 );
-        btn_menu5 = inflatedview.findViewById( R.id.btn_menu5 );
+        btn_menu1 = inflatedview2.findViewById( R.id.btn_menu1 );
+        btn_menu2 = inflatedview2.findViewById( R.id.btn_menu2 );
+        btn_menu3 = inflatedview2.findViewById( R.id.btn_menu3 );
+        btn_menu4 = inflatedview2.findViewById( R.id.btn_menu4 );
+        btn_menu5 = inflatedview2.findViewById( R.id.btn_menu5 );
 
-        return inflatedview;
+        return inflatedview2;
     }
 
 
@@ -97,13 +97,13 @@ public class Tab2Fragment extends Fragment {
         super.onActivityCreated( savedInstanceState );
 
 
-        tab1GridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        tab2GridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // intent 여기안에서 하기
                 Intent i = new Intent ( getContext(), SubMenuActivity.class);
                 i.putExtra( "position" , position );
-                i.putExtra( "name"     , getid );
+                i.putExtra( "name"     , getid2 );
                 startActivity(i);
             }
         });
@@ -122,48 +122,48 @@ public class Tab2Fragment extends Fragment {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.btn_menu1:
-                    data = MakeData1( 0 , coffee_images.length-1 );
-                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
-                    tab1Adapter.notifyDataSetChanged();
-                    tab1GridView.setAdapter( tab1Adapter );
+                    data2 = MakeData1( 0 , coffee_images.length-1 );
+                    tab2Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data2 );
+                    tab2Adapter.notifyDataSetChanged();
+                    tab2GridView.setAdapter( tab2Adapter );
 
-                    getid = v.getId();
+                    getid2 = v.getId();
 
                     break;
                 case R.id.btn_menu2:
-                    data = MakeData2( 0 , latte_iamges.length-1 );
-                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
-                    tab1Adapter.notifyDataSetChanged();
-                    tab1GridView.setAdapter( tab1Adapter );
+                    data2 = MakeData2( 0 , latte_iamges.length-1 );
+                    tab2Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data2 );
+                    tab2Adapter.notifyDataSetChanged();
+                    tab2GridView.setAdapter( tab2Adapter );
 
-                    getid = v.getId();
+                    getid2 = v.getId();
 
                     break;
                 case R.id.btn_menu3:
-                    data = MakeData3( 0 , beverage_images.length-1 );
-                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
-                    tab1Adapter.notifyDataSetChanged();
-                    tab1GridView.setAdapter( tab1Adapter );
+                    data2 = MakeData3( 0 , beverage_images.length-1 );
+                    tab2Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data2 );
+                    tab2Adapter.notifyDataSetChanged();
+                    tab2GridView.setAdapter( tab2Adapter );
 
-                    getid = v.getId();
+                    getid2 = v.getId();
 
                     break;
                 case R.id.btn_menu4:
-                    data = MakeData4( 0 , tea_iamges.length-1 );
-                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
-                    tab1Adapter.notifyDataSetChanged();
-                    tab1GridView.setAdapter( tab1Adapter );
+                    data2 = MakeData4( 0 , tea_iamges.length-1 );
+                    tab2Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data2 );
+                    tab2Adapter.notifyDataSetChanged();
+                    tab2GridView.setAdapter( tab2Adapter );
 
-                    getid = v.getId();
+                    getid2 = v.getId();
 
                     break;
                 case R.id.btn_menu5:
-                    data = MakeData5( 0 , sidemenu_images.length-1 );
-                    tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
-                    tab1Adapter.notifyDataSetChanged();
-                    tab1GridView.setAdapter( tab1Adapter );
+                    data2 = MakeData5( 0 , sidemenu_images.length-1 );
+                    tab2Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data2 );
+                    tab2Adapter.notifyDataSetChanged();
+                    tab2GridView.setAdapter( tab2Adapter );
 
-                    getid = v.getId();
+                    getid2 = v.getId();
 
                     break;
             }

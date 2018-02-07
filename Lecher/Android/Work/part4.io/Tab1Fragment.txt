@@ -1,0 +1,311 @@
+package com.example.st1drawermenu.Fragment.Tab1;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.content.Intent;
+import android.widget.ListView;
+
+
+import com.example.st1drawermenu.R;
+import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tab1Fragment extends Fragment {
+
+    private static final String ARG_PARAM1 = "param1";
+
+    private String mParam1;
+
+
+    private View                  inflatedview1     = null ;
+    private Tab1_Adapter_Card     tab1Adapter;
+    private ListView              tab1ListView;
+    private List<Tab1_Model_Card> data1;
+
+    private int[] poor_images            = Tab1MenuButton.poor_icon;
+    private int[] hungry_iamges          = Tab1MenuButton.hungry_icon;
+    private int[] orphan_images          = Tab1MenuButton.orphan_icon;
+    private int[] widow_iamges           = Tab1MenuButton.widow_icon;
+    private int[] streeter_images        = Tab1MenuButton.streeter_icon;
+    private int[] misionary_iamges       = Tab1MenuButton.misionary_icon;
+    private int[] africachildren_images  = Tab1MenuButton.africachildren_icon;
+
+    private Button btn_poor           = null;
+    private Button btn_hungry         = null;
+    private Button btn_orphan         = null;
+    private Button btn_widow          = null;
+    private Button btn_streeter       = null;
+    private Button btn_misionary      = null;
+    private Button btn_africachildren = null;
+
+    private int getid1 = 0;
+
+    public Tab1Fragment() {
+
+    }
+
+    public static Tab1Fragment newInstance(String param1, String param2) {
+        Tab1Fragment fragment = new Tab1Fragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+        }
+
+
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+
+        // Inflate the layout for this fragment
+        inflatedview1 = inflater.inflate(R.layout.fragment_tab1, container, false);
+
+        data1 = MakeDataA1( 0 , poor_images.length - 1 );
+
+        tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+        tab1ListView = inflatedview1.findViewById( R.id.tab1_main_listview );
+        tab1ListView.setAdapter( tab1Adapter );
+
+        btn_poor = inflatedview1.findViewById( R.id.btn_poor );
+        btn_hungry = inflatedview1.findViewById( R.id.btn_hungry );
+        btn_orphan = inflatedview1.findViewById( R.id.btn_orphan );
+        btn_widow = inflatedview1.findViewById( R.id.btn_widow );
+        btn_streeter = inflatedview1.findViewById( R.id.btn_streeter );
+        btn_misionary = inflatedview1.findViewById( R.id.btn_menu5 );
+        btn_africachildren = inflatedview1.findViewById( R.id.btn_africachildren );
+
+        return inflatedview1;
+    }
+
+
+
+    @Override                    // 위젯 관련된 것은 이쪽에서
+    public void onActivityCreated( @Nullable Bundle savedInstanceState ) {
+        super.onActivityCreated( savedInstanceState );
+
+
+        tab1ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // intent 여기안에서 하기
+                Intent i = new Intent ( getContext(), SubMenuActivity.class);
+                i.putExtra( "position1" , position );
+                i.putExtra( "name1"     , getid1 );
+                startActivity(i);
+            }
+        });
+
+        buttonClickListener bcListener = new buttonClickListener();
+        btn_poor.setOnClickListener( bcListener );
+        btn_hungry.setOnClickListener( bcListener );
+        btn_orphan.setOnClickListener( bcListener );
+        btn_widow.setOnClickListener( bcListener );
+        btn_streeter.setOnClickListener( bcListener );
+        btn_misionary.setOnClickListener( bcListener );
+        btn_africachildren.setOnClickListener( bcListener );
+
+
+    }
+
+
+    private class buttonClickListener implements View.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.btn_poor:
+                    data1 = MakeDataA1( 0 , poor_images.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+                case R.id.btn_hungry:
+                    data1 = MakeDataA2( 0 , hungry_iamges.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+                case R.id.btn_orphan:
+                    data1 = MakeDataA3( 0 , orphan_images.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+                case R.id.btn_widow:
+                    data1 = MakeDataA4( 0 , widow_iamges.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+                case R.id.btn_streeter:
+                    data1 = MakeDataA5( 0 , streeter_images.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+
+                case R.id.btn_misionary:
+                    data1 = MakeDataA6( 0 , misionary_iamges.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+
+                case R.id.btn_africachildren:
+                    data1 = MakeDataA7( 0 , africachildren_images.length-1 );
+                    tab1Adapter = new Tab1_Adapter_Card( getContext(), R.layout.fragment_tab1_custom, data1 );
+                    tab1Adapter.notifyDataSetChanged();
+                    tab1ListView.setAdapter( tab1Adapter );
+
+                    getid1 = v.getId();
+
+                    break;
+            }
+        }
+    }
+
+    private List<Tab1_Model_Card> MakeDataA1( int start, int end ) {
+
+        String[] poorName = getResources().getStringArray(R.array.tab1_poor_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(poor_images[i]));
+            item.setTab1_main_text1 ( poorName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+    private List<Tab1_Model_Card> MakeDataA2( int start, int end ) {
+
+        String[] hungryName = getResources().getStringArray(R.array.tab1_hungry_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(hungry_iamges[i]));
+            item.setTab1_main_text1( hungryName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+    private List<Tab1_Model_Card> MakeDataA3( int start, int end ) {
+
+        String[] orphanName = getResources().getStringArray(R.array.tab1_orphan_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(orphan_images[i]));
+            item.setTab1_main_text1( orphanName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+    private List<Tab1_Model_Card> MakeDataA4( int start, int end ) {
+
+        String[] widowName = getResources().getStringArray(R.array.tab1_widow_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(widow_iamges[i]));
+            item.setTab1_main_text1( widowName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+    private List<Tab1_Model_Card> MakeDataA5( int start, int end ) {
+
+        String[] streeterName = getResources().getStringArray(R.array.tab1_streeter_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(streeter_images[i]));
+            item.setTab1_main_text1( streeterName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+
+    private List<Tab1_Model_Card> MakeDataA6( int start, int end ) {
+
+        String[] misionaryName = getResources().getStringArray(R.array.tab1_misionary_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(streeter_images[i]));
+            item.setTab1_main_text1( misionaryName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+
+    private List<Tab1_Model_Card> MakeDataA7( int start, int end ) {
+
+        String[] africachildrenName = getResources().getStringArray(R.array.tab1_africachildren_text_name);
+        List<Tab1_Model_Card> list = new ArrayList<>();
+        for(int i =start ; i<=end; i++){
+
+            Tab1_Model_Card item = new Tab1_Model_Card();
+            item.setTab1_main_image1(getResources().getDrawable(streeter_images[i]));
+            item.setTab1_main_text1( africachildrenName[i] );
+
+            list.add(item);
+        }
+
+        return list;
+    }
+
+}

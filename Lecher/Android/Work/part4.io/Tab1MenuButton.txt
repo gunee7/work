@@ -1,0 +1,83 @@
+package com.example.st1drawermenu.Fragment.Tab1;
+
+import com.example.st1drawermenu.R;
+
+public class Tab1MenuButton {
+    public static final int[] poor_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+
+    public static final int[] hungry_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+
+    public static final int[] orphan_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+
+    public static final int[] widow_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+
+    public static final int[] streeter_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+
+    public static final int[] misionary_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+
+    public static final int[] africachildren_icon = {
+            R.drawable.caffe1,
+            R.drawable.caffe2,
+            R.drawable.caffe3,
+            R.drawable.caffe4,
+            R.drawable.caffe5,
+            R.drawable.caffe6,
+            R.drawable.caffe7,
+
+    };
+}
+

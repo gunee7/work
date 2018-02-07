@@ -26,6 +26,222 @@
         <item>영어교육과</item>
     </string-array>
     
+    <string-array name="tab1_poor_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    <string-array name="tab1_hungry_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    <string-array name="tab1_orphan_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    <string-array name="tab1_widow_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    <string-array name="tab1_streeter_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    <string-array name="tab1_misionary_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    <string-array name="tab1_africachildren_text_name">
+        <item>가난한 자</item>
+        <item>배고픈 자</item>
+        <item>고아</item>
+        <item>과부</item>
+        <item>거리의 객</item>
+        <item>선교지</item>
+        <item>아프리카아이들</item>
+    </string-array>
+    
+    
+    <string-array name="tab1_poor">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_poorup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="tab1_hungry">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_hungryup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="tab1_orphan">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_orphanup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="tab1_widow">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_widowup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="tab1_streeter">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_streeterup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="tab1_misionary">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_misionaryup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    <string-array name="tab1_africachildren">
+        <item>2900</item>
+        <item>2900</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+        <item>3400</item>
+    </string-array>
+    
+    <string-array name="tab1_africachildrenup">
+        <item>3400</item>
+        <item>3400</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3900</item>
+    </string-array>
+    
+    
+    
+    
+    
+    
     <string-array name="menu_coffee_name">
         <item>에스프레소 </item>
         <item>꼰빠냐     </item>
