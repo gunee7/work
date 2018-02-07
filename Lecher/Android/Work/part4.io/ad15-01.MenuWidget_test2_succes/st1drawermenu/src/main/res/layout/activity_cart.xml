@@ -3,10 +3,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.example.st1drawermenu.AppBar.CartActivity">
+              tools:context="com.example.st1drawermenu.Cart.CartActivity">
     
     <ListView
-        android:id="@+id/listview1"
+        android:id="@+id/cart_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

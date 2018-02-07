@@ -8,10 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
-import com.example.st1drawermenu.Fragment.Tab1Fragment;
+import com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4Fragment;
-import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
 import com.example.st1drawermenu.R;
 
 public class AppBarMainActivity extends AppCompatActivity {
@@ -87,8 +86,6 @@ public class AppBarMainActivity extends AppCompatActivity {
                     return new Tab3Fragment();
                 case 3:
                     return new Tab4Fragment();
-                case 4:
-                    return new Tab5Fragment();
                 default:
                     return null;
             }

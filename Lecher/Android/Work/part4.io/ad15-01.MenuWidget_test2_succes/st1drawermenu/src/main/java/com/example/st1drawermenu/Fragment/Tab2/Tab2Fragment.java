@@ -21,10 +21,8 @@ import java.util.List;
 public class Tab2Fragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
     private String mParam1;
-    private String mParam2;
 
 
     private View         inflatedview     = null ;
@@ -52,7 +50,6 @@ public class Tab2Fragment extends Fragment {
         Tab2Fragment fragment = new Tab2Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -62,7 +59,6 @@ public class Tab2Fragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
 
@@ -77,7 +73,7 @@ public class Tab2Fragment extends Fragment {
         // Inflate the layout for this fragment
         inflatedview = inflater.inflate(R.layout.fragment_tab2, container, false);
 
-        data = MakeData1( 0 , 15 );
+        data = MakeData1( 0 , coffee_images.length - 1 );
 
         tab1Adapter = new Tab2_Adapter_Card( getContext(), R.layout.fragment_tab2_custom, data );
         tab1GridView = inflatedview.findViewById( R.id.gridView );
@@ -217,7 +213,8 @@ public class Tab2Fragment extends Fragment {
         }
 
         return list;
-    }private List<Tab2_Model_Card> MakeData4( int start, int end ) {
+    }
+    private List<Tab2_Model_Card> MakeData4( int start, int end ) {
 
         String[] teaName = getResources().getStringArray(R.array.menu_tea_name);
         List<Tab2_Model_Card> list = new ArrayList<>();
@@ -231,7 +228,8 @@ public class Tab2Fragment extends Fragment {
         }
 
         return list;
-    }private List<Tab2_Model_Card> MakeData5( int start, int end ) {
+    }
+    private List<Tab2_Model_Card> MakeData5( int start, int end ) {
 
         String[] sidemenuName = getResources().getStringArray(R.array.menu_sidemenu_name);
         List<Tab2_Model_Card> list = new ArrayList<>();

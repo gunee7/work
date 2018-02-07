@@ -40,6 +40,8 @@
         </activity>
         <activity android:name=".AppBar.SearchActivity">
         </activity>
+        <activity android:name=".Cart.CartActivity">
+        </activity>
     </application>
 
 </manifest>

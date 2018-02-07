@@ -21,15 +21,14 @@ import android.widget.Toast;
 
 import com.example.st1drawermenu.AppBar.AppBarMainActivity;
 import com.example.st1drawermenu.AppBar.SearchActivity;
+import com.example.st1drawermenu.Cart.CartActivity;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
-import com.example.st1drawermenu.Fragment.Tab1Fragment;
+import com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4Fragment;
-import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
 import com.example.st1drawermenu.LoginPackage.CommonCode;
 import com.example.st1drawermenu.LoginPackage.LoginActivity;
 import com.example.st1drawermenu.LoginPackage.RegisterActivity;
-import com.example.st1drawermenu.AppBar.CartActivity;
 
 public class MainActivity extends AppBarMainActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -72,7 +71,6 @@ public class MainActivity extends AppBarMainActivity
         tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_email).setText("기브빈"));
         tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_dialer).setText("메뉴"));
         tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_map).setText("친구"));
-        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_info).setText("채팅"));
         tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_menu_add).setText("더보기"));
 
         //ViewPager설정
@@ -272,8 +270,6 @@ public class MainActivity extends AppBarMainActivity
                     return new Tab3Fragment();
                 case 3:
                     return new Tab4Fragment();
-                case 4:
-                    return new Tab5Fragment();
                 default:
                     return null;
             }

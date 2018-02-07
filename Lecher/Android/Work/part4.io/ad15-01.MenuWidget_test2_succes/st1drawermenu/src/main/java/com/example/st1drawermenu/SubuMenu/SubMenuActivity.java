@@ -1,5 +1,6 @@
 package com.example.st1drawermenu.SubuMenu;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -10,8 +11,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.st1drawermenu.Cart.CartActivity;
+import com.example.st1drawermenu.Cart.CartModel;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
+
+import java.util.ArrayList;
 
 public class SubMenuActivity extends AppCompatActivity {
 
@@ -25,11 +30,11 @@ public class SubMenuActivity extends AppCompatActivity {
     private TextView  coffeeNameText  = null;
     private TextView  coffeepayText  = null;
     private TextView  coffeepaySizwupText  = null;
-    private Button    btn_miuns     = null;
-    private Button    btn_plus       = null;
-    private EditText  count_number   = null;
-    private Button    choice     = null;
-
+    private ImageView btn_miuns            = null;
+    private ImageView btn_plus             = null;
+    private EditText  count_number         = null;
+    private Button    btn_go_cart          = null;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +45,24 @@ public class SubMenuActivity extends AppCompatActivity {
         int position = i.getIntExtra("position", -1);
         int menuname = i.getIntExtra("name", -1);
 
-        coffeeImage         = findViewById(R.id.menu_image);
-        coffeeNameText      = findViewById(R.id.coffee_text);
-        coffeepayText       = findViewById(R.id.coffeepayText);
-        coffeepaySizwupText = findViewById(R.id.coffeepaySizwupText);
-        btn_miuns           = findViewById( R.id.btn_minus);
-        btn_plus            = findViewById( R.id.btn_plus);
-        count_number        = findViewById( R.id.count_number);
-        choice        = findViewById( R.id.choice);
+        coffeeImage         = findViewById( R.id.menu_image          );
+        coffeeNameText      = findViewById( R.id.coffee_text         );
+        coffeepayText       = findViewById( R.id.coffeepayText       );
+        coffeepaySizwupText = findViewById( R.id.coffeepaySizwupText );
+        btn_miuns           = findViewById( R.id.btn_minus           );
+        btn_plus            = findViewById( R.id.btn_plus            );
+        btn_go_cart         = findViewById( R.id.btn_go_cart         );
+        count_number        = findViewById( R.id.count_number        );
 
+        setmenu(position, menuname);
+        mathclick mclick = new mathclick();
+        btn_miuns    .setOnClickListener( mclick );
+        btn_plus     .setOnClickListener( mclick );
+        btn_go_cart  .setOnClickListener( mclick );
+
+    }
+
+    private void setmenu(int position, int menuname) {
         if (menuname == R.id.btn_menu2){
             String[] latteName      = getResources().getStringArray(R.array.menu_latte_name);
             String[] lattepay       = getResources().getStringArray(R.array.menupay_latte);
@@ -100,20 +114,42 @@ public class SubMenuActivity extends AppCompatActivity {
             coffeepayText      .setText( coffeepay[position]);
             coffeepaySizwupText.setText( coffeepaySizwup[position]);
         }
-
-
-        choice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(getApplicationContext(), "장바구니로 이동합니다.", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getApplicationContext(), QrcodeActivity.class);
-                startActivity(i); //새창 띄우기
-            }
-        });
-
     }
 
+    private class mathclick implements View.OnClickListener {
+        @Override
+        public void onClick(View view) {
 
+            switch (view.getId()){
+
+                case R.id.btn_minus:
+                    count = Integer.parseInt(count_number.getText().toString());
+                    if (count == 0){
+                        break;
+                    }
+                    else {
+                        count = count - 1;
+                        count_number.setText(count + "");
+                    }
+                    break;
+                case R.id.btn_plus:
+                    count = Integer.parseInt(count_number.getText().toString());
+                    count = count + 1;
+                    count_number.setText( count + "");
+                    break;
+                case R.id.btn_go_cart:
+
+                    Intent cartgo = new Intent( SubMenuActivity.this, CartActivity.class);
+                    cartgo.putExtra( "name"  ,coffeeNameText.getText().toString());
+                    cartgo.putExtra( "price" ,coffeepayText .getText().toString());
+                    cartgo.putExtra( "number",count_number  .getText().toString());
+
+                    startActivity( cartgo );
+
+                    break;
+
+            }
+
+        }
+    }
 }
