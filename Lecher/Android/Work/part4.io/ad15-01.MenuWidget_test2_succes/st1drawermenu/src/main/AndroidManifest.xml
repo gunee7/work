@@ -16,6 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Intro.Splashscreen"
+             android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+        
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label=""
@@ -26,21 +34,21 @@
         <activity android:name=".Intro.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
+        
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name=".LoginPackage.RegisterActivity">
         </activity>
         <activity android:name=".SubuMenu.SubMenuActivity">
         </activity>
-        <activity android:name=".AppBar.CartActivity">
+        <activity android:name=".Cart.CartActivity">
         </activity>
         <activity android:name=".SubuMenu.QrcodeActivity">
         </activity>
         <activity android:name=".AppBar.SearchActivity">
         </activity>
-        <activity android:name=".Cart.CartActivity">
+        <activity android:name=".Main2Activity">
         </activity>
     </application>
 

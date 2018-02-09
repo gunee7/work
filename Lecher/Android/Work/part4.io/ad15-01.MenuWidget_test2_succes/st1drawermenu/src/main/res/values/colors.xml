@@ -16,12 +16,17 @@
     
     <!-- Screen background colors -->
     <color name="bg_screen1">#eea4f1</color>
-    <color name="bg_screen2">#c4246c</color>
-    <color name="bg_screen3">#7ebc44</color>
-    <color name="bg_screen4">#33afa9</color>
+    <color name="bg_screen2">#929bfd</color>
+    <color name="bg_screen3">#6a71fd</color>
+    <color name="bg_screen4">#4d36e4</color>
     
-    <color name="bg_screen5">#bba4f1</color>
-    <color name="bg_screen6">#fce3fd</color>
-    <color name="bg_screen7">#f9d2f1</color>
-    <color name="bg_screen8">#33afa9</color>
+    <color name="bg_screen5">#eea4f1</color>
+    <color name="bg_screen6">#e473a6</color>
+    <color name="bg_screen7">#fda2d4</color>
+    <color name="bg_screen8">#dc388a</color>
+    
+    <color name="bg_screen9">#fa90e1</color>
+    <color name="bg_screen10">#f184ce</color>
+    <color name="bg_screen11">#f469d7</color>
+    <color name="bg_screen12">#ef5ac2</color>
 </resources>

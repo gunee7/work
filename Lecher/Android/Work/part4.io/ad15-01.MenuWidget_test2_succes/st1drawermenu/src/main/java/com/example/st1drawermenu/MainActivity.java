@@ -203,7 +203,13 @@ public class MainActivity extends AppBarMainActivity
             Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ RegisterActivity.class);
             startActivityForResult( i, REQUEST_CODE_REGISTER);
         }
-        else if (id == R.id.nav_manage) {
+        else if (id == R.id.nav_notice) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ Main2Activity.class);
+            startActivityForResult( i, REQUEST_CODE_REGISTER);
+        }
+        else if (id == R.id.nav_board) {
+            Toast.makeText( getApplicationContext(),"준비중 입니다.",Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -222,7 +228,7 @@ public class MainActivity extends AppBarMainActivity
         // 결과 확인
         if( requestCode == REQUEST_CODE_LOGIN && resultCode == RESULT_OK ){
             // 로그인에 성공했을 때.
-            boolean loginStatus = data.getBooleanExtra(CommonCode.LOGIN_STATUS, false);
+            boolean loginStatus = data.getBooleanExtra(CommonCode.LOGIN_STATUS, true);
             // menu 보이고 감추기..
             NavigationView navView = findViewById(R.id.nav_view);
             setShowHideNavigation( true );

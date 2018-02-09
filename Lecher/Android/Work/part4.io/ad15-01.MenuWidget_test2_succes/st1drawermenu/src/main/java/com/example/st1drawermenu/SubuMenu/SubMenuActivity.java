@@ -1,6 +1,5 @@
 package com.example.st1drawermenu.SubuMenu;
 
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -9,14 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.st1drawermenu.Cart.CartActivity;
-import com.example.st1drawermenu.Cart.CartModel;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
-
-import java.util.ArrayList;
 
 public class SubMenuActivity extends AppCompatActivity {
 
