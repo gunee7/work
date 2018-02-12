@@ -1295,7 +1295,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zoZoFsRJEee-nbdQYXusRw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xDhe8AlcEeivKLJ-APHHtQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_zoi4U8RJEee-nbdQYXusRw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__sRB5w36EeiCCvTWWpa6-w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_zoi4U8RJEee-nbdQYXusRw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zoZoJcRJEee-nbdQYXusRw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1361,7 +1361,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zoZonMRJEee-nbdQYXusRw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xDjUIAlcEeivKLJ-APHHtQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_zoi3F8RJEee-nbdQYXusRw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__saL1Q36EeiCCvTWWpa6-w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_zoi3F8RJEee-nbdQYXusRw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_fS5JIPQXEeeGnomLkiEWRw" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
         <tags>Draggable</tags>
@@ -1822,7 +1822,9 @@
     <bindings xmi:id="_zoZqGsRJEee-nbdQYXusRw" keySequence="ALT+SHIFT+X C" command="_zoi5qcRJEee-nbdQYXusRw"/>
     <bindings xmi:id="_5JO-4ettEeelWNPXkvnYOQ" keySequence="F9" command="_zoi6dsRJEee-nbdQYXusRw"/>
     <bindings xmi:id="_5JTQUOttEeelWNPXkvnYOQ" keySequence="SHIFT+F9" command="_zoi6b8RJEee-nbdQYXusRw"/>
-    <bindings xmi:id="_5JTQU-ttEeelWNPXkvnYOQ" keySequence="CTRL+SHIFT+T" command="_zoi8zcRJEee-nbdQYXusRw"/>
+    <bindings xmi:id="_5JTQU-ttEeelWNPXkvnYOQ" keySequence="CTRL+SHIFT+T" command="_zoi8zcRJEee-nbdQYXusRw">
+      <tags>deleted</tags>
+    </bindings>
   </bindingTables>
   <bindingTables xmi:id="_zoZqG8RJEee-nbdQYXusRw" elementId="org.eclipse.tm.terminal.EditContext" bindingContext="_zoiugsRJEee-nbdQYXusRw">
     <bindings xmi:id="_zoZqHMRJEee-nbdQYXusRw" keySequence="CTRL+INSERT" command="_zoi2D8RJEee-nbdQYXusRw"/>
