@@ -66,15 +66,15 @@
                 app:srcCompat="@drawable/magnifier"/>
 
         </android.support.v7.widget.Toolbar>
-        
+    
     
         <android.support.design.widget.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabMode="fixed"
+            android:layout_height="40dp"
             android:background="@color/bg_screen7"
-            app:tabGravity="fill">
+            app:tabGravity="fill"
+            app:tabMode="fixed">
         </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>

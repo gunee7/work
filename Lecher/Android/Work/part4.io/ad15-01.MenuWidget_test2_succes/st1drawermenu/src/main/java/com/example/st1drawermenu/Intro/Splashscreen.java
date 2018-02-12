@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.st1drawermenu.LoginPackage.LoginActivity;
+import com.example.st1drawermenu.MainActivity;
 import com.example.st1drawermenu.R;
 
 public class Splashscreen extends Activity {
@@ -51,7 +52,7 @@ public class Splashscreen extends Activity {
                         waited += 100;
                     }
                     Intent intent = new Intent(Splashscreen.this,
-                            LoginActivity.class);
+                            MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     Splashscreen.this.finish();
