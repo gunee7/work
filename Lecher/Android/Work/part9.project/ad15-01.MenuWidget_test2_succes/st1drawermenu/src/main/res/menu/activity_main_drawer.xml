@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+      
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@android:drawable/btn_radio"
+                android:title="@string/drawer_menu_login"/>
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="@string/drawer_menu_register"/>
+            
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="@string/drawer_menu_logout"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_memedit"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="@string/drawer_menu_memedit"
+                android:visible="false" />
+        </menu>
+    </item>
+    
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_menu_share"
+            android:title="공지사항"/>
+    
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/ic_menu_share"
+            android:title="게시판"/>
+    
+        <item
+            android:id="@+id/nav_retrieval"
+            android:icon="@drawable/ic_menu_share"
+            android:title="정보수정"/>
+    
+        <item
+            android:id="@+id/nav_orderhistory"
+            android:icon="@drawable/ic_menu_share"
+            android:title="비회원 주문내역"/>
+    
+        <item
+            android:id="@+id/nav_recommend"
+            android:icon="@drawable/ic_menu_share"
+            android:title="기부커피 추천하기"/>
+        
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_menu_share"
+            android:title="이벤트"/>
+    
+        <item
+            android:id="@+id/nav_coupon"
+            android:icon="@drawable/ic_menu_share"
+            android:title="쿠폰함"/>
+        
+    </group>
+
+</menu>
