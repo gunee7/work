@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ad33-05.TabPagerFragment.iml" filepath="$PROJECT_DIR$/ad33-05.TabPagerFragment.iml" />
+      <module fileurl="file://C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\ad33-05.TabPagerFragment.iml" filepath="C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\ad33-05.TabPagerFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/st1/st1.iml" filepath="$PROJECT_DIR$/st1/st1.iml" />
+      <module fileurl="file://C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\st1\st1.iml" filepath="C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\st1\st1.iml" />
       <module fileurl="file://$PROJECT_DIR$/st3/st3.iml" filepath="$PROJECT_DIR$/st3/st3.iml" />
+      <module fileurl="file://C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\st3\st3.iml" filepath="C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\st3\st3.iml" />
       <module fileurl="file://$PROJECT_DIR$/st7slide/st7slide.iml" filepath="$PROJECT_DIR$/st7slide/st7slide.iml" />
+      <module fileurl="file://C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\st7slide\st7slide.iml" filepath="C:\Users\USER\Desktop\workspace\Lecher\Android\Work\part3.component\ad33-05.TabPagerFragment\st7slide\st7slide.iml" />
     </modules>
   </component>
 </project>

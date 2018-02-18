@@ -8,13 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.GridView;
 import android.content.Intent;
 
-import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
-import com.example.st1drawermenu.Fragment.Tab2.Tab2_Adapter_Card;
-import com.example.st1drawermenu.Fragment.Tab2.Tab2_Model_Card;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
 
@@ -104,13 +100,13 @@ public class Tab4Fragment extends Fragment {
 
     private List<Tab4_Model_Card> MakeData4( int start, int end ) {
 
-        String[] beverageName = getResources().getStringArray(R.array.menu_tea_name);
+        String[] teaName = getResources().getStringArray(R.array.menu_tea_name);
         List<Tab4_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab4_Model_Card item = new Tab4_Model_Card();
             item.setImageCoffee(getResources().getDrawable(tea_iamges[i]));
-            item.setTextCoffee( beverageName[i] );
+            item.setTextCoffee( teaName[i] );
 
             list.add(item);
         }

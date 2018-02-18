@@ -8,13 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.GridView;
 import android.content.Intent;
 
-import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
-import com.example.st1drawermenu.Fragment.Tab2.Tab2_Adapter_Card;
-import com.example.st1drawermenu.Fragment.Tab2.Tab2_Model_Card;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
 
@@ -33,7 +29,7 @@ public class Tab3Fragment extends Fragment {
     private GridView tab3GridView;
     private List<Tab3_Model_Card> data3;
 
-    private int[] beverage_images  = Tab2MenuButton.beverage_icon;
+    private int[] beverage_images    = Tab3MenuButton.beverage_icon;
 
 
     private int getid3 = 0;
@@ -66,14 +62,13 @@ public class Tab3Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
         // Inflate the layout for this fragment
-        inflatedview3 = inflater.inflate(R.layout.fragment_tab3, container, false);
+        inflatedview3 = inflater.inflate(R.layout.fragment_tab1, container, false);
 
         data3 = MakeData3( 0 , beverage_images.length - 1 );
 
         tab3Adapter = new Tab3_Adapter_Card( getContext(), R.layout.fragment_tab3_custom, data3 );
-        tab3GridView = inflatedview3.findViewById( R.id.gridView3 );
+        tab3GridView = inflatedview3.findViewById( R.id.gridView1 );
         tab3GridView.setAdapter( tab3Adapter );
 
 
@@ -104,13 +99,13 @@ public class Tab3Fragment extends Fragment {
 
     private List<Tab3_Model_Card> MakeData3( int start, int end ) {
 
-        String[] beverageName = getResources().getStringArray(R.array.menu_beverage_name);
+        String[] coffeeName = getResources().getStringArray(R.array.menu_coffee_name);
         List<Tab3_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab3_Model_Card item = new Tab3_Model_Card();
             item.setImageCoffee(getResources().getDrawable(beverage_images[i]));
-            item.setTextCoffee( beverageName[i] );
+            item.setTextCoffee( coffeeName[i] );
 
             list.add(item);
         }

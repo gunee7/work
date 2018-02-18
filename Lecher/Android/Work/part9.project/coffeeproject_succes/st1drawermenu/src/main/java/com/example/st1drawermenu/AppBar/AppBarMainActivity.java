@@ -1,22 +1,31 @@
 package com.example.st1drawermenu.AppBar;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
+import com.example.st1drawermenu.Cart.CartActivity;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
 import com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4.Tab4Fragment;
+import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
+import com.example.st1drawermenu.MainActivity;
 import com.example.st1drawermenu.R;
+import com.example.st1drawermenu.SubuMenu.QrcodeActivity;
 
 public class AppBarMainActivity extends AppCompatActivity {
 
     private ViewPager pager;
     private TabLayout tabLayout;
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,16 +33,14 @@ public class AppBarMainActivity extends AppCompatActivity {
 
 
 //        setSupportActionBar(toolbar);
-
         pager = findViewById(R.id.pager);
         tabLayout = findViewById(R.id.tab_layout);
 
-        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_email).setText("1"));
-        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_dialer).setText("2"));
-        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_map).setText("3"));
-        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_menu_add).setText("4"));
-
-
+        tabLayout.addTab(tabLayout.newTab().setText("커피"));
+        tabLayout.addTab(tabLayout.newTab().setText("라떼"));
+        tabLayout.addTab(tabLayout.newTab().setText("음료"));
+        tabLayout.addTab(tabLayout.newTab().setText("녹차"));
+        tabLayout.addTab(tabLayout.newTab().setText("빙수"));
 
 
         //ViewPager설정
@@ -88,6 +95,8 @@ public class AppBarMainActivity extends AppCompatActivity {
                     return new Tab3Fragment();
                 case 3:
                     return new Tab4Fragment();
+                case 4:
+                    return new Tab5Fragment();
                 default:
                     return null;
             }

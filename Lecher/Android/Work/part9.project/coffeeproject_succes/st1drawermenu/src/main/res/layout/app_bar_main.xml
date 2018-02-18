@@ -10,6 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/bg_screen2"
         android:theme="@style/AppTheme.AppBarOverlay">
     
         <android.support.v7.widget.Toolbar
@@ -22,16 +23,17 @@
         
             <ImageView
                 android:id="@+id/main_logo"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/givecoffee"/>
             
     
             <EditText
         
                 android:id="@+id/toolbar_edittext"
-                android:layout_width="180dp"
+                android:layout_width="140dp"
                 android:layout_height="50dp"
+                android:layout_weight="4"
                 android:layout_marginLeft="20dp"
                 android:background="@color/cardview_shadow_end_color"
                 android:hint="검색어를 입력하세요"
@@ -40,30 +42,28 @@
                 android:visibility="invisible"/>
     
             <ImageView
-                android:id="@+id/cart"
+                android:id="@+id/coffee_button"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/shoppingcart"/>
-    
-            <EditText
-        
-                android:id="@+id/toolbar_edittext2"
-                android:layout_width="5dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:background="@color/cardview_shadow_end_color"
-                android:hint="검색어를 입력하세요"
-                android:textColor="@color/colorPrimary"
-                android:textColorHint="#A9A9A9"
-                android:visibility="invisible"/>
-            
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/coffeecup"/>
             <ImageView
                 android:id="@+id/search_button"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/magnifier"/>
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/magnifiertool"/>
+            
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/shoppingcart"/>
+            
 
         </android.support.v7.widget.Toolbar>
     
@@ -84,9 +84,9 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="421dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        
+
     </android.support.v4.view.ViewPager>
-    
+
 </android.support.design.widget.CoordinatorLayout>

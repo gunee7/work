@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.st1drawermenu.Fragment.Tab3.Tab3_Model_Card;
+
 import com.example.st1drawermenu.R;
 
 import java.util.List;

@@ -10,16 +10,20 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.st1drawermenu.Cart.CartActivity;
+import com.example.st1drawermenu.Fragment.Tab1.Tab1MenuButton;
+import com.example.st1drawermenu.Fragment.Tab3.Tab3MenuButton;
+import com.example.st1drawermenu.Fragment.Tab4.Tab4MenuButton;
+import com.example.st1drawermenu.Fragment.Tab5.Tab5MenuButton;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2MenuButton;
 
 public class SubMenuActivity extends AppCompatActivity {
 
-    private int[] coffee_images    = Tab2MenuButton.caffee_icon;
+    private int[] coffee_images    = Tab1MenuButton.coffee_icon;
     private int[] latte_iamges     = Tab2MenuButton.lattee_icon;
-    private int[] beverage_images  = Tab2MenuButton.beverage_icon;
-    private int[] tea_iamges       = Tab2MenuButton.tea_icon;
-    private int[] sidemenu_images  = Tab2MenuButton.sidemenu_icon;
+    private int[] beverage_images  = Tab3MenuButton.beverage_icon;
+    private int[] tea_iamges       = Tab4MenuButton.tea_icon;
+    private int[] sidemenu_images  = Tab5MenuButton.sidemenu_icon;
 
     private ImageView coffeeImage = null;
     private TextView  coffeeNameText  = null;
@@ -58,7 +62,7 @@ public class SubMenuActivity extends AppCompatActivity {
     }
 
     private void setmenu(int position, int menuname) {
-        if (menuname == R.id.btn_menu2){
+        if (menuname == R.id.tab_layout){
             String[] latteName      = getResources().getStringArray(R.array.menu_latte_name);
             String[] lattepay       = getResources().getStringArray(R.array.menupay_latte);
             String[] latteSizwup    = getResources().getStringArray(R.array.menupay_latte_sizeup);
@@ -68,7 +72,7 @@ public class SubMenuActivity extends AppCompatActivity {
             coffeepayText      .setText( lattepay   [position]);
             coffeepaySizwupText.setText( latteSizwup[position]);
         }
-        else if (menuname == R.id.btn_menu3){
+        else if (menuname == R.id.tab_layout){
             String[] beverageName      = getResources().getStringArray(R.array.menu_beverage_name);
             String[] beveragepay       = getResources().getStringArray(R.array.menupay_beverage);
             String[] beverageSizwup    = getResources().getStringArray(R.array.menupay_beverage_sizeup);
@@ -78,7 +82,7 @@ public class SubMenuActivity extends AppCompatActivity {
             coffeepayText      .setText( beveragepay   [position]);
             coffeepaySizwupText.setText( beverageSizwup[position]);
         }
-        else if (menuname == R.id.btn_menu4){
+        else if (menuname == R.id.tab_layout){
             String[] teaName      = getResources().getStringArray(R.array.menu_tea_name);
             String[] teapay       = getResources().getStringArray(R.array.menupay_tea);
             String[] teaSizwup    = getResources().getStringArray(R.array.menupay_tea_sizeup);
@@ -88,7 +92,7 @@ public class SubMenuActivity extends AppCompatActivity {
             coffeepayText      .setText( teapay   [position]);
             coffeepaySizwupText.setText( teaSizwup[position]);
         }
-        else if (menuname == R.id.btn_menu5){
+        else if (menuname == R.id.tab_layout){
             String[] sidemenuName      = getResources().getStringArray(R.array.menu_sidemenu_name);
             String[] sidemenupay       = getResources().getStringArray(R.array.menupay_sidemenu);
             String[] sidemenuSizwup    = getResources().getStringArray(R.array.menupay_sidemenu_sizeup);

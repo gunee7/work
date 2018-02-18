@@ -1,28 +1,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:background="#ffffff"
               tools:context="com.example.st1drawermenu.Cart.CartActivity">
     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_screen6">
+    
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+    
+        <TextView
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="주문 리스트"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <ImageButton
+            android:id="@+id/btn_barket"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            app:srcCompat="@drawable/wastebin"/>
+        
+    </LinearLayout>
     <ListView
         android:id="@+id/cart_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:choiceMode="multipleChoice" />
+        android:choiceMode="multipleChoice"/>
     
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#57a79b"/>
-    
-    <EditText
-        android:id="@+id/edittext1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:hint="값을 입력하세요"/>
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,26 +56,24 @@
         android:orientation="horizontal">
         
         <Button
-            android:id="@+id/btn_add"
+            android:id="@+id/btn_menuadd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add" />
+            android:backgroundTint="@color/bg_screen2"
+            android:textColor="#000000"
+            android:text="메뉴추가" />
         
         <Button
-            android:id="@+id/btn_modify"
+            android:id="@+id/btn_checking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Modify" />
-        
-        <Button
-            android:id="@+id/btn_delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Delete" />
-    
+            android:backgroundTint="@color/bg_screen4"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="계산하기" />
+
     </LinearLayout>
 
 </LinearLayout>

@@ -26,9 +26,15 @@ import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
 import com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment;
 import com.example.st1drawermenu.Fragment.Tab3.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4.Tab4Fragment;
+import com.example.st1drawermenu.Fragment.Tab5.Tab5Fragment;
 import com.example.st1drawermenu.LoginPackage.CommonCode;
 import com.example.st1drawermenu.LoginPackage.LoginActivity;
 import com.example.st1drawermenu.LoginPackage.RegisterActivity;
+import com.example.st1drawermenu.NavPackage.Coupon.CouponActivity;
+import com.example.st1drawermenu.NavPackage.Notices.CourseFragment;
+import com.example.st1drawermenu.NavPackage.Notices.CourseListAdapter;
+import com.example.st1drawermenu.NavPackage.Notices.NoticeMainActivity;
+import com.example.st1drawermenu.NavPackage.Event.EventActivity;
 
 public class MainActivity extends AppBarMainActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -43,7 +49,6 @@ public class MainActivity extends AppBarMainActivity
     private ImageView main_logo;
     private ImageView cart;
     private ImageView search_button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,12 +71,13 @@ public class MainActivity extends AppBarMainActivity
         setShowHideNavigation( loginStatus );
 
         pager = findViewById(R.id.pager);
-        tabLayout = findViewById(R.id.tab_layout);
 
+        tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("커피"));
         tabLayout.addTab(tabLayout.newTab().setText("라떼"));
         tabLayout.addTab(tabLayout.newTab().setText("음료"));
         tabLayout.addTab(tabLayout.newTab().setText("녹차"));
+        tabLayout.addTab(tabLayout.newTab().setText("빙수"));
 
         //ViewPager설정
         pager = findViewById(R.id.pager);
@@ -169,13 +175,18 @@ public class MainActivity extends AppBarMainActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast.makeText( getApplicationContext(),"준비중 입니다.",Toast.LENGTH_SHORT).show();
             return true;
-        } else if (id == R.id.action_pref) {
+        } else if (id == R.id.action_franchise) {
+            Toast.makeText( getApplicationContext(),"점주님 공간으로 이동합니다.",Toast.LENGTH_SHORT).show();
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ LoginActivity.class);
+            startActivity( i );
             return true;
-        } else if (id == R.id.action_pref2) {
+        } else if (id == R.id.action_home) {
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ MainActivity.class);
+            startActivity( i );
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -205,10 +216,35 @@ public class MainActivity extends AppBarMainActivity
         }
         else if (id == R.id.nav_notice) {
             // 새창 띄우기
-            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ Main2Activity.class);
-            startActivityForResult( i, REQUEST_CODE_REGISTER);
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ NoticeMainActivity.class);
+            startActivity ( i );
+        }
+        else if (id == R.id.nav_event) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ EventActivity.class);
+            startActivity ( i );
         }
         else if (id == R.id.nav_board) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ NoticeMainActivity.class);
+            startActivity ( i );
+        }
+        else if (id == R.id.nav_coupon) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ CouponActivity.class);
+            startActivity ( i );
+        }
+        else if (id == R.id.nav_orderhistory) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ CartActivity.class);
+            startActivity ( i );
+        }
+        else if (id == R.id.nav_home) {
+            // 새창 띄우기
+            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ MainActivity.class);
+            startActivity ( i );
+        }
+        else if (id == R.id.nav_setting) {
             Toast.makeText( getApplicationContext(),"준비중 입니다.",Toast.LENGTH_SHORT).show();
         }
 
@@ -249,6 +285,7 @@ public class MainActivity extends AppBarMainActivity
             menu.findItem(R.id.nav_register).setVisible(!isVisible);
             menu.findItem(R.id.nav_logout  ).setVisible( isVisible);
             menu.findItem(R.id.nav_memedit ).setVisible( isVisible);
+            menu.findItem(R.id.nav_home ).setVisible( isVisible);
         }
     }
 
@@ -276,6 +313,8 @@ public class MainActivity extends AppBarMainActivity
                     return new Tab3Fragment();
                 case 3:
                     return new Tab4Fragment();
+                case 4:
+                    return new Tab5Fragment();
                 default:
                     return null;
             }

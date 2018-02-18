@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.st1drawermenu.Fragment.Tab2.Tab2_Model_Card;
+
 import com.example.st1drawermenu.R;
 
 import java.util.List;
@@ -38,7 +38,7 @@ public class Tab3_Adapter_Card extends ArrayAdapter<Tab3_Model_Card> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         inflater = LayoutInflater.from( context );
-        inflaterView = inflater.inflate( R.layout.fragment_tab2_custom, parent , false );
+        inflaterView = inflater.inflate( R.layout.fragment_tab3_custom, parent , false );
 
         holder = ( ViewHolder ) inflaterView.getTag();
 
