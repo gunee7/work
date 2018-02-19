@@ -1,6 +1,8 @@
 package com.example.st1drawermenu.Fragment.Tab1;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,14 +12,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
-import android.content.Intent;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.st1drawermenu.Cart.CartActivity;
-import com.example.st1drawermenu.MainActivity;
 import com.example.st1drawermenu.R;
-import com.example.st1drawermenu.SubuMenu.QrcodeActivity;
-import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +30,13 @@ public class Tab1Fragment extends Fragment {
     private Tab1_Adapter_Card tab1Adapter;
     private GridView tab1GridView;
     private List<Tab1_Model_Card> data1;
+    private AlertDialog dialog;
 
     private int[] coffee_images = Tab1MenuButton.coffee_icon;
 
 
     private int getid1 = 0;
+    private View dialogView;
 
 
     public Tab1Fragment() {
@@ -86,35 +86,53 @@ public class Tab1Fragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // intent 여기안에서 하기
-                Intent i = new Intent ( getContext(), SubMenuActivity.class);
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                dialogView = View.inflate(getContext(),R.layout.select_coffee_alert,null);
+
+                ImageView image = dialogView.findViewById( R.id.menu_image );
+                TextView  name  = dialogView.findViewById( R.id.coffee_text );
+                TextView  price = dialogView.findViewById( R.id.coffeepayText );
+                Button   finish = dialogView.findViewById( R.id.btn_finish );
+                Tab1_Model_Card model = data1.get(position);
+                image.setImageDrawable( model.getImageCoffee() );
+                name.setText( model.getTextCoffee() );
+                price.setText( model.getTextPrice() );
+
+
+                builder.setView(dialogView);
+                builder.setPositiveButton("주문표 넣기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                builder.setNegativeButton("닫기",null);
+
+                builder.show();
+
+                /*Intent i = new Intent ( getContext(), SubMenuActivity.class);
                 i.putExtra( "position" , position );
                 i.putExtra( "name"     , getid1 );
-                startActivity(i);
+                startActivity(i);*/
             }
         });
-
     }
 
 
     private List<Tab1_Model_Card> MakeData1( int start, int end ) {
 
         String[] coffeeName = getResources().getStringArray(R.array.menu_coffee_name);
+        String[] coffeePrice = getResources().getStringArray(R.array.menupay_coffee);
         List<Tab1_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab1_Model_Card item = new Tab1_Model_Card();
             item.setImageCoffee(getResources().getDrawable(coffee_images[i]));
             item.setTextCoffee( coffeeName[i] );
+            item.setTextPrice( coffeePrice[i] );
 
             list.add(item);
         }
-
         return list;
     }
-
-
 }
-
-
-
-

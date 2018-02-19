@@ -46,9 +46,14 @@ public class MainActivity extends AppBarMainActivity
     private ImageView main_logo;
     private ImageView cart;
     private ImageView search_button;
+    private final String GO_COFFEE = "select intro";
+
+    SharedPreferences pref = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -63,7 +68,7 @@ public class MainActivity extends AppBarMainActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // Preference 객체 얻기. 파일이름은 Settings.xml
-        SharedPreferences pref = getSharedPreferences( CommonCode.FILE_PREFERECE, MODE_PRIVATE);
+        pref = getSharedPreferences( CommonCode.FILE_PREFERECE, MODE_PRIVATE);
         boolean loginStatus = pref.getBoolean( CommonCode.LOGIN_STATUS, false);
         setShowHideNavigation( loginStatus );
 
@@ -79,6 +84,7 @@ public class MainActivity extends AppBarMainActivity
         pager = findViewById(R.id.pager);
         PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         pager.setAdapter(adapter);
+
 
         //ViewPager의 PagerChange와 TabLayout연동 설정
         //ViewPager를 스크롤하면 Tab도 같이 바뀌게 하는 설정.
@@ -102,7 +108,10 @@ public class MainActivity extends AppBarMainActivity
 
             }
         });
+        Intent gocoffee = getIntent();
+        int  aaa = gocoffee.getIntExtra(GO_COFFEE, -1);
 
+        pager.setCurrentItem(aaa);
 
 
         main_logo = findViewById(R.id.main_logo);
@@ -203,9 +212,11 @@ public class MainActivity extends AppBarMainActivity
             startActivityForResult( i, REQUEST_CODE_LOGIN );
 
         } else if (id == R.id.nav_logout) {
-            Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ IntroMainActivity.class);
-            startActivity( i);
+            pref = getSharedPreferences( CommonCode.FILE_PREFERECE, MODE_PRIVATE);
+            SharedPreferences.Editor setter = pref.edit();
+            setter.putBoolean(CommonCode.LOGIN_STATUS, false );
             setShowHideNavigation( false );
+
         }
         else if (id == R.id.nav_memedit) {
             Toast.makeText( getApplicationContext(),"준비중 입니다.",Toast.LENGTH_SHORT).show();
@@ -219,11 +230,13 @@ public class MainActivity extends AppBarMainActivity
         else if (id == R.id.nav_notice) {
             // 새창 띄우기
             Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ NoticeMainActivity.class);
+            i.putExtra("click","scheduleButton");
             startActivity ( i );
         }
         else if (id == R.id.nav_event) {
             // 새창 띄우기
             Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ NoticeMainActivity.class);
+            i.putExtra("click","courseButton");
             startActivity ( i );
         }
         else if (id == R.id.nav_board) {
@@ -234,6 +247,7 @@ public class MainActivity extends AppBarMainActivity
         else if (id == R.id.nav_coupon) {
             // 새창 띄우기
             Intent i = new Intent( /* context */ MainActivity.this  ,  /* class 이름 */ NoticeMainActivity.class);
+            i.putExtra("click","statisticsButton");
             startActivity ( i );
         }
         else if (id == R.id.nav_orderhistory) {
@@ -283,11 +297,11 @@ public class MainActivity extends AppBarMainActivity
         NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
         if (navView != null) {
             Menu menu = navView.getMenu();
-            menu.findItem(R.id.nav_login   ).setVisible( isVisible);
-            menu.findItem(R.id.nav_register).setVisible( isVisible);
-            menu.findItem(R.id.nav_logout  ).setVisible( !isVisible);
-            menu.findItem(R.id.nav_memedit ).setVisible( !isVisible);
-            menu.findItem(R.id.nav_home ).setVisible( !isVisible);
+            menu.findItem(R.id.nav_login   ).setVisible( !isVisible);
+            menu.findItem(R.id.nav_register).setVisible( !isVisible);
+            menu.findItem(R.id.nav_logout  ).setVisible(  isVisible);
+            menu.findItem(R.id.nav_memedit ).setVisible(  isVisible);
+            menu.findItem(R.id.nav_home ).setVisible(  isVisible);
         }
     }
 
