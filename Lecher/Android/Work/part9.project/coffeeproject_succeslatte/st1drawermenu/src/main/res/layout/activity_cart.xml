@@ -54,37 +54,53 @@
         android:background="#57a79b"/>
     
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         
-        <Button
-            android:id="@+id/btn_menuadd"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/textprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="가격"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_screen2"
-            android:textColor="#000000"
-            android:text="메뉴추가" />
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/btn_menuadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bg_screen2"
+                android:textColor="#000000"
+                android:text="메뉴추가" />
+            
+            
+            <Button
+                android:id="@+id/btn_checking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bg_screen4"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="결제하기" />
         
-        <TextView
-            android:id="@+id/textprice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="가격"/>
+        </LinearLayout>
         
-        <Button
-            android:id="@+id/btn_checking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/bg_screen4"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:text="결제하기" />
-        
-
     </LinearLayout>
 
 </LinearLayout>

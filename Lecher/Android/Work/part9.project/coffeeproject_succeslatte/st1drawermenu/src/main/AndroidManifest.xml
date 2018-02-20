@@ -61,6 +61,12 @@
             android:name=".AppBar.AppBarBottomActivity"
             android:label="@string/title_activity_app_bar_bottom">
         </activity>
+        <activity android:name=".board.CommentInsertActivity">
+        </activity>
+        <activity android:name=".board.CommentActivity">
+        </activity>
+        <activity android:name=".board.ArticleListActivity">
+        </activity>
     </application>
 
 </manifest>
