@@ -95,4 +95,5 @@
         android:textColor="@color/bg_screen4"
         android:textAlignment="center"/>
 
+    
 </RelativeLayout>

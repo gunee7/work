@@ -7,7 +7,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.content.Intent;
+import android.widget.TextView;
 
+import com.example.st1drawermenu.Fragment.Tab2.Tab2_Model_Card;
 import com.example.st1drawermenu.MainActivity;
 import com.example.st1drawermenu.NavPackage.Event.EventActivity;
 import com.example.st1drawermenu.R;
@@ -20,13 +22,16 @@ public class CartActivity extends AppCompatActivity {
 
     private ListView cartListview = null;
     private CartAdapter cartAdapter;
-    private List<CartModel> data;
-    List<CartModel> list = new ArrayList<>();
-
+    private List<Tab2_Model_Card> data;
+    List<Tab2_Model_Card> list = new ArrayList<>();
+    List<Tab2_Model_Card> datalist;
     private ImageView btn_back;
     private ImageView btn_barket;
     private Button btn_menuadd;
     private Button btn_checking;
+    private TextView textprice;
+    private final String GO_COFFEE = "select intro";
+    int total = 0;
 
 
     @Override
@@ -36,10 +41,12 @@ public class CartActivity extends AppCompatActivity {
 
         cartListview = findViewById( R.id.cart_listview );
 
-        data = MakeData();
+        Intent i = getIntent();
+        list = i.getParcelableArrayListExtra("cart");
 
-        cartAdapter = new CartAdapter( CartActivity.this,R.layout.cart_custom, data );
-        cartAdapter.notifyDataSetChanged();
+        data = MakeData( 0 , list.size()-1 );
+
+        cartAdapter = new CartAdapter( CartActivity.this , R.layout.cart_custom, data);
         cartListview.setAdapter( cartAdapter );
 
         btn_back = findViewById( R.id.btn_back );
@@ -47,6 +54,7 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent( /* context */ CartActivity.this  ,  /* class 이름 */ MainActivity.class);
+                i.putExtra(GO_COFFEE,0);
                 startActivity ( i );
             }
         });
@@ -56,8 +64,8 @@ public class CartActivity extends AppCompatActivity {
         btn_barket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( /* context */ CartActivity.this  ,  /* class 이름 */ CartActivity.class);
-                startActivity ( i );
+                data.clear();
+                cartAdapter.notifyDataSetChanged();
 
             }
         });
@@ -80,21 +88,25 @@ public class CartActivity extends AppCompatActivity {
                 startActivity ( i );
             }
         });
+        textprice = findViewById( R.id.textprice );
+        textprice.setText( total + "");
+
+
     }
 
-    private List<CartModel> MakeData() {
+    private List<Tab2_Model_Card> MakeData( int start , int end ) {
 
-        Intent i = getIntent();
-        String name = i.getStringExtra("name");
-        String price = i.getStringExtra("price");
-        String number = i.getStringExtra("number");
+        Tab2_Model_Card item = new Tab2_Model_Card();
+        datalist = new ArrayList<>();
+        for ( int i = start ; i <= end ; i++ ){
+            item = list.get( i );
+            datalist.add( item );
+            int pri = Integer.valueOf(item.getTextPrice());
+            int cou = Integer.valueOf(item.getCountCoffee());
+            int pay = pri * cou;
+            total = total + pay;
+        }
 
-        CartModel cart = new CartModel();
-        cart.setCoffeeName( name );
-        cart.setCoffePrice( price +"");
-        cart.setCoffeeCount( number+"" );
-
-        list.add( cart );
 
         return list;
     };

@@ -1,106 +1,72 @@
 package com.example.st1drawermenu.AppBar;
 
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ListView;
-
+import android.widget.Toast;
 import com.example.st1drawermenu.R;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import com.example.st1drawermenu.board.HttpBoard;
+import com.example.st1drawermenu.board.ModelArticle;
+import com.example.st1drawermenu.board.SiteAsyncTask;
 
 public class SearchActivity extends AppCompatActivity {
 
-
-    private Button btn_add;
-    private ImageView btnPrev;
-    private EditText txtUrl;
-    private WebView webView;
-    private ListView list_view;
+    private EditText edt_title   ;
+    private EditText edt_content;
+    private Button   btn_summit ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_search);
 
-        btn_add = findViewById(R.id.btn_add);
-        btnPrev = findViewById(R.id.btnPrev);
+        edt_title     = findViewById( R.id.edt_Title   );
+        edt_content   = findViewById( R.id.edt_content);
+        btn_summit    = findViewById( R.id.btn_summit );
 
-        ButtonInner bi = new ButtonInner();
+        btn_summit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String title = edt_title.getText().toString();
+                String content = edt_content.getText().toString();
 
-        btn_add.setOnClickListener(bi);
-        btnPrev.setOnClickListener(bi);
+                ModelArticle article = new ModelArticle();
+                article.setTitle( title );
+                article.setContent( content );
+                article.setBoardcd( "free");
 
-        webView = findViewById(R.id.webView);
+                new insertArticleTask(SearchActivity.this).execute( article );
+            }
+        });
 
-        webView.setWebViewClient(new MyWebClient());
-        WebSettings settings = webView.getSettings();
-        settings.setJavaScriptEnabled(true);
-        settings.setBuiltInZoomControls(true);
     }
+    private class insertArticleTask extends SiteAsyncTask< ModelArticle, Integer, Integer > {
 
-    private class ButtonInner implements View.OnClickListener {
+        public insertArticleTask(Context context) {
+            super(context);
+        }
         @Override
-        public void onClick(View view) {
-            switch (view.getId()) {
-                case R.id.btn_add:
-                    String url = txtUrl.getText().toString();
-                    webView.loadUrl("http://" + url);
-                    break;
+        protected Integer doInBackground(ModelArticle... modelArticles) {
 
-                case R.id.btnPrev:
-                    webView.goBack();
-                    break;
+            Integer result = new HttpBoard().insertArticle( modelArticles[0] );
+
+            return result;
+        }
+
+        @Override
+        protected void onPostExecute(Integer check) {
+            super.onPostExecute(check);
+
+            if (check >= 1){
+                Toast.makeText(SearchActivity.this, "글쓰기 완료", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+            else {
+                Toast.makeText(SearchActivity.this, "다시 입력해 주세요", Toast.LENGTH_SHORT).show();
             }
         }
     }
-
-    private class MyWebClient extends WebViewClient {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            return super.shouldOverrideUrlLoading(view, url);
-        }
-    }
-
-
-
-    private List<String> makeData() {
-        List<String> data = new ArrayList<>();
-        data.add("item 01");
-        data.add("item 02");
-        data.add("item 03");
-        data.add("item 04");
-        data.add("item 05");
-        data.add("item 06");
-        data.add("item 07");
-        data.add("item 08");
-        data.add("item 09");
-        data.add("item 10");
-        data.add("item 11");
-        data.add("item 12");
-        data.add("item 13");
-        data.add("item 14");
-        data.add("item 15");
-        data.add("item 16");
-        data.add("item 17");
-        data.add("item 18");
-        data.add("item 19");
-        data.add("item 20");
-        return data;
-    }
 }
-
-
-
-
-

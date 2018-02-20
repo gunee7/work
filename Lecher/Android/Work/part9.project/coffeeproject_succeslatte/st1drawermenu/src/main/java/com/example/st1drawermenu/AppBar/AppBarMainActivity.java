@@ -1,26 +1,18 @@
 package com.example.st1drawermenu.AppBar;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
-import com.example.st1drawermenu.Cart.CartActivity;
 import com.example.st1drawermenu.Fragment.Tab2.Tab2Fragment;
 import com.example.st1drawermenu.Fragment.Tab1.Tab1Fragment;
-import com.example.st1drawermenu.Fragment.Tab3Fragment;
-import com.example.st1drawermenu.Fragment.Tab3Fragment;
+import com.example.st1drawermenu.board.Tab3.Tab3Fragment;
 import com.example.st1drawermenu.Fragment.Tab4Fragment;
-import com.example.st1drawermenu.Fragment.Tab4Fragment;
-import com.example.st1drawermenu.MainActivity;
 import com.example.st1drawermenu.R;
-import com.example.st1drawermenu.SubuMenu.QrcodeActivity;
 
 public class AppBarMainActivity extends AppCompatActivity {
 

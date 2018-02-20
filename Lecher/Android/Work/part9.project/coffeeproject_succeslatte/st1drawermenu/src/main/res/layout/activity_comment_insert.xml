@@ -5,54 +5,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-              tools:context="com.example.st1drawermenu.AppBar.SearchActivity">
-    
+    tools:context="com.example.st1drawermenu.board.CommentInsertActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="제목 : "
         android:textSize="30dp"
-        android:id="@+id/textTitle" />
-    
+        android:text="닉네임 : "
+        android:id="@+id/textName" />
+
     <EditText
-        android:id="@+id/edt_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textTitle"
-        android:hint="제목"
-        android:textSize="20dp" />
-    
-    
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/textName"
+        android:hint="닉네임 입력"
+        android:textSize="20dp"
+        android:id="@+id/edt_nick" />
+
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textMemo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/edt_Title"
-        android:layout_marginTop="27dp"
+        android:layout_below="@+id/edt_nick"
         android:text="내용"
         android:textSize="30dp" />
-    
+
     <EditText
-        android:id="@+id/edt_content"
-        android:layout_width="match_parent"
+        android:id="@+id/edt_memo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView5"
-        android:hint="내용"/>
-    
+        android:layout_below="@+id/textMemo"
+        android:hint="내용 입력"
+        android:textSize="20dp" />
+
     <Button
-        android:id="@+id/btn_summit"
+        android:id="@+id/btn_comment_insert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:text="저장하기"/>
-
-
+        android:layout_below="@+id/edt_memo"
+        android:layout_marginTop="76dp"
+        android:text="댓글 작성" />
 
 </RelativeLayout>
-
-

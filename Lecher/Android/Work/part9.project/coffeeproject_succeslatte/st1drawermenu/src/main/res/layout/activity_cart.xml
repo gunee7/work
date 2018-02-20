@@ -47,6 +47,7 @@
         android:layout_weight="1"
         android:choiceMode="multipleChoice"/>
     
+    
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -66,6 +67,13 @@
             android:textColor="#000000"
             android:text="메뉴추가" />
         
+        <TextView
+            android:id="@+id/textprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="가격"/>
+        
         <Button
             android:id="@+id/btn_checking"
             android:layout_width="wrap_content"
@@ -75,6 +83,7 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:text="결제하기" />
+        
 
     </LinearLayout>
 

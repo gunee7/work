@@ -169,7 +169,7 @@
         android:layout_weight="1"
         android:text="주문표에_모아결제"/>
     
-        <Button
+        <!--<Button
             android:id="@+id/btn_go_checking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:text="바로 결제하기"/>
+            android:text="바로 결제하기"/>-->
 
     </LinearLayout>
 

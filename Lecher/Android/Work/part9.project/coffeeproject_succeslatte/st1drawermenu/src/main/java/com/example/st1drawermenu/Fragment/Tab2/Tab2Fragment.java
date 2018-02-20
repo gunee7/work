@@ -1,7 +1,10 @@
 package com.example.st1drawermenu.Fragment.Tab2;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,9 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.content.Intent;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.st1drawermenu.Cart.CartActivity;
+import com.example.st1drawermenu.Fragment.Tab1.Tab1_Model_Card;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
 
@@ -40,6 +49,9 @@ public class Tab2Fragment extends Fragment {
     private Button btn_menu4 = null;
     private Button btn_menu5 = null;
     private int getid2 = 0;
+    private View dialogView;
+
+    final List<Tab2_Model_Card> list = new ArrayList<>();
 
 
     public Tab2Fragment() {
@@ -100,11 +112,68 @@ public class Tab2Fragment extends Fragment {
         tab2GridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // intent 여기안에서 하기
-                Intent i = new Intent ( getContext(), SubMenuActivity.class);
-                i.putExtra( "position" , position );
-                i.putExtra( "name"     , getid2 );
-                startActivity(i);
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                dialogView = View.inflate(getContext(),R.layout.select_coffee_alert,null);
+
+                ImageView image = dialogView.findViewById( R.id.menu_image );
+                TextView  name  = dialogView.findViewById( R.id.coffee_text );
+                TextView  price = dialogView.findViewById( R.id.coffeepayText );
+                ImageView btn_minus = dialogView.findViewById( R.id.btn_minus );
+                ImageView btn_plus  = dialogView.findViewById( R.id.btn_plus  );
+                Button    btn_go_cart = dialogView.findViewById( R.id.btn_go_cart  );
+                final EditText  count_number =  dialogView.findViewById( R.id.count_number  );
+                //마이너스 해주는것
+                btn_minus.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String count = count_number.getText().toString();
+                        int    intcount = Integer.valueOf( count );
+                        if ( intcount <= 1 ){
+                            Toast.makeText(getContext(),"1개 이상 시키셔야 합니다.",Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            intcount = intcount - 1;
+                            count_number.setText(intcount + "");
+                        }
+                    }
+                });
+                btn_plus.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String count = count_number.getText().toString();
+                        int    intcount = Integer.valueOf( count );
+                        intcount = intcount + 1;
+                        count_number.setText(intcount + "");
+                    }
+                });
+
+                final Tab2_Model_Card model = data2.get(position);
+                image.setImageDrawable( getResources().getDrawable(model.getImageCoffee(), null) );
+                name.setText( model.getTextCoffee() );
+                price.setText( model.getTextPrice() );
+
+                builder.setView(dialogView);
+
+                btn_go_cart.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        model.setCountCoffee( count_number.getText().toString() );
+                        list.add( model );
+                        Toast.makeText(getContext(),"들어갔습니다.",Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setPositiveButton("결제하러 가기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent i = new Intent( getContext() , CartActivity.class);
+                        i.putParcelableArrayListExtra("cart", (ArrayList<Tab2_Model_Card>) list);
+                        startActivity( i );
+                    }
+                });
+                builder.setNegativeButton("닫기",null);
+
+                builder.show();
+
             }
         });
 
@@ -172,12 +241,14 @@ public class Tab2Fragment extends Fragment {
     private List<Tab2_Model_Card> MakeData1( int start, int end ) {
 
         String[] coffeeName = getResources().getStringArray(R.array.menu_coffee_name);
+        String[] coffeepay  = getResources().getStringArray(R.array.menupay_coffee  );
         List<Tab2_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab2_Model_Card item = new Tab2_Model_Card();
-            item.setImageCoffee(getResources().getDrawable(coffee_images[i]));
+            item.setImageCoffee(coffee_images[i]);
             item.setTextCoffee( coffeeName[i] );
+            item.setTextPrice( coffeepay[i] );
 
             list.add(item);
         }
@@ -187,12 +258,14 @@ public class Tab2Fragment extends Fragment {
     private List<Tab2_Model_Card> MakeData2( int start, int end ) {
 
         String[] latteName = getResources().getStringArray(R.array.menu_latte_name);
+        String[] lattepay  = getResources().getStringArray(R.array.menupay_latte  );
         List<Tab2_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab2_Model_Card item = new Tab2_Model_Card();
-            item.setImageCoffee(getResources().getDrawable(latte_iamges[i]));
+            item.setImageCoffee(latte_iamges[i]);
             item.setTextCoffee( latteName[i] );
+            item.setTextPrice ( lattepay[i] );
 
             list.add(item);
         }
@@ -202,12 +275,14 @@ public class Tab2Fragment extends Fragment {
     private List<Tab2_Model_Card> MakeData3( int start, int end ) {
 
         String[] beverageName = getResources().getStringArray(R.array.menu_beverage_name);
+        String[] beveragepay  = getResources().getStringArray(R.array.menupay_beverage  );
         List<Tab2_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab2_Model_Card item = new Tab2_Model_Card();
-            item.setImageCoffee(getResources().getDrawable(beverage_images[i]));
+            item.setImageCoffee(beverage_images[i]);
             item.setTextCoffee( beverageName[i] );
+            item.setTextPrice ( beveragepay[i] );
 
             list.add(item);
         }
@@ -217,12 +292,14 @@ public class Tab2Fragment extends Fragment {
     private List<Tab2_Model_Card> MakeData4( int start, int end ) {
 
         String[] teaName = getResources().getStringArray(R.array.menu_tea_name);
+        String[] teapay  = getResources().getStringArray(R.array.menupay_tea  );
         List<Tab2_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab2_Model_Card item = new Tab2_Model_Card();
-            item.setImageCoffee(getResources().getDrawable(tea_iamges[i]));
+            item.setImageCoffee(tea_iamges[i]);
             item.setTextCoffee( teaName[i] );
+            item.setTextPrice ( teapay[i] );
 
             list.add(item);
         }
@@ -232,12 +309,14 @@ public class Tab2Fragment extends Fragment {
     private List<Tab2_Model_Card> MakeData5( int start, int end ) {
 
         String[] sidemenuName = getResources().getStringArray(R.array.menu_sidemenu_name);
+        String[] sidemenuPay  = getResources().getStringArray(R.array.menupay_sidemenu  );
         List<Tab2_Model_Card> list = new ArrayList<>();
         for(int i =start ; i<=end; i++){
 
             Tab2_Model_Card item = new Tab2_Model_Card();
-            item.setImageCoffee(getResources().getDrawable(sidemenu_images[i]));
+            item.setImageCoffee(sidemenu_images[i]);
             item.setTextCoffee( sidemenuName[i] );
+            item.setTextPrice ( sidemenuPay[i] );
 
             list.add(item);
         }
